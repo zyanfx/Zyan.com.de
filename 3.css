@@ -1,0 +1,67 @@
+/*
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+*/
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 142px; /* .push must be the same height as .footer */
+}
+
+/*--------------*/
+p {
+	padding-bottom: 10px;
+}
+body {
+	font-family: Verdana, Tahoma, Arial, Helvetica;
+	color: #044;
+   background: url("mp-bg-footer.png") no-repeat center top, url(background5.png);
+}
+#header {
+   background: url(background5.png);
+}
+#header-bottom {
+   background: url(background4.png);
+   height: 4px;
+}
+#primary {
+    float: left;
+    width:24%;
+}
+#content {
+    float:left;
+    width:55%;
+}
+#secondary {
+    float:left;
+    width:15%;
+}
+#footer {
+    clear:both;
+    background: url("mp-bg-footer2.png") no-repeat center top, url(background4.png) repeat;
+}
+#footer-top {
+    clear:both;
+    background: url(background3.png);
+    height: 2px;
+}
+img.biglogo {
+	padding-top: 30px; 
+	padding-bottom: 20px; 
+	position: relative; 
+	left: -197px;
+}
+/*#footer.footer {
+	background: url("mp-bg-footer.png") no-repeat center top;
+}*/
