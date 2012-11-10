@@ -1,24 +1,3 @@
-/*
-Sticky Footer by Ryan Fait
-http://ryanfait.com/
-*/
-
-* {
-	margin: 0;
-}
-html, body {
-	height: 100%;
-}
-.wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-}
-.footer, .push {
-	height: 142px; /* .push must be the same height as .footer */
-}
-
 /*--------------*/
 p {
 	padding-bottom: 10px;
@@ -49,7 +28,10 @@ body {
 }
 #footer {
     clear:both;
-    background: url("mp-bg-footer2.png") no-repeat center top, url(background4.png) repeat;
+    background: 
+    	url(background3_2px.png) repeat-x,
+    	url("mp-bg-footer2.png") no-repeat center top, 
+    	url(background4.png) repeat;
 }
 #footer-top {
     clear:both;
@@ -62,6 +44,18 @@ img.biglogo {
 	position: relative; 
 	left: -197px;
 }
-/*#footer.footer {
-	background: url("mp-bg-footer.png") no-repeat center top;
-}*/
+h3.footer-title {
+	padding-bottom: 1em;
+}
+div.download {
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	color: #FFF;
+	background: #2BB url(background3.png);
+	margin-bottom: 0.3em;
+	padding: 0.4em;
+}
+.lighter {
+	color: #4AA;
+}
