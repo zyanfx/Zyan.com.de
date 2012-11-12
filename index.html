@@ -5,13 +5,14 @@
 	<meta charset="utf-8" />
 	<title>Zyan Communications Framework</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<!-- 1140px Grid styles for IE -->
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
 	<!-- The 1140px Grid - http://cssgrid.net/ -->
 	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
 	<!-- Your styles -->
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="6.css">
+	<link rel="stylesheet" type="text/css" href="zyan.css">
 	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 </head>
@@ -23,7 +24,7 @@
 		<div class="twocol">
 		</div>
 		<div class="eightcol">
-	    	<img src="zyan-logo20-hi.png" alt="Zyan Communication Framework" title="Zyan Communication Framework"/>
+	    	<img src="img/zyan-logo20-hi.png" alt="Zyan Communication Framework" title="Zyan Communication Framework"/>
 		</div>
 		<div class="twocol last">
 		</div>
@@ -87,12 +88,27 @@
 
 	<div class="row">
 		<div class="fourcol">
-			<h2>Wide range of protocols</h2>
+			<h2>Multiprotocol</h2>
 			<p>Supports TCP, HTTP and Named pipes. Extensibility model allows plugging any custom transport protocols.</p>
 		</div>
 		<div class="fourcol">
-			<h2>Bidirectional TCP</h2>
-			<p>Supports duplex TCP communication through client-side NAT and firewalls.</p>
+			<h2>Full duplex TCP</h2>
+			<p>Supports bidirectional TCP communication through client-side NAT and firewalls.</p>
+		</div>
+		<div class="fourcol last">
+			<h2>Supports duck typing</h2>
+			<p>Zyan is able to host component that matches an interface, but doesn't implement it.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fourcol">
+			<h2>Supports events</h2>
+			<p>Distributed events are as easy as button_Click in Windows Forms applications. Distributed Event-Based Components (EBC) are supported out-of-the-box.</p>
+		</div>
+		<div class="fourcol">
+			<h2>LINQ-enabled</h2>
+			<p>Supports LINQ queries to the remote components. Allows passing serialized LINQ expressions over network and generating anonymous classes on demand.</p>
 		</div>
 		<div class="fourcol last">
 			<h2>Extensible</h2>
@@ -104,8 +120,8 @@
 
 	<div class="row">
 		<div class="fourcol">
-			<h2>Supports events</h2>
-			<p>Distributed events are as easy as button_Click in Windows Forms. Distributed Event-Based Components (EBC) are supported out-of-the-box.</p>
+			<h2>Unit tested</h2>
+			<p>Zyan code is extensively covered with unit tests and integrational tests. Integrational tests are executed on Windows and Linux using Mono.</p>
 		</div>
 		<div class="fourcol">
 			<h2>Enterprise ready</h2>
@@ -144,8 +160,8 @@
 			of the fire-fighting vehicles.</p>
 		</div>
 		<div class="fourcol last">
-			<img src="img/Zyan-logo-masked.png" style="float:left;"/>
-			<p>Have used Zyan in your projects? Share the details of your application, 
+			<img src="img/zyan-logo-masked.png" style="float:left;"/>
+			<p>Have used Zyan in your projects? <a href="http://zyan.codeplex.com/discussions/337472">Share the details</a> of your application, 
 			help other customers to make a decision!</p>
 			<p></p>
 		</div>
@@ -161,7 +177,8 @@
 			<h3 class="footer-title">About</h3>
 			<p><a href="http://zyan.codeplex.com">Overview</a></p>
 			<p><a href="http://zyan.codeplex.com/wikipage?title=What%C2%B4s%20new%20in%20Zyan%202.0%3f">What's new</a></p>
-			<p>FAQ</p>
+			<p>FAQ <span class="lighter">(TODO)</span></p>
+			<p><a href="https://www.ohloh.net/p/zyan">Statistics</a></p>
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">Learn</h3>
@@ -186,8 +203,9 @@
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">Contact</h3>
-			<p><a href="https://www.codeplex.com/site/users/contact/Rainbird?OriginalUrl=http://www.codeplex.com/site/users/view/Rainbird">Rainbird</a></p>
-			<p><a href="https://www.codeplex.com/site/users/contact/yallie?OriginalUrl=http://www.codeplex.com/site/users/view/yallie">yallie</a></p>
+			<p><a href="http://yellow-rainbird.de">Rainbird</a></p>
+			<p><a href="http://www.sharp-shooter.ru">yallie</a></p>
+			<p><img src="img/stamp2012.png" style="position: relative; left: -4px;" alt="website designed by yallie" title="website designed by yallie"/></p>
 		</div>
 		<div class="onecol last">
 		</div>
@@ -195,8 +213,7 @@
 	<div class="row" style="padding-top: 1em; padding-bottom: 1em;">
 		<div class="twelvecol last">
 			<center><small>
-				Copyright &copy; 2010-2012 Hagen Siegel, Alexey Yakovlev.<br/>
-				Website designed by yallie.
+				Copyright &copy; 2010-2012 Hagen Siegel, Alexey Yakovlev.
 			</small></center>
 		</div>
 	</div>

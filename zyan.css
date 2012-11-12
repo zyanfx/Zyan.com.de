@@ -5,13 +5,13 @@ p {
 body {
 	font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica;
 	color: #044;
-   background: url("mp-bg-footer.png") no-repeat center top, url(background5.png);
+   background: url(img/mp-bg-footer.png) no-repeat center top, url(img/background5.png);
 }
 #header {
-   background: url(background5.png);
+   background: url(img/background5.png);
 }
 #header-bottom {
-   background: url(background4.png);
+   background: url(img/background4.png);
    height: 4px;
 }
 #primary {
@@ -29,13 +29,13 @@ body {
 #footer {
     clear:both;
     background: 
-    	url(background3_2px.png) repeat-x,
-    	url(mp-bg-footer2.png) no-repeat center top, 
-    	url(background4.png) repeat;
+    	url(img/background3_2px.png) repeat-x,
+    	url(img/mp-bg-footer2.png) no-repeat center top, 
+    	url(img/background4.png) repeat;
 }
 #footer-top {
     clear:both;
-    background: url(background3.png);
+    background: url(img/background3.png);
     height: 2px;
 }
 img.biglogo {
@@ -47,15 +47,9 @@ img.biglogo {
 h1, h2, h3, h4, h5 {
 	padding-bottom: 0.5em;
 }
-a, a.button:hover {
+a.button, a.button:hover {
 	text-decoration: none;
 	color: #033;
-}
-a:visited {
-	color: #066;
-}
-a:hover {
-	text-decoration: underline;
 }
 .download {
 	font-weight: bold;
@@ -63,17 +57,17 @@ a:hover {
 	text-decoration: none;
 	color: #266;
 	background: 
-    	url(mp-bg-footer2.png) no-repeat center top, 
-    	url(background3_2px.png) repeat-x bottom,
-		#2BB url(background7.png);
+    	url(img/mp-bg-footer2.png) no-repeat center top, 
+    	url(img/background3_2px.png) repeat-x bottom,
+		#2BB url(img/background7.png);
 	margin-bottom: 0.3em;
 	padding: 0.4em;
 }
 .download:hover {
 	color: #FFF;
 	background: 
-    	url(background3_2px.png) repeat-x bottom,
-		#4DD url(background7.png);
+    	url(img/background3_2px.png) repeat-x bottom,
+		#4DD url(img/background7.png);
 }
 .lighter {
 	color: #4AA;
@@ -86,14 +80,27 @@ a:hover {
 	text-shadow: 0px 1px 0px #9EE;
 }
 .section {
-	background: url(background8.png) center top repeat-x; 
+	background: url(img/background8.png) center top repeat-x; 
 	margin-top: 1em;
 	padding-top: 2em;
 	margin-bottom: 2em;
 }
-.masked {
-	background: url(mask.png);
+a {
+	text-decoration: none;
+	border-bottom: 1px solid #ADD;
+	color: #033;
 }
-.masker:hover {
-	background: none;
+a:hover {
+	text-decoration: none;
+	color: #044;
+	border-bottom: 1px solid #044;
+}
+a:visited {
+	color: #077;
+}
+.footer a {
+	border: none;
+}
+.footer a:hover {
+	color: #044;
 }
