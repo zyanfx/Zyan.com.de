@@ -1,0 +1,7 @@
+body {
+   background: url(img/background5.png);
+}
+#footer {
+    background: url(img/background4.png) repeat;
+    border-top: 2px solid #377;
+}

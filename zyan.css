@@ -30,13 +30,8 @@ body {
     clear:both;
     background: 
     	url(img/background3_2px.png) repeat-x,
-    	url(img/mp-bg-footer2.png) no-repeat center top, 
+    	url(img/mp-bg-footer2.png) no-repeat center top,
     	url(img/background4.png) repeat;
-}
-#footer-top {
-    clear:both;
-    background: url(img/background3.png);
-    height: 2px;
 }
 img.biglogo {
 	padding-top: 30px; 
