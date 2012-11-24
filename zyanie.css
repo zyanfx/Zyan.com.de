@@ -5,3 +5,11 @@ body {
     background: url(img/background4.png) repeat;
     border-top: 2px solid #377;
 }
+.download {
+	background: #2BB url(img/mp-bg-footer2.png) no-repeat center top;
+	border-bottom: 2px solid #8CC;
+}
+.download:hover {
+	background: #4DD url(img/background7.png);
+	border-bottom: 2px solid #377;
+}
