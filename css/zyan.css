@@ -5,13 +5,13 @@ p {
 body {
 	font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica;
 	color: #044;
-   background: url(img/mp-bg-footer.png) no-repeat center top, url(img/background5.png);
+   background: url(../img/mp-bg-footer.png) no-repeat center top, url(../img/background5.png);
 }
 #header {
-   background: url(img/background5.png);
+   background: url(../img/background5.png);
 }
 #header-bottom {
-   background: url(img/background4.png);
+   background: url(../img/background4.png);
    height: 4px;
 }
 #primary {
@@ -29,9 +29,9 @@ body {
 #footer {
     clear:both;
     background: 
-    	url(img/background3_2px.png) repeat-x,
-    	url(img/mp-bg-footer2.png) no-repeat center top,
-    	url(img/background4.png) repeat;
+    	url(../img/background3_2px.png) repeat-x,
+    	url(../img/mp-bg-footer2.png) no-repeat center top,
+    	url(../img/background4.png) repeat;
 }
 img.biglogo {
 	padding-top: 30px; 
@@ -56,17 +56,17 @@ a.button:hover {
 	text-decoration: none;
 	color: #266;
 	background: 
-    	url(img/mp-bg-footer2.png) no-repeat center top, 
-    	url(img/background3_2px.png) repeat-x bottom,
-		#2BB url(img/background7.png);
+    	url(../img/mp-bg-footer2.png) no-repeat center top, 
+    	url(../img/background3_2px.png) repeat-x bottom,
+		#2BB url(../img/background7.png);
 	margin-bottom: 0.3em;
 	padding: 0.4em;
 }
 .download:hover {
 	color: #FFF;
 	background: 
-    	url(img/background3_2px.png) repeat-x bottom,
-		#4DD url(img/background7.png);
+    	url(../img/background3_2px.png) repeat-x bottom,
+		#4DD url(../img/background7.png);
 }
 .lighter {
 	color: #4AA;
@@ -79,7 +79,7 @@ a.button:hover {
 	text-shadow: 0px 1px 0px #9EE;
 }
 .section {
-	background: url(img/background8.png) center top repeat-x; 
+	background: url(../img/background8.png) center top repeat-x; 
 	margin-top: 1em;
 	padding-top: 2em;
 	margin-bottom: 2em;
