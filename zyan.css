@@ -42,7 +42,11 @@ img.biglogo {
 h1, h2, h3, h4, h5 {
 	padding-bottom: 0.5em;
 }
-a.button, a.button:hover {
+a.button {
+	text-decoration: none;
+	color: #033;
+}
+a.button:hover {
 	text-decoration: none;
 	color: #033;
 }

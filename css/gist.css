@@ -1,0 +1,18 @@
+/* Custom styles for code samples hosted by gist */
+
+.gist .gist-file .gist-data pre {
+  font-family: 'Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Courier', monospace !important;
+}
+
+.gist-data {
+  border-bottom: 1px solid #ACC !important;
+}
+
+.gist-file {
+  border: 1px solid #ACC !important;
+}
+
+.gist-meta{
+  font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica !important;
+  background: #DEE !important;
+}
