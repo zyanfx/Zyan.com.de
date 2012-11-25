@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>NotificationReceiver.EventName Property </title>
+<title>NotificationService.Unsubscribe Method (string, EventHandler&lt;NotificationEventArgs&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">NotificationReceiver.EventName Property </div>
+<div id="PageTitle">NotificationService.Unsubscribe Method (string, EventHandler&lt;NotificationEventArgs&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gibt den Ereignisnamen zurück.
+Hebt eine Registrierung für den Empfang von Benachrichtigungen eines bestimmten Ereignisses auf.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/291.html">NotificationReceiver</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/285.html">NotificationService</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/8.html">Zyan.Communication.Notification</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,8 +40,16 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public string EventName { get; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void Unsubscribe (
+        string <i>eventName</i>,
+        EventHandler&lt;NotificationEventArgs&gt; <i>handler</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">eventName</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
+</div>
+<div class="CommentParameterName">handler</div>
 <div class="ParameterCommentContainer">
 <p>There is no description.</p>
 </div>

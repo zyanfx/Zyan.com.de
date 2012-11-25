@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionConverter Class Members</title>
+<title>ExpressionConverter.VisitLambdaExpression Method (LambdaExpression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionConverter Class Members</div>
+<div id="PageTitle">ExpressionConverter.VisitLambdaExpression Method (LambdaExpression)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,194 +24,35 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-This class is an <a href="../../Contents/2/485.html">ExpressionVisitor</a> implementation
-            used to convert a <span class="PseudoLink">System.Linq.Expressions.Expression</span> to a
-            <a href="../../Contents/2/224.html">SerializableExpression</a>.
+Converts a <span class="PseudoLink">System.Linq.Expressions.LambdaExpression</span> to a
+            <a href="../../Contents/2/355.html">SerializableLambdaExpression</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/381.html">ExpressionConverter</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/373.html">ExpressionConverter</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/25.html">Zyan.InterLinq.Expressions.Helpers</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader30" class="SectionHeader">
-<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
-Public Constructors
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Syntax
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv30" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/24.html">ExpressionConverter</a></td>
-<td>Initializes this class.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader37" class="SectionHeader">
-<img id="SectionExpanderImg37" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(37);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(37);">
-Protected Methods
-</span>
-</span>
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected override object VisitLambdaExpression (
+        LambdaExpression <i>expression</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">expression</div>
+<div class="ParameterCommentContainer">
+<span class="PseudoLink">System.Linq.Expressions.LambdaExpression</span> to convert.
 </div>
-
-<div id="SectionContainerDiv37" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/25.html">VisitBinaryExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.BinaryExpression</span> to a
-            <a href="../../Contents/2/358.html">SerializableBinaryExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/26.html">VisitConditionalExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.ConditionalExpression</span> to a
-            <a href="../../Contents/2/359.html">SerializableConditionalExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/27.html">VisitConstantExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.ConstantExpression</span> to a
-            <a href="../../Contents/2/360.html">SerializableConstantExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/28.html">VisitElementInit</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.ElementInit</span> to a
-            <a href="../../Contents/3/29.html">SerializableElementInit</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/30.html">VisitInvocationExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.InvocationExpression</span> to a
-            <a href="../../Contents/2/362.html">SerializableInvocationExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/31.html">VisitLambdaExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.LambdaExpression</span> to a
-            <a href="../../Contents/2/363.html">SerializableLambdaExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/32.html">VisitListInitExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.ListInitExpression</span> to a
-            <a href="../../Contents/2/364.html">SerializableListInitExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/33.html">VisitMemberAssignment</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.MemberAssignment</span> to a
-            <a href="../../Contents/3/34.html">SerializableMemberAssignment</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/35.html">VisitMemberExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.MemberExpression</span> to a
-            <a href="../../Contents/2/365.html">SerializableMemberExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/36.html">VisitMemberInitExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.MemberInitExpression</span> to a
-            <a href="../../Contents/2/366.html">SerializableMemberInitExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/37.html">VisitMemberListBinding</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.MemberListBinding</span> to a
-            <a href="../../Contents/3/38.html">SerializableMemberListBinding</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/39.html">VisitMemberMemberBinding</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.MemberMemberBinding</span> to a
-            <a href="../../Contents/3/40.html">SerializableMemberMemberBinding</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/41.html">VisitMethodCallExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.MethodCallExpression</span> to a
-            <a href="../../Contents/2/367.html">SerializableMethodCallExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/42.html">VisitNewArrayExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.NewArrayExpression</span> to a
-            <a href="../../Contents/2/368.html">SerializableNewArrayExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/43.html">VisitNewExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.NewExpression</span> to a
-            <a href="../../Contents/2/369.html">SerializableNewExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/44.html">VisitParameterExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.ParameterExpression</span> to a
-            <a href="../../Contents/2/370.html">SerializableParameterExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/45.html">VisitTypeBinaryExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.TypeBinaryExpression</span> to a
-            <a href="../../Contents/2/371.html">SerializableTypeBinaryExpression</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/46.html">VisitTypedExpression&lt;T&gt;</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.Expression`1</span> to a
-            <a href="../../Contents/2/361.html">SerializableExpressionTyped</a>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/3/47.html">VisitUnaryExpression</a></td>
-<td>Converts a <span class="PseudoLink">System.Linq.Expressions.UnaryExpression</span> to a
-            <a href="../../Contents/2/372.html">SerializableUnaryExpression</a>.</td>
-</tr>
-</table>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+Returns the converted <a href="../../Contents/2/355.html">SerializableLambdaExpression</a>.
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

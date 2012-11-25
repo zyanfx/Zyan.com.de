@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanConnectionSetup Class Members</title>
+<title>ZyanErrorEventArgs Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanConnectionSetup Class Members</div>
+<div id="PageTitle">ZyanErrorEventArgs Class Members</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
 <a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
@@ -26,9 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Describes configuration settings for setup a single Zyan Connection.
+Provides specific data for ZyanError-Events.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/55.html">ZyanConnectionSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/55.html">ZyanErrorEventArgs</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -54,35 +53,8 @@ Public Constructors
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/1/412.html">ZyanConnectionSetup</a></td>
-<td>Creates a new instance of the ZyanConnectionSetup class.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/1/413.html">AddCredential</a></td>
-<td>Adds a new credential.</td>
+<td><a href="../../Contents/1/412.html">ZyanErrorEventArgs</a></td>
+<td>Creates a new instance of the ZyanErrorEventArgs class.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
@@ -108,32 +80,32 @@ Public Properties
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/1/414.html">AutoLoginOnExpiredSession</a></td>
-<td>Gets or sets wether Zyan should login automatically with cached credentials after the session is expired.</td>
+<td><a href="../../Contents/1/413.html">Action</a></td>
+<td>Gets or sets, the action to handle this error.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/1/415.html">Credentials</a></td>
-<td>Gets or sets the login credentials.</td>
+<td><a href="../../Contents/1/414.html">Exception</a></td>
+<td>Gets the exception that occured.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/1/416.html">KeepSessionAlive</a></td>
-<td>Gets or sets wether the session should be kept alive.</td>
+<td><a href="../../Contents/1/415.html">RemoteMemberName</a></td>
+<td>Gets the name of the remote called member.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/1/417.html">ProtocolSetup</a></td>
-<td>Gets or sets the protocol setup to be used.</td>
+<td><a href="../../Contents/1/416.html">RemotingMessage</a></td>
+<td>Gets the remoting message of the request.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/1/418.html">ServerUrl</a></td>
-<td>Get or sets the server URL (e.G. "tcp://server1:46123/host1")</td>
+<td><a href="../../Contents/1/417.html">ServerComponentType</a></td>
+<td>Gets the type of the called server component.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

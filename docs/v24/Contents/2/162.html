@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanClientQueryHandler.Connect Method ()</title>
+<title>ZyanEntityQueryHandler.CloseSession Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanClientQueryHandler.Connect Method ()</div>
+<div id="PageTitle">ZyanEntityQueryHandler.CloseSession Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Connects to the server.
-            <a href="../../Contents/2/135.html">InterLinqQueryHandler</a>
+Tells the <a href="../../Contents/2/124.html">IQueryHandler</a> to close the current session.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/137.html">ZyanClientQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/130.html">ZyanEntityQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,7 +40,11 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override void Connect ()</pre></td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public bool CloseSession ()</pre></td></tr></table>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+True, if the session closing was successful. False, if not.
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

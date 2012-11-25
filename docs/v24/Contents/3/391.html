@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerProtocolSetupExtensions.GetClientFormatter Method (IServerProtocolSetup)</title>
+<title>IServerProtocolSetup.CreateChannel Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerProtocolSetupExtensions.GetClientFormatter Method (IServerProtocolSetup)</div>
+<div id="PageTitle">IServerProtocolSetup.CreateChannel Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns the configured formatter from the client sink chain of a specified client protocol setup.
+Creates and configures a Remoting channel.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/316.html">ServerProtocolSetupExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/287.html">IServerProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/9.html">Zyan.Communication.Protocols</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,17 +40,10 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IClientFormatterSinkProvider GetClientFormatter (
-        IServerProtocolSetup <i>protocolSetup</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">protocolSetup</div>
-<div class="ParameterCommentContainer">
-Protocol setup
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract IChannel CreateChannel ()</pre></td></tr></table>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-client formatter sink
+Remoting channel
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

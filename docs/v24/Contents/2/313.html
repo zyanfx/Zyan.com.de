@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>RemotingConstants.GetDefaultChannel Method (IDictionary)</title>
+<title>ServerQueryRemotingHandler.RegisterService Method (IQueryRemoteHandler)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">RemotingConstants.GetDefaultChannel Method (IDictionary)</div>
+<div id="PageTitle">ServerQueryRemotingHandler.RegisterService Method (IQueryRemoteHandler)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-A channel with the default name and the default port.
+Registers the <a href="../../Contents/2/138.html">IQueryRemoteHandler</a> as service.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/298.html">RemotingConstants</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/291.html">ServerQueryRemotingHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/22.html">Zyan.InterLinq.Communication.Remoting</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,17 +40,13 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IChannel GetDefaultChannel (
-        IDictionary <i>properties</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected virtual void RegisterService (
+        IQueryRemoteHandler <i>serviceHandler</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">properties</div>
+<div class="CommentParameterName">serviceHandler</div>
 <div class="ParameterCommentContainer">
-The properties of the channel.
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Retruns a default <span class="PseudoLink">System.Runtime.Remoting.Channels.IChannel</span>.
+<a href="../../Contents/2/138.html">IQueryRemoteHandler</a> to register.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

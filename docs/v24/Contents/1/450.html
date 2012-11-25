@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>IComponentCatalog.RegisterComponent&lt;I, T&gt; Method (string, T, Action&lt;object&gt;)</title>
+<title>IZyanDispatcher.RenewSession Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">IComponentCatalog.RegisterComponent&lt;I, T&gt; Method (string, T, Action&lt;object&gt;)</div>
+<div id="PageTitle">IZyanDispatcher.RenewSession Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Registeres a component instance in the component catalog.
+Extends the lifetime of the current session and returs the current session age limit.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/60.html">IComponentCatalog</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/59.html">IZyanDispatcher</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,32 +40,10 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract void RegisterComponent&lt;I, T&gt; (
-        string <i>uniqueName</i>,
-        T <i>instance</i>,
-        Action&lt;object&gt; <i>cleanUpHandler</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">I</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract int RenewSession ()</pre></td></tr></table>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Interface type of the component
-</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-Implementation type of the component
-</div>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">uniqueName</div>
-<div class="ParameterCommentContainer">
-Unique component name
-</div>
-<div class="CommentParameterName">instance</div>
-<div class="ParameterCommentContainer">
-Component instance
-</div>
-<div class="CommentParameterName">cleanUpHandler</div>
-<div class="ParameterCommentContainer">
-Delegate for external clean up method
+Session age limit (in minutes)
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

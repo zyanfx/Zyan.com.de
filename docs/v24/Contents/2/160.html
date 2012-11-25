@@ -6,16 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanClientQueryHandler Class Members</title>
+<title>ZyanEntityQueryHandler Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanClientQueryHandler Class Members</div>
+<div id="PageTitle">ZyanEntityQueryHandler Class Members</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
 <a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
-<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -26,9 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Client handler class managing Zyan connection to the InterLINQ Server.
+Simple IQueryable server query handler
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/137.html">ZyanClientQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/130.html">ZyanEntityQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -54,8 +53,8 @@ Public Constructors
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/2/161.html">ZyanClientQueryHandler</a></td>
-<td>Overloaded. Creates ZyanClientQueryHandler instance.</td>
+<td><a href="../../Contents/2/161.html">ZyanEntityQueryHandler</a></td>
+<td>Overloaded. Initializes a new instance of the <a href="../../Contents/2/130.html">ZyanEntityQueryHandler</a> class.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
@@ -80,43 +79,27 @@ Public Methods
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/2/162.html">Connect</a></td>
-<td>Connects to the server.
-            <a href="../../Contents/2/135.html">InterLinqQueryHandler</a></td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader40" class="SectionHeader">
-<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
-Public Properties
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv40" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/2/162.html">CloseSession</a></td>
+<td>Tells the <a href="../../Contents/2/124.html">IQueryHandler</a> to close the current session.</td>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/2/163.html">Connection</a></td>
-<td>Gets the <a href="../../Contents/1/54.html">ZyanConnection</a> associated with the client query handler.</td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/2/163.html">Get</a></td>
+<td>Returns an <span class="PseudoLink">System.Linq.IQueryable</span>.</td>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/2/164.html">ImplicitTransactionTransfer</a></td>
-<td>Gets or sets a value indicating whether ambient transaction support is enabled.</td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/2/164.html">Get&lt;T&gt;</a></td>
+<td>Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/2/165.html">StartSession</a></td>
+<td>Tells the <a href="../../Contents/2/124.html">IQueryHandler</a> to start a new the session.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

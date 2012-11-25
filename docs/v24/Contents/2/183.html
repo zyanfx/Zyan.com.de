@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanExtensions.CreateQueryableProxy Method (ZyanConnection, string, bool)</title>
+<title>ZyanExtensions.RegisterQueryHandler Method (ZyanComponentHost, IQueryHandler)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanExtensions.CreateQueryableProxy Method (ZyanConnection, string, bool)</div>
+<div id="PageTitle">ZyanExtensions.RegisterQueryHandler Method (ZyanComponentHost, IQueryHandler)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates IQueryable proxy for Zyan connection
+Registers IQueryHandler as IQueryable component
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/139.html">ZyanExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/131.html">ZyanExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,27 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static ZyanClientQueryHandler CreateQueryableProxy (
-        ZyanConnection <i>connection</i>,
-        string <i>unqiueName</i>,
-        bool <i>implicitTransactionTransfer</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterQueryHandler (
+        ZyanComponentHost <i>host</i>,
+        IQueryHandler <i>queryHandler</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">connection</div>
+<div class="CommentParameterName">host</div>
 <div class="ParameterCommentContainer">
-ZyanConnection
+Component host
 </div>
-<div class="CommentParameterName">unqiueName</div>
+<div class="CommentParameterName">queryHandler</div>
 <div class="ParameterCommentContainer">
-Unique component name
-</div>
-<div class="CommentParameterName">implicitTransactionTransfer</div>
-<div class="ParameterCommentContainer">
-Transfer ambient transactions
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-<p>There is no description.</p>
+Query handler
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

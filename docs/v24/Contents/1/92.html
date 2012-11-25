@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>CallInterceptorCollection.AddRange Method (IEnumerable&lt;CallInterceptor&gt;)</title>
+<title>CallInterceptorHelper&lt;T&gt;.Add Method (Expression&lt;Action&lt;T&gt;&gt;, CallInterceptionDelegate)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">CallInterceptorCollection.AddRange Method (IEnumerable&lt;CallInterceptor&gt;)</div>
+<div id="PageTitle">CallInterceptorHelper&lt;T&gt;.Add Method (Expression&lt;Action&lt;T&gt;&gt;, CallInterceptionDelegate)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Adds call interceptors to the collection.
+Creates new CallInterceptor for the given method and adds it to the interceptors collection.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/35.html">CallInterceptorCollection</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/35.html">CallInterceptorHelper&lt;T&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,13 +40,22 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void AddRange (
-        IEnumerable&lt;CallInterceptor&gt; <i>interceptors</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public CallInterceptorHelper&lt;T&gt; Add (
+        Expression&lt;Action&lt;T&gt;&gt; <i>expression</i>,
+        CallInterceptionDelegate <i>handler</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">interceptors</div>
+<div class="CommentParameterName">expression</div>
 <div class="ParameterCommentContainer">
-The interceptors to add.
+LINQ expression of the method to intercept.
+</div>
+<div class="CommentParameterName">handler</div>
+<div class="ParameterCommentContainer">
+Interception handler.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

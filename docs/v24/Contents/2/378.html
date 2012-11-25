@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionConversionHelper.MakeSerializableCollection&lt;T&gt; Method (IEnumerable, ExpressionConverter)</title>
+<title>SerializableExpression Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionConversionHelper.MakeSerializableCollection&lt;T&gt; Method (IEnumerable, ExpressionConverter)</div>
+<div id="PageTitle">SerializableExpression Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,57 +25,104 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Extension Method for <span class="PseudoLink">System.Collections.IEnumerable</span>.
-            Converts an <span class="PseudoLink">System.Collections.IEnumerable</span> to a <span class="PseudoLink">System.Collections.ObjectModel.ReadOnlyCollection`1</span>.
+A serializable version of <span class="PseudoLink">System.Linq.Expressions.Expression</span>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/356.html">ExpressionConversionHelper</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/216.html">SerializableExpression</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader0" class="SectionHeader">
-<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
+<div id="SectionHeader32" class="SectionHeader">
+<img id="SectionExpanderImg32" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(32);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(32);">
+Protected Constructors
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static ReadOnlyCollection&lt;T&gt; MakeSerializableCollection&lt;T&gt; (
-        IEnumerable <i>exp</i>,
-        ExpressionConverter <i>expConverter</i>
-) </pre>
-<div style="padding-left: 30px; margin-top: 0px;">
-<table class="InsideCodeBlock">
-<col />
-<col width="100%" />
+<div id="SectionContainerDiv32" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
 <tr>
-<td class="NoWrapTop">where T</td>
-<td>&nbsp;: SerializableExpression</td>
-</td>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" /></td>
+<td><a href="../../Contents/2/379.html">SerializableExpression</a></td>
+<td>Overloaded. Default constructor for serialization.</td>
 </tr>
 </table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods
+</span>
+</span>
 </div>
-</td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-Return type (must be subclass of <a href="../../Contents/2/224.html">SerializableExpression</a>.
+
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/2/380.html">ToString</a></td>
+<td>Builds a <see langword="string" /> representing the <span class="PseudoLink">System.Linq.Expressions.Expression</span>.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader40" class="SectionHeader">
+<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
+Public Properties
+</span>
+</span>
 </div>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">exp</div>
-<div class="ParameterCommentContainer">
-Extended class instance.
-</div>
-<div class="CommentParameterName">expConverter</div>
-<div class="ParameterCommentContainer">
-<a href="../../Contents/2/381.html">ExpressionConverter</a> instance.
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Returns the converted <span class="PseudoLink">System.Collections.ObjectModel.ReadOnlyCollection`1</span>.
-</div>
+
+<div id="SectionContainerDiv40" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/2/381.html">HashCode</a></td>
+<td>The hashcode of the original <span class="PseudoLink">System.Linq.Expressions.Expression</span>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/2/382.html">NodeType</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.Expression.NodeType</span></td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/2/383.html">Type</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.Expression.Type</span></td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

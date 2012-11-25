@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>IZyanDispatcher.AddEventHandler Method (string, DelegateCorrelationInfo, string)</title>
+<title>ActivationType.SingleCall Field</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">IZyanDispatcher.AddEventHandler Method (string, DelegateCorrelationInfo, string)</div>
+<div id="PageTitle">ActivationType.SingleCall Field</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Adds a handler to an event of a server component.
+Component instance lives only for a single call.
+            <remarks>Single call activated components need not be thread-safe</remarks>
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/62.html">IZyanDispatcher</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/61.html">ActivationType</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,24 +41,7 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract void AddEventHandler (
-        string <i>interfaceName</i>,
-        DelegateCorrelationInfo <i>correlation</i>,
-        string <i>uniqueName</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">interfaceName</div>
-<div class="ParameterCommentContainer">
-Name of the server component interface
-</div>
-<div class="CommentParameterName">correlation</div>
-<div class="ParameterCommentContainer">
-Correlation information
-</div>
-<div class="CommentParameterName">uniqueName</div>
-<div class="ParameterCommentContainer">
-Unique name of the server component instance (May left empty, if component isn´t registered with a unique name)
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable">public const ActivationType SingleCall = 1</td></tr></table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

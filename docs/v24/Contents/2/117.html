@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SessionEventArgs.SessionID Property </title>
+<title>IEventFilter.AllowInvocation Method (object[])</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SessionEventArgs.SessionID Property </div>
+<div id="PageTitle">IEventFilter.AllowInvocation Method (object[])</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets the session ID.
+Determines whether this filter allows invoking the event handler.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/60.html">SessionEventArgs</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/54.html">IEventFilter</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,10 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public Guid SessionID { get; set; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract bool AllowInvocation (
+        params object[] <i>parameters</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">parameters</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+Event parameters (typically, object sender and EventArgs args).
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<span class="Code">true</span> if invocation is allowed; otherwise, <span class="Code">false</span>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

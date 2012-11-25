@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanDispatcher.Invoke Method (Guid, string, List&lt;DelegateCorrelationInfo&gt;, string, Type[], Type[], object[])</title>
+<title>ZyanDispatcher.OnClientHeartbeatReceived Method (ClientHeartbeatEventArgs)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanDispatcher.Invoke Method (Guid, string, List&lt;DelegateCorrelationInfo&gt;, string, Type[], Type[], object[])</div>
+<div id="PageTitle">ZyanDispatcher.OnClientHeartbeatReceived Method (ClientHeartbeatEventArgs)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,12 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Processes remote method invocation.
+Fires the ClientHeartbeatReceived event.
+            <remarks>
+            Event is fired in a different thread to avoid blocking the client.
+            </remarks>
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/56.html">ZyanDispatcher</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/54.html">ZyanDispatcher</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,47 +43,13 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public object Invoke (
-        Guid <i>trackingID</i>,
-        string <i>interfaceName</i>,
-        List&lt;DelegateCorrelationInfo&gt; <i>delegateCorrelationSet</i>,
-        string <i>methodName</i>,
-        Type[] <i>genericArguments</i>,
-        Type[] <i>paramTypes</i>,
-        params object[] <i>args</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected virtual void OnClientHeartbeatReceived (
+        ClientHeartbeatEventArgs <i>e</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">trackingID</div>
+<div class="CommentParameterName">e</div>
 <div class="ParameterCommentContainer">
-Key for call tracking
-</div>
-<div class="CommentParameterName">interfaceName</div>
-<div class="ParameterCommentContainer">
-Name of the component interface
-</div>
-<div class="CommentParameterName">delegateCorrelationSet</div>
-<div class="ParameterCommentContainer">
-Correlation set for dynamic event and delegate wiring
-</div>
-<div class="CommentParameterName">methodName</div>
-<div class="ParameterCommentContainer">
-Name of the invoked method
-</div>
-<div class="CommentParameterName">genericArguments</div>
-<div class="ParameterCommentContainer">
-Generic arguments of the invoked method
-</div>
-<div class="CommentParameterName">paramTypes</div>
-<div class="ParameterCommentContainer">
-Parameter types
-</div>
-<div class="CommentParameterName">args</div>
-<div class="ParameterCommentContainer">
-Parameter values
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Return value
+Event arguments
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

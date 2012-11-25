@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>InterLinqQueryHandler.Get&lt;T&gt; Method ()</title>
+<title>InterLinqQueryProvider.Execute&lt;TResult&gt; Method (Expression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">InterLinqQueryHandler.Get&lt;T&gt; Method ()</div>
+<div id="PageTitle">InterLinqQueryProvider.Execute&lt;TResult&gt; Method (Expression)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.
+Executes the strongly-typed query represented by a specified <span class="PseudoLink">System.Linq.Expressions.Expression</span> tree.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/135.html">InterLinqQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/128.html">InterLinqQueryProvider</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,27 +40,22 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public IQueryable&lt;T&gt; Get&lt;T&gt; ()</pre>
-<div style="padding-left: 30px; margin-top: 0px;">
-<table class="InsideCodeBlock">
-<col />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">where T</td>
-<td>&nbsp;: class</td>
-</td>
-</tr>
-</table>
-</div>
-</td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public virtual TResult Execute&lt;TResult&gt; (
+        Expression <i>expression</i>
+) </pre></td></tr></table>
 <div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
+<div class="CommentParameterName">TResult</div>
 <div class="ParameterCommentContainer">
-Generic Argument of the returned <span class="PseudoLink">System.Linq.IQueryable`1</span>.
+The <span class="PseudoLink">System.Type</span> of the value that is returned by the query execution.
+</div>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">expression</div>
+<div class="ParameterCommentContainer">
+An <span class="PseudoLink">System.Linq.Expressions.Expression</span> that represents a LINQ query.
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.
+A value of type TResult that results from executing the specified query.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

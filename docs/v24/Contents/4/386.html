@@ -6,14 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>MonoCheck Class Members</title>
+<title>SyncContextSwitcher&lt;T&gt; Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">MonoCheck Class Members</div>
+<div id="PageTitle">SyncContextSwitcher&lt;T&gt; Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
+<a href="#SectionHeader25" onclick="javascript: SetSectionVisibility(25, true); SetExpandCollapseAllToCollapseAll();">Fields</a>&nbsp;
+<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,22 +26,22 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Tool to test for Mono runtime environment.
+Ensures that the processing of messages is performed in the original thread.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/365.html">MonoCheck</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/354.html">SyncContextSwitcher&lt;T&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/19.html">Zyan.Communication.Toolbox</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader40" class="SectionHeader">
-<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
+<div id="SectionHeader25" class="SectionHeader">
+<img id="SectionExpanderImg25" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(25);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
-Public Properties
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(25);">
+Public Fields
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv40" class="SectionContainer">
+<div id="SectionContainerDiv25" class="SectionContainer">
 <table class="MembersTable">
 <col width="7%" />
 <col width="38%" />
@@ -51,15 +53,69 @@ Public Properties
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/4/387.html">IsRunningOnMono</a></td>
-<td>Returns true if Zyan is running on Mono.</td>
+<img src="../../GFX/PublicField.gif" alt="Public Field" /></td>
+<td><a href="../../Contents/4/387.html">Out</a></td>
+<td>Action to be performed when a message is to be processed.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader30" class="SectionHeader">
+<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
+Public Constructors
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv30" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/4/388.html">IsUnixOS</a></td>
-<td>Returns true if the local operating system is not Windows.</td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/388.html">SyncContextSwitcher</a></td>
+<td><p>There is no summary.</p></td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/389.html">In</a></td>
+<td>Processes a message using the original synchronization context.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/4/390.html">WireUp</a></td>
+<td>Creates a new instance and wires up the pins.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpBinaryServerProtocolSetup Constructor (int)</title>
+<title>TcpDuplexClientProtocolSetup Constructor (bool, bool, ulong, ulong)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpBinaryServerProtocolSetup Constructor (int)</div>
+<div id="PageTitle">TcpDuplexClientProtocolSetup Constructor (bool, bool, ulong, ulong)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the TcpBinaryServerProtocolSetup class.
+Creates a new instance of the TcpDuplexClientProtocolSetup class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/84.html">TcpBinaryServerProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/75.html">TcpDuplexClientProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,13 +40,28 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpBinaryServerProtocolSetup (
-        int <i>tcpPort</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpDuplexClientProtocolSetup (
+        bool <i>encryption</i>,
+        bool <i>keepAlive</i>,
+        ulong <i>keepAliveTime</i>,
+        ulong <i>KeepAliveInterval</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">tcpPort</div>
+<div class="CommentParameterName">encryption</div>
 <div class="ParameterCommentContainer">
-TCP port number
+Specifies if the communication sould be encrypted
+</div>
+<div class="CommentParameterName">keepAlive</div>
+<div class="ParameterCommentContainer">
+Enables or disables TCP KeepAlive for the new connection
+</div>
+<div class="CommentParameterName">keepAliveTime</div>
+<div class="ParameterCommentContainer">
+Time for TCP KeepAlive in Milliseconds
+</div>
+<div class="CommentParameterName">KeepAliveInterval</div>
+<div class="ParameterCommentContainer">
+Interval for TCP KeepAlive in Milliseconds
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

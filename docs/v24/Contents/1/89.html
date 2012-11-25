@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>CallInterceptorCollection.InsertItem Method (int, CallInterceptor)</title>
+<title>CallInterceptorCollection.AddRange Method (CallInterceptor[])</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">CallInterceptorCollection.InsertItem Method (int, CallInterceptor)</div>
+<div id="PageTitle">CallInterceptorCollection.AddRange Method (CallInterceptor[])</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Is called when a new item is added.
+Adds call interceptors to the collection.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/35.html">CallInterceptorCollection</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/34.html">CallInterceptorCollection</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,18 +40,13 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected override void InsertItem (
-        int <i>index</i>,
-        CallInterceptor <i>item</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void AddRange (
+        params CallInterceptor[] <i>interceptors</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">index</div>
+<div class="CommentParameterName">interceptors</div>
 <div class="ParameterCommentContainer">
-Index
-</div>
-<div class="CommentParameterName">item</div>
-<div class="ParameterCommentContainer">
-Added item
+The interceptors to add.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

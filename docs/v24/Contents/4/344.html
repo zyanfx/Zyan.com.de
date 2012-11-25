@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ISessionManager.GetSessionBySessionID Method (Guid)</title>
+<title>ISessionVariableAdapter.SetSessionVariable Method (string, object)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ISessionManager.GetSessionBySessionID Method (Guid)</div>
+<div id="PageTitle">ISessionVariableAdapter.SetSessionVariable Method (string, object)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns <a href="../../Contents/1/52.html">ServerSession</a> identified by sessionID.
+Set the new value for a session variable with the given name.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/296.html">ISessionManager</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/287.html">ISessionVariableAdapter</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,17 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract ServerSession GetSessionBySessionID (
-        Guid <i>sessionID</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract void SetSessionVariable (
+        string <i>name</i>,
+        object <i>value</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">sessionID</div>
+<div class="CommentParameterName">name</div>
 <div class="ParameterCommentContainer">
-Session unique identifier.
+Variable name.
 </div>
-<div class="CommentHeader">Return Value</div>
+<div class="CommentParameterName">value</div>
 <div class="ParameterCommentContainer">
-<a href="../../Contents/1/52.html">ServerSession</a> or null, if session with the given identifier is not found.
+Variable value.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

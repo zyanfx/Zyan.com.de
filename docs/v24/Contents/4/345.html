@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ISessionManager.GetSessionVariable Method (Guid, string)</title>
+<title>ISessionVariableAdapter.Item Property (string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ISessionManager.GetSessionVariable Method (Guid, string)</div>
+<div id="PageTitle">ISessionVariableAdapter.Item Property (string)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns the value of the session variable.
+Gets or sets the variable value.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/296.html">ISessionManager</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/287.html">ISessionVariableAdapter</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,22 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract object GetSessionVariable (
-        Guid <i>sessionID</i>,
-        string <i>name</i>
-) </pre></td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract object this [
+        string <i>variableName</i>
+] { get; set; }</pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">sessionID</div>
-<div class="ParameterCommentContainer">
-Session unique identifier.
-</div>
-<div class="CommentParameterName">name</div>
+<div class="CommentParameterName">variableName</div>
 <div class="ParameterCommentContainer">
 Variable name.
 </div>
-<div class="CommentHeader">Return Value</div>
+<div class="CommentHeader">Property Value</div>
 <div class="ParameterCommentContainer">
-Value of the given session variable or null, if the variable is not defined.
+<p>There is no description.</p>
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

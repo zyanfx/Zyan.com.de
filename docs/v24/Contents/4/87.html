@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpDuplexClientProtocolSetup Class</title>
+<title>TcpCustomClientProtocolSetup Constructor (bool, string, int)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpDuplexClientProtocolSetup Class</div>
+<div id="PageTitle">TcpCustomClientProtocolSetup Constructor (bool, string, int)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -25,8 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Client protocol setup for bi-directional TCP communication with support for user defined authentication and security.
+Creates a new instance of the TcpCustomClientProtocolSetup class.
 <div id="ItemLocation">
+<b>Declaring type:</b> <a href="../../Contents/4/73.html">TcpCustomClientProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,29 +40,24 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
-<col width="0%" />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">public class TcpDuplexClientProtocolSetup :&nbsp;</td>
-<td>
-CustomClientProtocolSetup<br />
-</td>
-</tr>
-</table>
-</td></tr></table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader1" class="SectionHeader">
-<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Members
-</span>
-</span>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpCustomClientProtocolSetup (
+        bool <i>encryption</i>,
+        string <i>algorithm</i>,
+        int <i>maxAttempts</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">encryption</div>
+<div class="ParameterCommentContainer">
+Specifies if the communication sould be encrypted
 </div>
-
-<div id="SectionContainerDiv1" class="SectionContainer">
-<p>Click <a href="../../Contents/4/143.html">here</a> to see the list of members.</p>
+<div class="CommentParameterName">algorithm</div>
+<div class="ParameterCommentContainer">
+Encryption algorithm (e.G. "3DES")
+</div>
+<div class="CommentParameterName">maxAttempts</div>
+<div class="ParameterCommentContainer">
+Maximum number of connection attempts
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

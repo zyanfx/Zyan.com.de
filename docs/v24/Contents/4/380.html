@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>Extensions.GetMethod Method (Type, string, Type[], Type[])</title>
+<title>TypeHelper.GetType Method (string, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">Extensions.GetMethod Method (Type, string, Type[], Type[])</div>
+<div id="PageTitle">TypeHelper.GetType Method (string, bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Searches for the specified public method whose parameters match the specified argument types.
+Gets the <span class="PseudoLink">System.Type</span> with the specified name, performing a case-sensitive search.
+            Looks for the specified assembly in the current <span class="PseudoLink">System.AppDomain</span> assembly list.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/364.html">Extensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/356.html">TypeHelper</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/19.html">Zyan.Communication.Toolbox</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,32 +41,23 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static MethodInfo GetMethod (
-        Type <i>type</i>,
-        string <i>methodName</i>,
-        Type[] <i>genericArguments</i>,
-        Type[] <i>argumentTypes</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static Type GetType (
+        string <i>fullName</i>,
+        bool <i>throwOnError</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">type</div>
+<div class="CommentParameterName">fullName</div>
 <div class="ParameterCommentContainer">
-Type to inspect
+The assembly-qualified name of the type to get.
 </div>
-<div class="CommentParameterName">methodName</div>
+<div class="CommentParameterName">throwOnError</div>
 <div class="ParameterCommentContainer">
-Method name
-</div>
-<div class="CommentParameterName">genericArguments</div>
-<div class="ParameterCommentContainer">
-List of generic arguments
-</div>
-<div class="CommentParameterName">argumentTypes</div>
-<div class="ParameterCommentContainer">
-Argument types
+True to throw the <span class="PseudoLink">System.TypeLoadException</span> if the type can not be found.
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-MethodInfo it method is found, otherwise, null
+The type with the specified name. If the type is not found, the throwOnError 
+            parameter specifies whether null is returned or an exception is thrown.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

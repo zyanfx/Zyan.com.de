@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>FilteredEventHandler.Create&lt;TEventArgs&gt; Method</title>
+<title>FlexibleEventFilter&lt;TEventArgs&gt;.AllowInvocation Method (object, TEventArgs)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">FilteredEventHandler.Create&lt;TEventArgs&gt; Method</div>
+<div id="PageTitle">FlexibleEventFilter&lt;TEventArgs&gt;.AllowInvocation Method (object, TEventArgs)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates filtered event handler of type EventHandler{TEventArgs}.
+Returns true if event handler invocation is allowed.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/57.html">FilteredEventHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/50.html">FlexibleEventFilter&lt;TEventArgs&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -34,40 +34,29 @@ Creates filtered event handler of type EventHandler{TEventArgs}.
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Overload List
+Syntax
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/107.html">FilteredEventHandler.Create&lt;TEventArgs&gt; (EventHandler&lt;TEventArgs&gt;, IEventFilter, bool)</a></td>
-<td>Creates filtered event handler of type EventHandler{TEventArgs}.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/108.html">FilteredEventHandler.Create&lt;TDelegate&gt; (TDelegate, IEventFilter, bool)</a></td>
-<td>Creates non-standard filtered event handler of type TDelegate.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/109.html">FilteredEventHandler.Create&lt;TEventArgs&gt; (EventHandler&lt;TEventArgs&gt;, Expression&lt;Func&lt;object, TEventArgs, bool&gt;&gt;, bool)</a></td>
-<td>Creates filtered event handler of type EventHandler{TEventArgs} using the specified filter predicate.</td>
-</tr>
-</table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected override bool AllowInvocation (
+        object <i>sender</i>,
+        TEventArgs <i>args</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sender</div>
+<div class="ParameterCommentContainer">
+Event sender.
+</div>
+<div class="CommentParameterName">args</div>
+<div class="ParameterCommentContainer">
+The instance containing the event data.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

@@ -6,15 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>CompressionMethod Class</title>
+<title>CompressionClientChannelSinkProvider.CreateSink Method (IChannelSender, string, object)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">CompressionMethod Class</div>
+<div id="PageTitle">CompressionClientChannelSinkProvider.CreateSink Method (IChannelSender, string, object)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Exceptions</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -25,8 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Compression levels.
+Creates a sink chain.
 <div id="ItemLocation">
+<b>Declaring type:</b> <a href="../../Contents/1/462.html">CompressionClientChannelSinkProvider</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/3.html">Zyan.Communication.ChannelSinks.Compression</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,29 +41,51 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
-<col width="0%" />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">public sealed class CompressionMethod :&nbsp;</td>
-<td>
-Enum<br />
-</td>
-</tr>
-</table>
-</td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public IClientChannelSink CreateSink (
+        IChannelSender <i>channel</i>,
+        string <i>url</i>,
+        object <i>remoteChannelData</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">channel</div>
+<div class="ParameterCommentContainer">
+Channel for which the current sink chain is being constructed.
+</div>
+<div class="CommentParameterName">url</div>
+<div class="ParameterCommentContainer">
+The URL of the object to connect to. This parameter can be null if the connection is based entirely on the information contained in the <span class="Code">remoteChannelData</span> parameter.
+</div>
+<div class="CommentParameterName">remoteChannelData</div>
+<div class="ParameterCommentContainer">
+A channel data object that describes a channel on the remote server.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+The first sink of the newly formed channel sink chain, or null, which indicates that this provider will not or cannot provide a connection for this endpoint.
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 <div id="SectionHeader1" class="SectionHeader">
 <img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Members
+Exceptions
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv1" class="SectionContainer">
-<p>Click <a href="../../Contents/1/480.html">here</a> to see the list of members.</p>
+<table class="MembersTable">
+<col width="25%" />
+<col width="75%" />
+<tr>
+<th>Exception type</th>
+<th>Condition</th>
+</tr>
+<tr>
+<td><span class="PseudoLink">SecurityException</span></td>
+<td>The immediate caller does not have infrastructure permission. </td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

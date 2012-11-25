@@ -6,14 +6,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanComponentHost Constructor (string, int)</title>
+<title>ZyanConnection Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanComponentHost Constructor (string, int)</div>
+<div id="PageTitle">ZyanConnection Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
+<a href="#SectionHeader45" onclick="javascript: SetSectionVisibility(45, true); SetExpandCollapseAllToCollapseAll();">Events</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,35 +27,359 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a new instance of the <a href="../../Contents/1/53.html">ZyanComponentHost</a> class.
+Maintains a connection to a Zyan component host.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/53.html">ZyanComponentHost</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/52.html">ZyanConnection</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader0" class="SectionHeader">
-<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
+<div id="SectionHeader30" class="SectionHeader">
+<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
+Public Constructors
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public ZyanComponentHost (
-        string <i>name</i>,
-        int <i>tcpPort</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">name</div>
-<div class="ParameterCommentContainer">
-The name of the component host.
+<div id="SectionContainerDiv30" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/308.html">ZyanConnection</a></td>
+<td>Overloaded. Creates a new instance of the ZyanConnection class.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods</span>
+ <span class="SeeAlsoInSectionHeader">(see also: <a href="#SectionHeader36" onclick="javascript: SetSectionVisibility(36, true); SetExpandCollapseAllToCollapseAll();">Protected Internal</a>, <a href="#SectionHeader37" onclick="javascript: SetSectionVisibility(37, true); SetExpandCollapseAllToCollapseAll();">Protected</a> Methods)</span>
+</span>
 </div>
-<div class="CommentParameterName">tcpPort</div>
-<div class="ParameterCommentContainer">
-The TCP port.
+
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/309.html">CreateProxy&lt;T&gt;</a></td>
+<td>Overloaded. Creates a local proxy object of a specified remote component.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/310.html">Dispose</a></td>
+<td>Release managed resources.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/311.html">Reconnect</a></td>
+<td>Reestablish connection to server.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/312.html">SubscribeEvent</a></td>
+<td>Subscribes for receiving notifications of a specified event.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/313.html">UnsubscribeEvent</a></td>
+<td>Unsubscribe for receiving notifications of a specified event.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader36" class="SectionHeader">
+<img id="SectionExpanderImg36" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(36);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(36);">
+Protected Internal Methods
+</span>
+</span>
 </div>
+
+<div id="SectionContainerDiv36" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedInternalMethod.gif" alt="Protected Internal Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/314.html">OnAfterInvoke</a></td>
+<td>Fires the AfterInvoke event.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedInternalMethod.gif" alt="Protected Internal Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/315.html">OnBeforeInvoke</a></td>
+<td>Fires the BeforeInvoke event.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedInternalMethod.gif" alt="Protected Internal Method" /></td>
+<td><a href="../../Contents/1/316.html">OnError</a></td>
+<td>Fires the Error event.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedInternalMethod.gif" alt="Protected Internal Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/317.html">OnInvokeCanceled</a></td>
+<td>Fires the InvokeCanceled event.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader37" class="SectionHeader">
+<img id="SectionExpanderImg37" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(37);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(37);">
+Protected Methods
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv37" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/318.html">Finalize</a></td>
+<td>Called from CLR when the object is finalized.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/319.html">OnDisconnected</a></td>
+<td>Fires the Disconnected event.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/320.html">OnNewLogonNeeded</a></td>
+<td>Fires the NewLogonNeeded event.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/1/321.html">OnReconnected</a></td>
+<td>Fires the Reconnected event.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader40" class="SectionHeader">
+<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
+Public Properties</span>
+ <span class="SeeAlsoInSectionHeader">(see also: <a href="#SectionHeader41" onclick="javascript: SetSectionVisibility(41, true); SetExpandCollapseAllToCollapseAll();">Protected Internal</a> Properties)</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv40" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/1/322.html">AllowUrlRandomization</a></td>
+<td>Enables or disables URL randomization to work around Remoting Identity caching.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/323.html">CallInterceptionEnabled</a></td>
+<td>Gets whether registered call interceptors should be processed.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/324.html">CallInterceptors</a></td>
+<td>Returns a collection of registred call interceptors.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/325.html">ComponentHostName</a></td>
+<td>Gets the name of the remote component host.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/1/326.html">Connections</a></td>
+<td>Gets a list of all known Zyan connections in the current Application Domain.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/327.html">IsSessionValid</a></td>
+<td>Gets true, if the session on server is valid, otherwise false.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/328.html">PollingEnabled</a></td>
+<td>Gets whether polling is enabled.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/329.html">PollingInterval</a></td>
+<td>Gets or sets the polling interval.
+            <remarks>
+            Default is 1 minute.
+            </remarks></td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/330.html">SerializationHandling</a></td>
+<td>Returns the repository of serialization handlers.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/331.html">ServerUrl</a></td>
+<td>Gets the URL of the remote server.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/332.html">SessionID</a></td>
+<td>Gets the session ID.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader41" class="SectionHeader">
+<img id="SectionExpanderImg41" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(41);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(41);">
+Protected Internal Properties
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv41" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedInternalProperty.gif" alt="Protected Internal Property" /></td>
+<td><a href="../../Contents/1/333.html">RemoteDispatcher</a></td>
+<td>Gets a proxy to access the remote dispatcher.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader45" class="SectionHeader">
+<img id="SectionExpanderImg45" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(45);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(45);">
+Public Events
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv45" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/334.html">AfterInvoke</a></td>
+<td>Event: After a remote call is invoked.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/335.html">BeforeInvoke</a></td>
+<td>Event: Before a remote call is invoked.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/336.html">Disconnected</a></td>
+<td>Occurs when disconnection is detected.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/337.html">Error</a></td>
+<td>Event: Occures when a error is detected.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/338.html">InvokeCanceled</a></td>
+<td>Event: When a remote call is canceled.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/339.html">NewLogonNeeded</a></td>
+<td>Event: Fired when a new logon is needed, after a detected diconnection.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
+<td><a href="../../Contents/1/340.html">Reconnected</a></td>
+<td>Occurs when connection is restored.</td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

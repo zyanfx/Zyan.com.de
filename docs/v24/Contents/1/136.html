@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ComponentInfo.ActivationType Property </title>
+<title>CallInterceptionData Constructor (object[], Func&lt;IMethodCallMessage, ReturnMessage&gt;, IMethodCallMessage)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ComponentInfo.ActivationType Property </div>
+<div id="PageTitle">CallInterceptionData Constructor (object[], Func&lt;IMethodCallMessage, ReturnMessage&gt;, IMethodCallMessage)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets or sets the activation type of the component.
+Creates a new instance of the CallInterceptionData class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/39.html">ComponentInfo</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/31.html">CallInterceptionData</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,10 +40,23 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public ActivationType ActivationType { get; set; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public CallInterceptionData (
+        object[] <i>parameters</i>,
+        Func&lt;IMethodCallMessage, ReturnMessage&gt; <i>remoteInvoker</i>,
+        IMethodCallMessage <i>remotingMessage</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">parameters</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+Parameter values of the intercepted call
+</div>
+<div class="CommentParameterName">remoteInvoker</div>
+<div class="ParameterCommentContainer">
+Delegate for remote invocation
+</div>
+<div class="CommentParameterName">remotingMessage</div>
+<div class="ParameterCommentContainer">
+Remoting message
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

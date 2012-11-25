@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>EventStub.RemoveHandler Method (string, Delegate)</title>
+<title>SafeDynamicInvoker.SafeDynamicInvoke Method (Delegate, object[])</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">EventStub.RemoveHandler Method (string, Delegate)</div>
+<div id="PageTitle">SafeDynamicInvoker.SafeDynamicInvoke Method (Delegate, object[])</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Removes the handler for the given event.
+Dynamically invokes the method represented by the given delegate. The delegate can be null.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/56.html">EventStub</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/51.html">SafeDynamicInvoker</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,18 +41,38 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void RemoveHandler (
-        string <i>name</i>,
-        Delegate <i>handler</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static object SafeDynamicInvoke (
+        Delegate <i>deleg</i>,
+        params object[] <i>args</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">name</div>
+<div class="CommentParameterName">deleg</div>
 <div class="ParameterCommentContainer">
-The name of the event or delegate property.
+The delegate to invoke.
 </div>
-<div class="CommentParameterName">handler</div>
+<div class="CommentParameterName">args</div>
 <div class="ParameterCommentContainer">
-The handler.
+The arguments for the delegate.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+The return value of the delegate
+</div>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader1" class="SectionHeader">
+<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
+Remarks
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv1" class="SectionContainer">
+<div class="RemarksContainer">
+Ensures that all delegates of the invocation list are called (even if some exceptions occured).
+            If several delegates throw exceptions, then the first exception is rethrown.
+            In .NET 4.0, all exceptions are aggregated into one AggregateException.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

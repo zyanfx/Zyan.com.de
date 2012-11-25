@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerProtocolSetupExtensions Class Members</title>
+<title>ServerProtocolSetupExtensions.GetClientFormatter Method (IServerProtocolSetup)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerProtocolSetupExtensions Class Members</div>
+<div id="PageTitle">ServerProtocolSetupExtensions.GetClientFormatter Method (IServerProtocolSetup)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,86 +24,34 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Contains extension methods for server protocol setups.
+Returns the configured formatter from the client sink chain of a specified client protocol setup.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/316.html">ServerProtocolSetupExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/308.html">ServerProtocolSetupExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/9.html">Zyan.Communication.Protocols</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Syntax
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/384.html">AddChannelSetting</a></td>
-<td>Adds a single channel setting.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/385.html">AddClientSink</a></td>
-<td>Adds a specified client sink provider into the client sink chain.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/386.html">AddClientSinkAfterFormatter</a></td>
-<td>Adds a specified client sink provider into the client sink chain after the formatter.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/387.html">AddClientSinkBeforeFormatter</a></td>
-<td>Adds a specified client sink provider into the client sink chain before the formatter.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/388.html">AddServerSink</a></td>
-<td>Adds a specified server sink provider into the server sink chain.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/389.html">AddServerSinkAfterFormatter</a></td>
-<td>Adds a specified server sink provider into the server sink chain after the formatter.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/390.html">AddServerSinkBeforeFormatter</a></td>
-<td>Adds a specified server sink provider into the server sink chain before the formatter.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/391.html">GetClientFormatter</a></td>
-<td>Returns the configured formatter from the client sink chain of a specified client protocol setup.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/3/392.html">GetServerFormatter</a></td>
-<td>Returns the configured formatter from the server sink chain of a specified client protocol setup.</td>
-</tr>
-</table>
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IClientFormatterSinkProvider GetClientFormatter (
+        IServerProtocolSetup <i>protocolSetup</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">protocolSetup</div>
+<div class="ParameterCommentContainer">
+Protocol setup
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+client formatter sink
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

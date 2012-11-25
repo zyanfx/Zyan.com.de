@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerSession.ClientAddress Property </title>
+<title>IComponentCatalog.RegisterComponent&lt;I, T&gt; Method (string, T, Action&lt;object&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerSession.ClientAddress Property </div>
+<div id="PageTitle">IComponentCatalog.RegisterComponent&lt;I, T&gt; Method (string, T, Action&lt;object&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets or sets the IP Address of the calling client.
+Registeres a component instance in the component catalog.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/52.html">ServerSession</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/57.html">IComponentCatalog</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,10 +40,32 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public string ClientAddress { get; set; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract void RegisterComponent&lt;I, T&gt; (
+        string <i>uniqueName</i>,
+        T <i>instance</i>,
+        Action&lt;object&gt; <i>cleanUpHandler</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">I</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+Interface type of the component
+</div>
+<div class="CommentParameterName">T</div>
+<div class="ParameterCommentContainer">
+Implementation type of the component
+</div>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">uniqueName</div>
+<div class="ParameterCommentContainer">
+Unique component name
+</div>
+<div class="CommentParameterName">instance</div>
+<div class="ParameterCommentContainer">
+Component instance
+</div>
+<div class="CommentParameterName">cleanUpHandler</div>
+<div class="ParameterCommentContainer">
+Delegate for external clean up method
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

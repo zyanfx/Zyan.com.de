@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>Connection Constructor (Socket, TcpExChannel, bool, ulong, ulong, short, int)</title>
+<title>TcpExChannel.CreateMessageSink Method (string, object, out string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">Connection Constructor (Socket, TcpExChannel, bool, ulong, ulong, short, int)</div>
+<div id="PageTitle">TcpExChannel.CreateMessageSink Method (string, object, out string)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Exceptions</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the Connection class.
+Returns a channel message sink that delivers messages to the specified URL or channel data object.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/491.html">Connection</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/484.html">TcpExChannel</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,44 +41,51 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected Connection (
-        Socket <i>socket</i>,
-        TcpExChannel <i>channel</i>,
-        bool <i>keepAlive</i>,
-        ulong <i>keepAliveTime</i>,
-        ulong <i>KeepAliveInterval</i>,
-        short <i>maxRetries</i>,
-        int <i>retryDelay</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public IMessageSink CreateMessageSink (
+        string <i>url</i>,
+        object <i>remoteChannelData</i>,
+        out string <i>objectURI</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">socket</div>
+<div class="CommentParameterName">url</div>
 <div class="ParameterCommentContainer">
-Socket which sould be used
+The URL to which the new sink will deliver messages. Can be null.
 </div>
-<div class="CommentParameterName">channel</div>
+<div class="CommentParameterName">remoteChannelData</div>
 <div class="ParameterCommentContainer">
-Remoting channel
+The channel data object of the remote host to which the new sink will deliver messages. Can be null.
 </div>
-<div class="CommentParameterName">keepAlive</div>
+<div class="CommentParameterName">objectURI</div>
 <div class="ParameterCommentContainer">
-Enables or disables TCP KeepAlive for the new connection
+When this method returns, contains a URI of the new channel message sink that delivers messages to the specified URL or channel data object. This parameter is passed uninitialized.
 </div>
-<div class="CommentParameterName">keepAliveTime</div>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Time for TCP KeepAlive in Milliseconds
+A channel message sink that delivers messages to the specified URL or channel data object, or null if the channel cannot connect to the given endpoint.
 </div>
-<div class="CommentParameterName">KeepAliveInterval</div>
-<div class="ParameterCommentContainer">
-Interval for TCP KeepAlive in Milliseconds
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader1" class="SectionHeader">
+<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
+Exceptions
+</span>
+</span>
 </div>
-<div class="CommentParameterName">maxRetries</div>
-<div class="ParameterCommentContainer">
-Maximum number of connection retry attempts
-</div>
-<div class="CommentParameterName">retryDelay</div>
-<div class="ParameterCommentContainer">
-Delay after connection retry in milliseconds
-</div>
+
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<col width="25%" />
+<col width="75%" />
+<tr>
+<th>Exception type</th>
+<th>Condition</th>
+</tr>
+<tr>
+<td><span class="PseudoLink">SecurityException</span></td>
+<td>The immediate caller does not have infrastructure permission. </td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

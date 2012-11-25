@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>PasswordExpiredException Constructor (SerializationInfo, StreamingContext)</title>
+<title>SqlSessionManager Class</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">PasswordExpiredException Constructor (SerializationInfo, StreamingContext)</div>
+<div id="PageTitle">SqlSessionManager Class</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,10 +25,12 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.
+Session manager backed with SQL Server Database storage.
+            <remarks>
+            Session table has the following structure:
+            <ul><li><strong>SessionID</strong>uniqueidentifier</li><li><strong>SessionTimestamp</strong>datetime</li><li><strong>IdentityName</strong>nvarchar(255)</li></ul></remarks>
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/263.html">PasswordExpiredException</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/16.html">Zyan.Communication.Security.Exceptions</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
 <div id="SectionHeader0" class="SectionHeader">
@@ -40,19 +43,29 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected PasswordExpiredException (
-        SerializationInfo <i>info</i>,
-        StreamingContext <i>context</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">info</div>
-<div class="ParameterCommentContainer">
-The object that holds the serialized object data.
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
+<col width="0%" />
+<col width="100%" />
+<tr>
+<td class="NoWrapTop">public class SqlSessionManager :&nbsp;</td>
+<td>
+SessionManagerBase<br />
+</td>
+</tr>
+</table>
+</td></tr></table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader1" class="SectionHeader">
+<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
+Members
+</span>
+</span>
 </div>
-<div class="CommentParameterName">context</div>
-<div class="ParameterCommentContainer">
-The contextual information about the source or destination.
-</div>
+
+<div id="SectionContainerDiv1" class="SectionContainer">
+<p>Click <a href="../../Contents/4/321.html">here</a> to see the list of members.</p>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

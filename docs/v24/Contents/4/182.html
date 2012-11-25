@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpDuplexServerProtocolSetup Constructor (Versioning, int, IAuthenticationProvider)</title>
+<title>TcpDuplexServerProtocolSetup Constructor (Versioning, int, IAuthenticationProvider, bool, string, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpDuplexServerProtocolSetup Constructor (Versioning, int, IAuthenticationProvider)</div>
+<div id="PageTitle">TcpDuplexServerProtocolSetup Constructor (Versioning, int, IAuthenticationProvider, bool, string, bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -26,7 +26,7 @@
 <a id="ContentsAnchor">&nbsp;</a>
 Creates a new instance of the TcpDuplexServerProtocolSetup class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/88.html">TcpDuplexServerProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/76.html">TcpDuplexServerProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -43,7 +43,10 @@ Syntax
 <table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpDuplexServerProtocolSetup (
         Versioning <i>versioning</i>,
         int <i>tcpPort</i>,
-        IAuthenticationProvider <i>authProvider</i>
+        IAuthenticationProvider <i>authProvider</i>,
+        bool <i>encryption</i>,
+        string <i>algorithm</i>,
+        bool <i>oaep</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">versioning</div>
@@ -57,6 +60,18 @@ TCP port number
 <div class="CommentParameterName">authProvider</div>
 <div class="ParameterCommentContainer">
 Authentication provider
+</div>
+<div class="CommentParameterName">encryption</div>
+<div class="ParameterCommentContainer">
+Specifies if the communication sould be encrypted
+</div>
+<div class="CommentParameterName">algorithm</div>
+<div class="ParameterCommentContainer">
+Encryption algorithm (e.G. "3DES")
+</div>
+<div class="CommentParameterName">oaep</div>
+<div class="ParameterCommentContainer">
+Specifies if OAEP padding should be activated
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

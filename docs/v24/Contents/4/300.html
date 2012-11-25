@@ -6,17 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SessionManagerBase Class Members</title>
+<title>SessionManagerBase.StartSweepTimer Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SessionManagerBase Class Members</div>
+<div id="PageTitle">SessionManagerBase.StartSweepTimer Method ()</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
-<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
-<a href="#SectionHeader45" onclick="javascript: SetSectionVisibility(45, true); SetExpandCollapseAllToCollapseAll();">Events</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -27,258 +24,23 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Abstract base class for <a href="../../Contents/4/296.html">ISessionManager</a> implementations.
-            Contains session sweeping logic, <a href="../../Contents/4/297.html">CreateServerSession</a> utility method and implements <span class="PseudoLink">System.IDisposable</span> pattern.
+Starts session sweeping timer.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/295.html">SessionManagerBase</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/283.html">SessionManagerBase</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader30" class="SectionHeader">
-<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
-Public Constructors
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Syntax
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv30" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/301.html">SessionManagerBase</a></td>
-<td>Overloaded. Initializes a <a href="../../Contents/4/295.html">SessionManagerBase</a> instance with the default values for SessionAgeLimit and SessionSweepInterval.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods</span>
- <span class="SeeAlsoInSectionHeader">(see also: <a href="#SectionHeader37" onclick="javascript: SetSectionVisibility(37, true); SetExpandCollapseAllToCollapseAll();">Protected</a> Methods)</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/302.html">Dispose</a></td>
-<td>Overloaded. Release allocated resources.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Abstract.gif" alt="Abstract" /></td>
-<td><a href="../../Contents/4/303.html">ExistSession</a></td>
-<td>Checks whether the given session exists.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Abstract.gif" alt="Abstract" /></td>
-<td><a href="../../Contents/4/304.html">GetSessionBySessionID</a></td>
-<td>Returns <a href="../../Contents/1/52.html">ServerSession</a> identified by sessionID.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Abstract.gif" alt="Abstract" /></td>
-<td><a href="../../Contents/4/305.html">GetSessionVariable</a></td>
-<td>Returns the value of the session variable.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Abstract.gif" alt="Abstract" /></td>
-<td><a href="../../Contents/4/306.html">RemoveSession</a></td>
-<td>Removes the given session from the session list.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Abstract.gif" alt="Abstract" /></td>
-<td><a href="../../Contents/4/307.html">SetSessionVariable</a></td>
-<td>Sets the new value of the session variable.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Abstract.gif" alt="Abstract" /></td>
-<td><a href="../../Contents/4/308.html">StoreSession</a></td>
-<td>Stores the given <a href="../../Contents/1/52.html">ServerSession</a> to the session list.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/309.html">TerminateSession</a></td>
-<td>Removes the given session and raises the ClientSessionTerminated event.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader37" class="SectionHeader">
-<img id="SectionExpanderImg37" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(37);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(37);">
-Protected Methods
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv37" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/297.html">CreateServerSession</a></td>
-<td>Creates a new <a href="../../Contents/1/52.html">ServerSession</a> with the given arguments.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/310.html">Finalize</a></td>
-<td>Finalizer method.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" /></td>
-<td><a href="../../Contents/4/311.html">OnClientSessionTerminated</a></td>
-<td>Raises the <span class="PseudoLink">ClientSessionTerminated</span> event.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" /></td>
-<td><a href="../../Contents/4/312.html">StartSweepTimer</a></td>
-<td>Starts session sweeping timer.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/313.html">SweepExpiredSessions</a></td>
-<td>Removes all sessions older than <a href="../../Contents/4/314.html">SessionAgeLimit</a>.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader40" class="SectionHeader">
-<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
-Public Properties</span>
- <span class="SeeAlsoInSectionHeader">(see also: <a href="#SectionHeader42" onclick="javascript: SetSectionVisibility(42, true); SetExpandCollapseAllToCollapseAll();">Protected</a> Properties)</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv40" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/4/314.html">SessionAgeLimit</a></td>
-<td>Gets or sets session age limit (minutes).</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/4/315.html">SessionSweepInterval</a></td>
-<td>Gets or sets session cleanup interval (minutes).</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader42" class="SectionHeader">
-<img id="SectionExpanderImg42" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(42);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(42);">
-Protected Properties
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv42" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedProperty.gif" alt="Protected Property" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/316.html">AllSessions</a></td>
-<td>Returns list of all sessions.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedProperty.gif" alt="Protected Property" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/317.html">ExpiredSessions</a></td>
-<td>Returns list of expired sessions.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedProperty.gif" alt="Protected Property" /></td>
-<td><a href="../../Contents/4/318.html">IsDisposed</a></td>
-<td>Returns true if the instance is disposed.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader45" class="SectionHeader">
-<img id="SectionExpanderImg45" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(45);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(45);">
-Public Events
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv45" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicEvent.gif" alt="Public Event" /></td>
-<td><a href="../../Contents/4/319.html">ClientSessionTerminated</a></td>
-<td>Occurs when the client session is terminated abnormally.</td>
-</tr>
-</table>
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected void StartSweepTimer ()</pre></td></tr></table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

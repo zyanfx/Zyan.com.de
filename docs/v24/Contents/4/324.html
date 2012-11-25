@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>InProcSessionManager Class Members</title>
+<title>SqlSessionManager.GetSessionBySessionID Method (Guid)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">InProcSessionManager Class Members</div>
+<div id="PageTitle">SqlSessionManager.GetSessionBySessionID Method (Guid)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -25,122 +24,34 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Slim in-process session manager.
+Returns <a href="../../Contents/1/50.html">ServerSession</a> identified by sessionID.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/294.html">InProcSessionManager</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/286.html">SqlSessionManager</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader30" class="SectionHeader">
-<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
-Public Constructors
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Syntax
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv30" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/325.html">InProcSessionManager</a></td>
-<td><p>There is no summary.</p></td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods
-</span>
-</span>
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override ServerSession GetSessionBySessionID (
+        Guid <i>sessionID</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sessionID</div>
+<div class="ParameterCommentContainer">
+Session unique identifier.
 </div>
-
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/326.html">ExistSession</a></td>
-<td>Checks whether the given session exists.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/327.html">GetSessionBySessionID</a></td>
-<td>Returns <a href="../../Contents/1/52.html">ServerSession</a> identified by sessionID.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/328.html">GetSessionVariable</a></td>
-<td>Returns the value of the session variable.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/329.html">RemoveSession</a></td>
-<td>Removes the given session from the session list.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/330.html">SetSessionVariable</a></td>
-<td>Sets the new value of the session variable.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/4/331.html">StoreSession</a></td>
-<td>Stores the given <a href="../../Contents/1/52.html">ServerSession</a> to the session list.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader42" class="SectionHeader">
-<img id="SectionExpanderImg42" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(42);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(42);">
-Protected Properties
-</span>
-</span>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<a href="../../Contents/1/50.html">ServerSession</a> or null, if session with the given identifier is not found.
 </div>
-
-<div id="SectionContainerDiv42" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedProperty.gif" alt="Protected Property" /></td>
-<td><a href="../../Contents/4/332.html">AllSessions</a></td>
-<td>Returns list of all sessions.</td>
-</tr>
-</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

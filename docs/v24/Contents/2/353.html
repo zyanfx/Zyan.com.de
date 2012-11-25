@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServiceHelper.GetEndpoint Method (string, string, string)</title>
+<title>SerializableExpressionTyped Class</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServiceHelper.GetEndpoint Method (string, string, string)</div>
+<div id="PageTitle">SerializableExpressionTyped Class</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,10 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns a Service <span class="PseudoLink">System.ServiceModel.EndpointAddress</span>.
+A serializable version of <span class="PseudoLink">System.Linq.Expressions.LambdaExpression</span>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/328.html">ServiceHelper</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/23.html">Zyan.InterLinq.Communication.Wcf</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
 <div id="SectionHeader0" class="SectionHeader">
@@ -40,28 +40,29 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static EndpointAddress GetEndpoint (
-        string <i>serverAddress</i>,
-        string <i>serverPort</i>,
-        string <i>servicePath</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">serverAddress</div>
-<div class="ParameterCommentContainer">
-Address of the Server.
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
+<col width="0%" />
+<col width="100%" />
+<tr>
+<td class="NoWrapTop">public class SerializableExpressionTyped :&nbsp;</td>
+<td>
+SerializableLambdaExpression<br />
+</td>
+</tr>
+</table>
+</td></tr></table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader1" class="SectionHeader">
+<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
+Members
+</span>
+</span>
 </div>
-<div class="CommentParameterName">serverPort</div>
-<div class="ParameterCommentContainer">
-Port of the Server.
-</div>
-<div class="CommentParameterName">servicePath</div>
-<div class="ParameterCommentContainer">
-Path of the WCF Service.
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Returns a Service <span class="PseudoLink">System.ServiceModel.EndpointAddress</span>.
-</div>
+
+<div id="SectionContainerDiv1" class="SectionContainer">
+<p>Click <a href="../../Contents/2/413.html">here</a> to see the list of members.</p>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

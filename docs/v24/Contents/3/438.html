@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>HttpCustomServerProtocolSetup Constructor</title>
+<title>HttpCustomServerProtocolSetup Constructor (int, IAuthenticationProvider, bool, string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">HttpCustomServerProtocolSetup Constructor</div>
+<div id="PageTitle">HttpCustomServerProtocolSetup Constructor (int, IAuthenticationProvider, bool, string)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -26,7 +26,7 @@
 <a id="ContentsAnchor">&nbsp;</a>
 Creates a new instance of the HttpCustomServerProtocolSetup class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/409.html">HttpCustomServerProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/399.html">HttpCustomServerProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/10.html">Zyan.Communication.Protocols.Http</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -34,82 +34,35 @@ Creates a new instance of the HttpCustomServerProtocolSetup class.
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Overload List
+Syntax
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/442.html">HttpCustomServerProtocolSetup ()</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/443.html">HttpCustomServerProtocolSetup (Versioning)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/444.html">HttpCustomServerProtocolSetup (int, IAuthenticationProvider)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/445.html">HttpCustomServerProtocolSetup (Versioning, int, IAuthenticationProvider)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/446.html">HttpCustomServerProtocolSetup (int, IAuthenticationProvider, bool)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/447.html">HttpCustomServerProtocolSetup (Versioning, int, IAuthenticationProvider, bool)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/448.html">HttpCustomServerProtocolSetup (int, IAuthenticationProvider, bool, string)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/449.html">HttpCustomServerProtocolSetup (Versioning, int, IAuthenticationProvider, bool, string)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/450.html">HttpCustomServerProtocolSetup (int, IAuthenticationProvider, bool, string, bool)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/451.html">HttpCustomServerProtocolSetup (Versioning, int, IAuthenticationProvider, bool, string, bool)</a></td>
-<td>Creates a new instance of the HttpCustomServerProtocolSetup class.</td>
-</tr>
-</table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public HttpCustomServerProtocolSetup (
+        int <i>httpPort</i>,
+        IAuthenticationProvider <i>authProvider</i>,
+        bool <i>encryption</i>,
+        string <i>algorithm</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">httpPort</div>
+<div class="ParameterCommentContainer">
+HTTP port number
+</div>
+<div class="CommentParameterName">authProvider</div>
+<div class="ParameterCommentContainer">
+Authentication provider
+</div>
+<div class="CommentParameterName">encryption</div>
+<div class="ParameterCommentContainer">
+Specifies if the communication sould be encrypted
+</div>
+<div class="CommentParameterName">algorithm</div>
+<div class="ParameterCommentContainer">
+Encryption algorithm (e.G. "3DES")
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerQueryWcfHandler.Start Method (Binding, string)</title>
+<title>ServiceHelper.GetServiceUri Method (string, string, string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerQueryWcfHandler.Start Method (Binding, string)</div>
+<div id="PageTitle">ServiceHelper.GetServiceUri Method (string, string, string)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Starts the Service Instance.
+Returns a Service URI as <see langword="string" />.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/326.html">ServerQueryWcfHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/319.html">ServiceHelper</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/23.html">Zyan.InterLinq.Communication.Wcf</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,18 +40,27 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void Start (
-        Binding <i>binding</i>,
-        string <i>serviceUri</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static string GetServiceUri (
+        string <i>serverAddress</i>,
+        string <i>serverPort</i>,
+        string <i>servicePath</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">binding</div>
+<div class="CommentParameterName">serverAddress</div>
 <div class="ParameterCommentContainer">
-Predefined <span class="PseudoLink">System.ServiceModel.Channels.Binding</span>.
+Address of the Server.
 </div>
-<div class="CommentParameterName">serviceUri</div>
+<div class="CommentParameterName">serverPort</div>
 <div class="ParameterCommentContainer">
-Service URI as <see langword="string" />.
+Port of the Server.
+</div>
+<div class="CommentParameterName">servicePath</div>
+<div class="ParameterCommentContainer">
+Path of the WCF Service.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+Returns a Service URI as <see langword="string" />.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>Connection.RemoteAddresses Property </title>
+<title>Message.BeginReceive Method (Connection, AsyncCallback, object)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">Connection.RemoteAddresses Property </div>
+<div id="PageTitle">Message.BeginReceive Method (Connection, AsyncCallback, object)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets a list of all registered addresses of the remote channel.
+Begins receiving message data asynchronously.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/491.html">Connection</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/482.html">Message</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,10 +40,27 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public List&lt;string&gt; RemoteAddresses { get; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IAsyncResult BeginReceive (
+        Connection <i>connection</i>,
+        AsyncCallback <i>callback</i>,
+        object <i>asyncState</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">connection</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+Duplex Channel Connection
+</div>
+<div class="CommentParameterName">callback</div>
+<div class="ParameterCommentContainer">
+Delegate to invoke, when asynchronous operation is completed
+</div>
+<div class="CommentParameterName">asyncState</div>
+<div class="ParameterCommentContainer">
+Pass through state object
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+Result
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

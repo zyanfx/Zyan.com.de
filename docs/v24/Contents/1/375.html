@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ComponentRegistration Constructor (Type, Type, Action&lt;object&gt;)</title>
+<title>ComponentRegistration Constructor (Type, object, Action&lt;object&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ComponentRegistration Constructor (Type, Type, Action&lt;object&gt;)</div>
+<div id="PageTitle">ComponentRegistration Constructor (Type, object, Action&lt;object&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -26,7 +26,7 @@
 <a id="ContentsAnchor">&nbsp;</a>
 Creates a new instance of the ComponentRegistration class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/40.html">ComponentRegistration</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/39.html">ComponentRegistration</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -42,7 +42,7 @@ Syntax
 <div id="SectionContainerDiv0" class="SectionContainer">
 <table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public ComponentRegistration (
         Type <i>interfaceType</i>,
-        Type <i>implementationType</i>,
+        object <i>singletonInstance</i>,
         Action&lt;object&gt; <i>cleanUpHandler</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
@@ -50,9 +50,9 @@ Syntax
 <div class="ParameterCommentContainer">
 Interface type of the component
 </div>
-<div class="CommentParameterName">implementationType</div>
+<div class="CommentParameterName">singletonInstance</div>
 <div class="ParameterCommentContainer">
-Implementation type of the component
+Singleton instance of the component
 </div>
 <div class="CommentParameterName">cleanUpHandler</div>
 <div class="ParameterCommentContainer">

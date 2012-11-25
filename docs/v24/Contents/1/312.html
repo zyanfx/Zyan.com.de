@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanComponentHost Constructor (string, IServerProtocolSetup, ISessionManager, ComponentCatalog)</title>
+<title>ZyanConnection.SubscribeEvent Method (string, EventHandler&lt;NotificationEventArgs&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanComponentHost Constructor (string, IServerProtocolSetup, ISessionManager, ComponentCatalog)</div>
+<div id="PageTitle">ZyanConnection.SubscribeEvent Method (string, EventHandler&lt;NotificationEventArgs&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a new instance of the <a href="../../Contents/1/53.html">ZyanComponentHost</a> class.
+Subscribes for receiving notifications of a specified event.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/53.html">ZyanComponentHost</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/52.html">ZyanConnection</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,28 +40,22 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public ZyanComponentHost (
-        string <i>name</i>,
-        IServerProtocolSetup <i>protocolSetup</i>,
-        ISessionManager <i>sessionManager</i>,
-        ComponentCatalog <i>catalog</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public Guid SubscribeEvent (
+        string <i>eventName</i>,
+        EventHandler&lt;NotificationEventArgs&gt; <i>handler</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">name</div>
+<div class="CommentParameterName">eventName</div>
 <div class="ParameterCommentContainer">
-The name of the component host.
+Event name
 </div>
-<div class="CommentParameterName">protocolSetup</div>
+<div class="CommentParameterName">handler</div>
 <div class="ParameterCommentContainer">
-The protocol setup.
+Client side event handler
 </div>
-<div class="CommentParameterName">sessionManager</div>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-The session manager.
-</div>
-<div class="CommentParameterName">catalog</div>
-<div class="ParameterCommentContainer">
-The component catalog.
+Unique subscription ID
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

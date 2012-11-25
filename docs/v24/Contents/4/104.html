@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpCustomClientProtocolSetup Constructor (Versioning, bool, string, int, bool)</title>
+<title>TcpCustomServerProtocolSetup Constructor (Versioning, int, IAuthenticationProvider, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpCustomClientProtocolSetup Constructor (Versioning, bool, string, int, bool)</div>
+<div id="PageTitle">TcpCustomServerProtocolSetup Constructor (Versioning, int, IAuthenticationProvider, bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the TcpCustomClientProtocolSetup class.
+Creates a new instance of the TcpCustomServerProtocolSetup class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/85.html">TcpCustomClientProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/74.html">TcpCustomServerProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,33 +40,28 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpCustomClientProtocolSetup (
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpCustomServerProtocolSetup (
         Versioning <i>versioning</i>,
-        bool <i>encryption</i>,
-        string <i>algorithm</i>,
-        int <i>maxAttempts</i>,
-        bool <i>oaep</i>
+        int <i>tcpPort</i>,
+        IAuthenticationProvider <i>authProvider</i>,
+        bool <i>encryption</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">versioning</div>
 <div class="ParameterCommentContainer">
 Versioning behavior
 </div>
+<div class="CommentParameterName">tcpPort</div>
+<div class="ParameterCommentContainer">
+TCP port number
+</div>
+<div class="CommentParameterName">authProvider</div>
+<div class="ParameterCommentContainer">
+Authentication provider
+</div>
 <div class="CommentParameterName">encryption</div>
 <div class="ParameterCommentContainer">
 Specifies if the communication sould be encrypted
-</div>
-<div class="CommentParameterName">algorithm</div>
-<div class="ParameterCommentContainer">
-Encryption algorithm (e.G. "3DES")
-</div>
-<div class="CommentParameterName">maxAttempts</div>
-<div class="ParameterCommentContainer">
-Maximum number of connection attempts
-</div>
-<div class="CommentParameterName">oaep</div>
-<div class="ParameterCommentContainer">
-Specifies if OAEP padding should be used
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

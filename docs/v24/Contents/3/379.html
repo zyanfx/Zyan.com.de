@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ClientProtocolSetupExtensions.AddServerSinkAfterFormatter Method (IClientProtocolSetup, IServerChannelSinkProvider)</title>
+<title>ServerProtocolSetupExtensions.AddClientSinkBeforeFormatter Method (IServerProtocolSetup, IClientChannelSinkProvider)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ClientProtocolSetupExtensions.AddServerSinkAfterFormatter Method (IClientProtocolSetup, IServerChannelSinkProvider)</div>
+<div id="PageTitle">ServerProtocolSetupExtensions.AddClientSinkBeforeFormatter Method (IServerProtocolSetup, IClientChannelSinkProvider)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Adds a specified server sink provider into the server sink chain after the formatter.
+Adds a specified client sink provider into the client sink chain before the formatter.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/312.html">ClientProtocolSetupExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/308.html">ServerProtocolSetupExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/9.html">Zyan.Communication.Protocols</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,18 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IClientProtocolSetup AddServerSinkAfterFormatter (
-        IClientProtocolSetup <i>protocolSetup</i>,
-        IServerChannelSinkProvider <i>serverSinkProvider</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IServerProtocolSetup AddClientSinkBeforeFormatter (
+        IServerProtocolSetup <i>protocolSetup</i>,
+        IClientChannelSinkProvider <i>clientSinkProvider</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">protocolSetup</div>
 <div class="ParameterCommentContainer">
 Protocol setup
 </div>
-<div class="CommentParameterName">serverSinkProvider</div>
+<div class="CommentParameterName">clientSinkProvider</div>
 <div class="ParameterCommentContainer">
-Server sink provider to be added
+Client sink provider to be added
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">

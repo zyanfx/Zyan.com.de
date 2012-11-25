@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpDuplexServerProtocolSetup Constructor (int, IAuthenticationProvider, bool, bool, ulong, ulong)</title>
+<title>CryptoServerChannelSinkProvider Class</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpDuplexServerProtocolSetup Constructor (int, IAuthenticationProvider, bool, bool, ulong, ulong)</div>
+<div id="PageTitle">CryptoServerChannelSinkProvider Class</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,10 +25,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the TcpDuplexServerProtocolSetup class.
+Anbieter fьr die serverseitige Kanalsenke zur verschlьsselten Kommunikation.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/88.html">TcpDuplexServerProtocolSetup</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/5.html">Zyan.Communication.ChannelSinks.Encryption</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
 <div id="SectionHeader0" class="SectionHeader">
@@ -40,39 +40,29 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public TcpDuplexServerProtocolSetup (
-        int <i>tcpPort</i>,
-        IAuthenticationProvider <i>authProvider</i>,
-        bool <i>encryption</i>,
-        bool <i>keepAlive</i>,
-        ulong <i>keepAliveTime</i>,
-        ulong <i>KeepAliveInterval</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">tcpPort</div>
-<div class="ParameterCommentContainer">
-TCP port number
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
+<col width="0%" />
+<col width="100%" />
+<tr>
+<td class="NoWrapTop">public class CryptoServerChannelSinkProvider :&nbsp;</td>
+<td>
+IServerChannelSinkProvider
+</td>
+</tr>
+</table>
+</td></tr></table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader1" class="SectionHeader">
+<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
+Members
+</span>
+</span>
 </div>
-<div class="CommentParameterName">authProvider</div>
-<div class="ParameterCommentContainer">
-Authentication provider
-</div>
-<div class="CommentParameterName">encryption</div>
-<div class="ParameterCommentContainer">
-Specifies if the communication sould be encrypted
-</div>
-<div class="CommentParameterName">keepAlive</div>
-<div class="ParameterCommentContainer">
-Enables or disables TCP KeepAlive for the new connection
-</div>
-<div class="CommentParameterName">keepAliveTime</div>
-<div class="ParameterCommentContainer">
-Time for TCP KeepAlive in Milliseconds
-</div>
-<div class="CommentParameterName">KeepAliveInterval</div>
-<div class="ParameterCommentContainer">
-Interval for TCP KeepAlive in Milliseconds
-</div>
+
+<div id="SectionContainerDiv1" class="SectionContainer">
+<p>Click <a href="../../Contents/4/209.html">here</a> to see the list of members.</p>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

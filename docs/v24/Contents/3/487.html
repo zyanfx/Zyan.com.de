@@ -6,14 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>NullClientProtocolSetup Class Members</title>
+<title>Connection Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">NullClientProtocolSetup Class Members</div>
+<div id="PageTitle">Connection Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader25" onclick="javascript: SetSectionVisibility(25, true); SetExpandCollapseAllToCollapseAll();">Fields</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,22 +26,164 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-<a href="../../Contents/2/296.html">IClientProtocolSetup</a> implementation for the <a href="../../Contents/3/472.html">NullChannel</a>.
+Encapsulates a connection, providing read/write locking for synchronisation.
+            Additionally, this should provide a useful position for adding reconnection abilities.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/473.html">NullClientProtocolSetup</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/12.html">Zyan.Communication.Protocols.Null</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/481.html">Connection</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader30" class="SectionHeader">
-<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
+<div id="SectionHeader25" class="SectionHeader">
+<img id="SectionExpanderImg25" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(25);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
-Public Constructors
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(25);">
+Public Fields</span>
+ <span class="SeeAlsoInSectionHeader">(see also: <a href="#SectionHeader27" onclick="javascript: SetSectionVisibility(27, true); SetExpandCollapseAllToCollapseAll();">Protected</a> Fields)</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv25" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicField.gif" alt="Public Field" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/3/488.html">BufferSize</a></td>
+<td>Defines the buffer size (Default = 10K).</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader27" class="SectionHeader">
+<img id="SectionExpanderImg27" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(27);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(27);">
+Protected Fields
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv30" class="SectionContainer">
+<div id="SectionContainerDiv27" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/489.html">_channel</a></td>
+<td>Parent Remoting channel of this connection.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/490.html">_connectionRole</a></td>
+<td>Defines the connection role.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/491.html">_maxRetries</a></td>
+<td>Maximum number of connection retry attempts.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/492.html">_reader</a></td>
+<td>Reader for reading binary raw data from network stream.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/493.html">_remoteChannelData</a></td>
+<td>Configuration data of the remoting channel.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/494.html">_retryDelay</a></td>
+<td>Delay after retry attempt in milliseconds.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/495.html">_socket</a></td>
+<td>Socket used for TCP communication.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/496.html">_socketRemoteAddress</a></td>
+<td>Address of the remote socket endpoint.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/497.html">_socketRemotePort</a></td>
+<td>Port of the remote socket endpoint.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/498.html">_stream</a></td>
+<td>Networkstream for sending and receiving raw data.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
+<td><a href="../../Contents/3/499.html">_writer</a></td>
+<td>Writer for writing binary raw data to network stream.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader32" class="SectionHeader">
+<img id="SectionExpanderImg32" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(32);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(32);">
+Protected Constructors
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv32" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" /></td>
+<td><a href="../../Contents/3/500.html">Connection</a></td>
+<td>Overloaded. Creates a new instance of the Connection class.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv35" class="SectionContainer">
 <table class="MembersTable">
 <col width="7%" />
 <col width="38%" />
@@ -52,8 +196,155 @@ Public Constructors
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/3/488.html">NullClientProtocolSetup</a></td>
-<td>Initializes a new instance of the <a href="../../Contents/3/473.html">NullClientProtocolSetup</a> class.</td>
+<td><a href="../../Contents/4/1.html">Close</a></td>
+<td>Closes the connection.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/4/2.html">CreateConnection</a></td>
+<td>Creates a connection object.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/4/3.html">GetConnection</a></td>
+<td>Gets a specified connection.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/4.html">LockRead</a></td>
+<td>Locks the connection for reading through other threads.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/5.html">LockWrite</a></td>
+<td>Locks the connection for writing through other threads.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/6.html">ReleaseRead</a></td>
+<td>Releases the read lock.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/7.html">ReleaseWrite</a></td>
+<td>Releases the write lock.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader40" class="SectionHeader">
+<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
+Public Properties
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv40" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/8.html">IsClosed</a></td>
+<td>Returns if the connection is already closed or not.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/9.html">IsLocalHost</a></td>
+<td>Checks, if the connection is a local connection or not.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/10.html">LocalAddress</a></td>
+<td>Gets the address of the local channel.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/11.html">LocalChannelID</a></td>
+<td>Gets the unique identifier of the local channel.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/12.html">MaxRetries</a></td>
+<td>Gets or sets the maximum number of connection retry attempts.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/13.html">Reader</a></td>
+<td>Gets a binary reader for reading raw data from the network stream.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/14.html">RemoteAddresses</a></td>
+<td>Gets a list of all registered addresses of the remote channel.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/15.html">RemoteChannelID</a></td>
+<td>Gets the unique identifier of the remote channel.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/16.html">RetryDelay</a></td>
+<td>Gets or sets the delay after a retry attempt in milliseconds.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/17.html">Socket</a></td>
+<td>Gets the underlying socket of the connection.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/18.html">Stream</a></td>
+<td>Gets the Network stream.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/19.html">TcpKeepAliveEnabled</a></td>
+<td>Enables or disables TCP KeepAlive.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/20.html">TcpKeepAliveInterval</a></td>
+<td>Gets or sets the TCP KeepAlive interval in milliseconds</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/21.html">TcpKeepAliveTime</a></td>
+<td>Gets or sets the TCP KeepAlive time in milliseconds.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/22.html">Writer</a></td>
+<td>Gets a binary writer for writing raw data from the network stream.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

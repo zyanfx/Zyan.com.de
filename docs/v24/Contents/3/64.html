@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>RewriteExpressionVisitor.VisitNewArrayExpression Method (NewArrayExpression)</title>
+<title>SerializableExpressionVisitor.Visit Method</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">RewriteExpressionVisitor.VisitNewArrayExpression Method (NewArrayExpression)</div>
+<div id="PageTitle">SerializableExpressionVisitor.Visit Method</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a <span class="PseudoLink">System.Linq.Expressions.NewArrayExpression</span>.
+Visits the <a href="../../Contents/2/216.html">SerializableExpression</a> tree to convert and
+            returns the converted <span class="PseudoLink">System.Linq.Expressions.Expression</span>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/487.html">RewriteExpressionVisitor</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/481.html">SerializableExpressionVisitor</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/25.html">Zyan.InterLinq.Expressions.Helpers</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -34,24 +35,35 @@ Creates a <span class="PseudoLink">System.Linq.Expressions.NewArrayExpression</s
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+Overload List
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected override object VisitNewArrayExpression (
-        NewArrayExpression <i>expression</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">expression</div>
-<div class="ParameterCommentContainer">
-<span class="PseudoLink">System.Linq.Expressions.NewArrayExpression</span> to visit.
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Returns a <span class="PseudoLink">System.Linq.Expressions.NewArrayExpression</span>.
-</div>
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/3/92.html">SerializableExpressionVisitor.Visit ()</a></td>
+<td>Visits the <a href="../../Contents/2/216.html">SerializableExpression</a> tree to convert and
+            returns the converted <span class="PseudoLink">System.Linq.Expressions.Expression</span>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/3/93.html">SerializableExpressionVisitor.Visit (SerializableExpression)</a></td>
+<td>Returns an <span class="PseudoLink">System.Linq.Expressions.Expression</span> by visiting and converting <span class="Code">expression</span>.</td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

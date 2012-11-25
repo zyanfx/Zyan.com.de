@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>MessageException Constructor (string, Exception, Connection)</title>
+<title>TcpExChannel.ConnectDuringCreation Property </title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">MessageException Constructor (string, Exception, Connection)</div>
+<div id="PageTitle">TcpExChannel.ConnectDuringCreation Property </div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the MessageException class.
+Gets or sets the value indicating whether the client-side should connect
+            to the server during the creation of the transport channel.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/494.html">MessageException</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/484.html">TcpExChannel</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,23 +41,10 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public MessageException (
-        string <i>msg</i>,
-        Exception <i>innerException</i>,
-        Connection <i>connection</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">msg</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public bool ConnectDuringCreation { get; set; }</pre></td></tr></table>
+<div class="CommentHeader">Property Value</div>
 <div class="ParameterCommentContainer">
-Error message
-</div>
-<div class="CommentParameterName">innerException</div>
-<div class="ParameterCommentContainer">
-Inner exception (can be null)
-</div>
-<div class="CommentParameterName">connection</div>
-<div class="ParameterCommentContainer">
-Affected Duplex Channel Connection
+<p>There is no description.</p>
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

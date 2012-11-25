@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ClientQueryWcfHandler.Connect Method (Binding, EndpointAddress)</title>
+<title>ServerQueryWcfHandler.Start Method (bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ClientQueryWcfHandler.Connect Method (Binding, EndpointAddress)</div>
+<div id="PageTitle">ServerQueryWcfHandler.Start Method (bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Connects to the server.
+Starts a Service Instance using the settings in your App.config.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/325.html">ClientQueryWcfHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/318.html">ServerQueryWcfHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/23.html">Zyan.InterLinq.Communication.Wcf</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,18 +40,13 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void Connect (
-        Binding <i>binding</i>,
-        EndpointAddress <i>endpointAddress</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public void Start (
+        bool <i>useAppConfig</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">binding</div>
+<div class="CommentParameterName">useAppConfig</div>
 <div class="ParameterCommentContainer">
-Predefined <span class="PseudoLink">System.ServiceModel.Channels.Binding</span>.
-</div>
-<div class="CommentParameterName">endpointAddress</div>
-<div class="ParameterCommentContainer">
-<span class="PseudoLink">System.ServiceModel.EndpointAddress</span> of the server.
+Uses App.config WCF Service configuration elements if true.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SessionEventArgs Constructor ()</title>
+<title>IEventFilter.Contains&lt;TEventFilter&gt; Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SessionEventArgs Constructor ()</div>
+<div id="PageTitle">IEventFilter.Contains&lt;TEventFilter&gt; Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a new instance of the <a href="../../Contents/2/60.html">SessionEventArgs</a> class.
-            Session identity is taken from ServerSession.CurrentSession.
+Determines whether this filter contains nested event filter of the given type.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/60.html">SessionEventArgs</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/54.html">IEventFilter</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,7 +40,28 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public SessionEventArgs ()</pre></td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract bool Contains&lt;TEventFilter&gt; ()</pre>
+<div style="padding-left: 30px; margin-top: 0px;">
+<table class="InsideCodeBlock">
+<col />
+<col width="100%" />
+<tr>
+<td class="NoWrapTop">where TEventFilter</td>
+<td>&nbsp;: IEventFilter</td>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">TEventFilter</div>
+<div class="ParameterCommentContainer">
+Event filter type.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

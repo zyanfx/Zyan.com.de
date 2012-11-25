@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ClientQueryHandler Class Members</title>
+<title>ClientQueryProvider Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ClientQueryHandler Class Members</div>
+<div id="PageTitle">ClientQueryProvider Class Members</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
 <a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
@@ -26,39 +26,12 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Client implementation of the <a href="../../Contents/2/135.html">InterLinqQueryHandler</a>.
+Client implementation of the <a href="../../Contents/2/128.html">InterLinqQueryProvider</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/262.html">ClientQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/255.html">ClientQueryProvider</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/21.html">Zyan.InterLinq.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader27" class="SectionHeader">
-<img id="SectionExpanderImg27" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(27);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(27);">
-Protected Fields
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv27" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedField.gif" alt="Protected Field" /></td>
-<td><a href="../../Contents/2/267.html">queryRemoteHandler</a></td>
-<td><a href="../../Contents/2/146.html">IQueryRemoteHandler</a> instance.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 <div id="SectionHeader30" class="SectionHeader">
 <img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
 <span class="SectionHeader">
@@ -81,8 +54,8 @@ Public Constructors
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/2/268.html">ClientQueryHandler</a></td>
-<td>Overloaded. Empty constructor.</td>
+<td><a href="../../Contents/2/267.html">ClientQueryProvider</a></td>
+<td>Initializes this class.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
@@ -108,8 +81,14 @@ Public Methods
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/2/269.html">Connect</a></td>
-<td>Connects to the server.</td>
+<td><a href="../../Contents/2/268.html">Execute</a></td>
+<td>Executes the query and returns the requested data.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/2/269.html">Execute&lt;TResult&gt;</a></td>
+<td>Executes the query and returns the requested data.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
@@ -135,14 +114,8 @@ Public Properties
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/2/270.html">QueryProvider</a></td>
-<td>Gets the <span class="PseudoLink">System.Linq.IQueryProvider</span>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicProperty.gif" alt="Public Property" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/2/271.html">QueryRemoteHandler</a></td>
-<td>Gets the <a href="../../Contents/2/146.html">IQueryRemoteHandler</a>;</td>
+<td><a href="../../Contents/2/270.html">Handler</a></td>
+<td>Gets the <a href="../../Contents/2/138.html">IQueryRemoteHandler</a>;</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

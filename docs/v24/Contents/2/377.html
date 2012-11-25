@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionConversionHelper.MakeSerializable&lt;T&gt; Method (Expression, ExpressionConverter)</title>
+<title>ExpressionSerializationHandler.Serialize Method (object)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionConversionHelper.MakeSerializable&lt;T&gt; Method (Expression, ExpressionConverter)</div>
+<div id="PageTitle">ExpressionSerializationHandler.Serialize Method (object)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Extension Method for <span class="PseudoLink">System.Linq.Expressions.Expression</span>.
-            Converts an <span class="PseudoLink">System.Linq.Expressions.Expression</span> to a <span class="Code">T</span>.
+Serializes Linq expression into raw byte array
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/356.html">ExpressionConversionHelper</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/349.html">ExpressionSerializationHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,39 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static T MakeSerializable&lt;T&gt; (
-        Expression <i>exp</i>,
-        ExpressionConverter <i>expConverter</i>
-) </pre>
-<div style="padding-left: 30px; margin-top: 0px;">
-<table class="InsideCodeBlock">
-<col />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">where T</td>
-<td>&nbsp;: SerializableExpression</td>
-</td>
-</tr>
-</table>
-</div>
-</td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-Return type (must be subclass of <a href="../../Contents/2/224.html">SerializableExpression</a>.
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public byte[] Serialize (
+        object <i>data</i>
+) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">exp</div>
+<div class="CommentParameterName">data</div>
 <div class="ParameterCommentContainer">
-Extended class instance.
-</div>
-<div class="CommentParameterName">expConverter</div>
-<div class="ParameterCommentContainer">
-<a href="../../Contents/2/381.html">ExpressionConverter</a> instance.
+Linq expression
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns the converted <span class="Code">T</span>.
+Raw data
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

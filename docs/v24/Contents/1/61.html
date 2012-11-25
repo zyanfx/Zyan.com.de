@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ISerializationHandler Interface</title>
+<title>ActivationType Enumeration</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ISerializationHandler Interface</div>
+<div id="PageTitle">ActivationType Enumeration</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 <a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
@@ -25,7 +25,7 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Interface for custom serialization handling.
+Enumeration of supported activation types.
 <div id="ItemLocation">
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
@@ -44,8 +44,10 @@ Syntax
 <col width="0%" />
 <col width="100%" />
 <tr>
-<td class="NoWrapTop">public interface ISerializationHandler </td>
-<td>&nbsp;</td>
+<td class="NoWrapTop">public enum ActivationType :&nbsp;</td>
+<td>
+short
+</td>
 </tr>
 </table>
 </td></tr></table>
@@ -60,7 +62,30 @@ Members
 </div>
 
 <div id="SectionContainerDiv1" class="SectionContainer">
-<p>Click <a href="../../Contents/1/451.html">here</a> to see the list of members.</p>
+<table class="MembersTable">
+<col width="2%" />
+<col width="38%" />
+<col width="60%" />
+<tr>
+<th>&nbsp;</th>
+<th>Member name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/EnumField.gif" alt="Enum Field" /></td>
+<td><a href="../../Contents/1/455.html">SingleCall</a></td>
+<td>Component instance lives only for a single call.
+            <remarks>Single call activated components need not be thread-safe</remarks></td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/EnumField.gif" alt="Enum Field" /></td>
+<td><a href="../../Contents/1/456.html">Singleton</a></td>
+<td>Component instance is created on first call and reused for all subsequent calls.
+            <remarks>Singleton activated components must be thread-safe</remarks></td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

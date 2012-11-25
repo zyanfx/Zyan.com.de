@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>Connection Constructor (string, TcpExChannel, bool, ulong, ulong, short, int)</title>
+<title>TcpExChannel Constructor</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">Connection Constructor (string, TcpExChannel, bool, ulong, ulong, short, int)</div>
+<div id="PageTitle">TcpExChannel Constructor</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the Connection class.
+Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class with default settings (client mode).
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/491.html">Connection</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/484.html">TcpExChannel</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -34,50 +34,58 @@ Creates a new instance of the Connection class.
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+Overload List
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected Connection (
-        string <i>address</i>,
-        TcpExChannel <i>channel</i>,
-        bool <i>keepAlive</i>,
-        ulong <i>keepAliveTime</i>,
-        ulong <i>KeepAliveInterval</i>,
-        short <i>maxRetries</i>,
-        int <i>retryDelay</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">address</div>
-<div class="ParameterCommentContainer">
-Address (IP oder DNS based)
-</div>
-<div class="CommentParameterName">channel</div>
-<div class="ParameterCommentContainer">
-Remoting channel
-</div>
-<div class="CommentParameterName">keepAlive</div>
-<div class="ParameterCommentContainer">
-Enables or disables TCP KeepAlive for the new connection
-</div>
-<div class="CommentParameterName">keepAliveTime</div>
-<div class="ParameterCommentContainer">
-Time for TCP KeepAlive in Milliseconds
-</div>
-<div class="CommentParameterName">KeepAliveInterval</div>
-<div class="ParameterCommentContainer">
-Interval for TCP KeepAlive in Milliseconds
-</div>
-<div class="CommentParameterName">maxRetries</div>
-<div class="ParameterCommentContainer">
-Maximum number of connection retry attempts
-</div>
-<div class="CommentParameterName">retryDelay</div>
-<div class="ParameterCommentContainer">
-Delay after connection retry in milliseconds
-</div>
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/56.html">TcpExChannel ()</a></td>
+<td>Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class with default settings (client mode).</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/57.html">TcpExChannel (int)</a></td>
+<td>Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class (server mode).</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/58.html">TcpExChannel (bool)</a></td>
+<td>Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/59.html">TcpExChannel (TypeFilterLevel, bool)</a></td>
+<td>Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/60.html">TcpExChannel (TypeFilterLevel, int)</a></td>
+<td>Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/61.html">TcpExChannel (IDictionary, IClientChannelSinkProvider, IServerChannelSinkProvider)</a></td>
+<td>Initializes a new instance of the <a href="../../Contents/3/484.html">TcpExChannel</a> class.</td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

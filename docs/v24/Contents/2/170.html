@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanEntityQueryHandler.CloseSession Method ()</title>
+<title>ZyanExtensions.RegisterQueryableComponent Method</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanEntityQueryHandler.CloseSession Method ()</div>
+<div id="PageTitle">ZyanExtensions.RegisterQueryableComponent Method</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Tells the <a href="../../Contents/2/132.html">IQueryHandler</a> to close the current session.
+Registers IQueryable component factory
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/138.html">ZyanEntityQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/131.html">ZyanExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -34,17 +34,106 @@ Tells the <a href="../../Contents/2/132.html">IQueryHandler</a> to close the cur
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+Overload List
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public bool CloseSession ()</pre></td></tr></table>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-True, if the session closing was successful. False, if not.
-</div>
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/185.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, Func&lt;Type, IEnumerable&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/186.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, Func&lt;Type, IQueryable&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/187.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;Type, IEnumerable&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/188.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;Type, IQueryable&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/189.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;Type, IEnumerable&gt;, ActivationType)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/190.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;Type, IQueryable&gt;, ActivationType)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/191.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, Func&lt;IObjectSource&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/192.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, Func&lt;IEntitySource&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/193.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;IObjectSource&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/194.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;IEntitySource&gt;)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/195.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, Func&lt;IObjectSource&gt;, ActivationType)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/196.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, Func&lt;IEntitySource&gt;, ActivationType)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/197.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;IObjectSource&gt;, ActivationType)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/198.html">ZyanExtensions.RegisterQueryableComponent (ZyanComponentHost, string, Func&lt;IEntitySource&gt;, ActivationType)</a></td>
+<td>Registers IQueryable component factory</td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>EventStub.Item Property (string)</title>
+<title>FilteredEventHandler.AddFilter Method (EventHandler, IEventFilter, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">EventStub.Item Property (string)</div>
+<div id="PageTitle">FilteredEventHandler.AddFilter Method (EventHandler, IEventFilter, bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets or sets the <span class="PseudoLink">System.Delegate</span> with the specified event property name.
+Creates filtered event handler of type EventHandler.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/56.html">EventStub</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/49.html">FilteredEventHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,15 +40,25 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public Delegate this [
-        string <i>propertyName</i>
-] { get; }</pre></td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static EventHandler AddFilter (
+        EventHandler <i>eventHandler</i>,
+        IEventFilter <i>eventFilter</i>,
+        bool <i>filterLocally</i>
+) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">propertyName</div>
+<div class="CommentParameterName">eventHandler</div>
 <div class="ParameterCommentContainer">
-Name of the event or delegate property.
+The event handler.
 </div>
-<div class="CommentHeader">Property Value</div>
+<div class="CommentParameterName">eventFilter</div>
+<div class="ParameterCommentContainer">
+The event filter.
+</div>
+<div class="CommentParameterName">filterLocally</div>
+<div class="ParameterCommentContainer">
+Whether the filter should also work when used locally.
+</div>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
 <p>There is no description.</p>
 </div>

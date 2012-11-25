@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SerializableConditionalExpression.IfTrue Property </title>
+<title>SerializableConstantExpression Constructor (ConstantExpression, ExpressionConverter)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SerializableConditionalExpression.IfTrue Property </div>
+<div id="PageTitle">SerializableConstantExpression Constructor (ConstantExpression, ExpressionConverter)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-See <span class="PseudoLink">System.Linq.Expressions.ConditionalExpression.IfTrue</span>
+Constructor with an <span class="PseudoLink">System.Linq.Expressions.ConstantExpression</span> and an <a href="../../Contents/2/373.html">ExpressionConverter</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/359.html">SerializableConditionalExpression</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/352.html">SerializableConstantExpression</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,10 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public SerializableExpression IfTrue { get; set; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public SerializableConstantExpression (
+        ConstantExpression <i>expression</i>,
+        ExpressionConverter <i>expConverter</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">expression</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+The original, not serializable <span class="PseudoLink">System.Linq.Expressions.Expression</span>.
+</div>
+<div class="CommentParameterName">expConverter</div>
+<div class="ParameterCommentContainer">
+The <span class="PseudoLink">Expressions</span>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

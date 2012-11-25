@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>IComponentCatalogExtensions.RegisterComponent&lt;I, T&gt; Method (IComponentCatalog, ActivationType)</title>
+<title>IComponentCatalogExtensions.RegisterComponent&lt;I, T&gt; Method (IComponentCatalog, T, Action&lt;object&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">IComponentCatalogExtensions.RegisterComponent&lt;I, T&gt; Method (IComponentCatalog, ActivationType)</div>
+<div id="PageTitle">IComponentCatalogExtensions.RegisterComponent&lt;I, T&gt; Method (IComponentCatalog, T, Action&lt;object&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Registers a component in the component catalog.
+Registeres a component instance in the component catalog.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/43.html">IComponentCatalogExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/42.html">IComponentCatalogExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -42,7 +42,8 @@ Syntax
 <div id="SectionContainerDiv0" class="SectionContainer">
 <table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterComponent&lt;I, T&gt; (
         IComponentCatalog <i>catalog</i>,
-        ActivationType <i>activationType</i>
+        T <i>instance</i>,
+        Action&lt;object&gt; <i>cleanUpHandler</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Type Parameters</div>
 <div class="CommentParameterName">I</div>
@@ -58,9 +59,13 @@ Implementation type of the component
 <div class="ParameterCommentContainer">
 IComponentCatalog instance
 </div>
-<div class="CommentParameterName">activationType</div>
+<div class="CommentParameterName">instance</div>
 <div class="ParameterCommentContainer">
-Activation type (SingleCall/Singleton)
+Component instance
+</div>
+<div class="CommentParameterName">cleanUpHandler</div>
+<div class="ParameterCommentContainer">
+Delegate for external clean up method
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

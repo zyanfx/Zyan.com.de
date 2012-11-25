@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SafeDynamicInvoker.ThreadPool Property </title>
+<title>FilteredEventHandler.Create&lt;TDelegate&gt; Method (TDelegate, IEventFilter, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SafeDynamicInvoker.ThreadPool Property </div>
+<div id="PageTitle">FilteredEventHandler.Create&lt;TDelegate&gt; Method (TDelegate, IEventFilter, bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -25,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets or sets the thread pool used to send server events to remote subscribers.
+Creates non-standard filtered event handler of type TDelegate.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/59.html">SafeDynamicInvoker</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/49.html">FilteredEventHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,25 +40,44 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IThreadPool ThreadPool { get; set; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static TDelegate Create&lt;TDelegate&gt; (
+        TDelegate <i>eventHandler</i>,
+        IEventFilter <i>eventFilter</i>,
+        bool <i>filterLocally</i>
+) </pre>
+<div style="padding-left: 30px; margin-top: 0px;">
+<table class="InsideCodeBlock">
+<col />
+<col width="100%" />
+<tr>
+<td class="NoWrapTop">where TDelegate</td>
+<td>&nbsp;: class</td>
+</td>
+</tr>
+</table>
+</div>
+</td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">TDelegate</div>
 <div class="ParameterCommentContainer">
 <p>There is no description.</p>
 </div>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader1" class="SectionHeader">
-<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Remarks
-</span>
-</span>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">eventHandler</div>
+<div class="ParameterCommentContainer">
+The event handler.
 </div>
-
-<div id="SectionContainerDiv1" class="SectionContainer">
-<div class="RemarksContainer">
-Assign this property to an instance of the <a href="../../Contents/2/101.html">ClrThreadPool</a> class
-            to fall back to the standard <span class="PseudoLink">System.Threading.ThreadPool</span>.
+<div class="CommentParameterName">eventFilter</div>
+<div class="ParameterCommentContainer">
+The event filter.
+</div>
+<div class="CommentParameterName">filterLocally</div>
+<div class="ParameterCommentContainer">
+Whether the filter should also work when used locally.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TypeHelper.GetType Method (string, bool)</title>
+<title>TransactionStarter&lt;T&gt;.Out Field</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TypeHelper.GetType Method (string, bool)</div>
+<div id="PageTitle">TransactionStarter&lt;T&gt;.Out Field</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets the <span class="PseudoLink">System.Type</span> with the specified name, performing a case-sensitive search.
-            Looks for the specified assembly in the current <span class="PseudoLink">System.AppDomain</span> assembly list.
+Output pin.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/368.html">TypeHelper</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/355.html">TransactionStarter&lt;T&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/19.html">Zyan.Communication.Toolbox</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,24 +40,7 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static Type GetType (
-        string <i>fullName</i>,
-        bool <i>throwOnError</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">fullName</div>
-<div class="ParameterCommentContainer">
-The assembly-qualified name of the type to get.
-</div>
-<div class="CommentParameterName">throwOnError</div>
-<div class="ParameterCommentContainer">
-True to throw the <span class="PseudoLink">System.TypeLoadException</span> if the type can not be found.
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-The type with the specified name. If the type is not found, the throwOnError 
-            parameter specifies whether null is returned or an exception is thrown.
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable">public Action&lt;T&gt; Out</td></tr></table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

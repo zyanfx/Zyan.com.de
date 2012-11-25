@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>HttpCustomClientProtocolSetup Constructor (Versioning, bool, string, int, bool, IWebProxy)</title>
+<title>HttpCustomServerProtocolSetup Constructor (int, IAuthenticationProvider, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">HttpCustomClientProtocolSetup Constructor (Versioning, bool, string, int, bool, IWebProxy)</div>
+<div id="PageTitle">HttpCustomServerProtocolSetup Constructor (int, IAuthenticationProvider, bool)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the HttpCustomClientProtocolSetup class.
+Creates a new instance of the HttpCustomServerProtocolSetup class.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/408.html">HttpCustomClientProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/399.html">HttpCustomServerProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/10.html">Zyan.Communication.Protocols.Http</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,38 +40,23 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public HttpCustomClientProtocolSetup (
-        Versioning <i>versioning</i>,
-        bool <i>encryption</i>,
-        string <i>algorithm</i>,
-        int <i>maxAttempts</i>,
-        bool <i>oaep</i>,
-        IWebProxy <i>webProxy</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public HttpCustomServerProtocolSetup (
+        int <i>httpPort</i>,
+        IAuthenticationProvider <i>authProvider</i>,
+        bool <i>encryption</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">versioning</div>
+<div class="CommentParameterName">httpPort</div>
 <div class="ParameterCommentContainer">
-Versioning behavior
+HTTP port number
+</div>
+<div class="CommentParameterName">authProvider</div>
+<div class="ParameterCommentContainer">
+Authentication provider
 </div>
 <div class="CommentParameterName">encryption</div>
 <div class="ParameterCommentContainer">
 Specifies if the communication sould be encrypted
-</div>
-<div class="CommentParameterName">algorithm</div>
-<div class="ParameterCommentContainer">
-Encryption algorithm (e.G. "3DES")
-</div>
-<div class="CommentParameterName">maxAttempts</div>
-<div class="ParameterCommentContainer">
-Maximum number of connection attempts
-</div>
-<div class="CommentParameterName">oaep</div>
-<div class="ParameterCommentContainer">
-Specifies if OAEP padding should be activated
-</div>
-<div class="CommentParameterName">webProxy</div>
-<div class="ParameterCommentContainer">
-Defines HTTP proxy settings
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

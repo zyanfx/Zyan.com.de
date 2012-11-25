@@ -14,6 +14,7 @@
 <div id="PageTitle">Zyan.Communication.Protocols.Tcp.DuplexChannel Namespace</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Classes</a>&nbsp;
+<a href="#SectionHeader20" onclick="javascript: SetSectionVisibility(20, true); SetExpandCollapseAllToCollapseAll();">Enumerations</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -52,40 +53,61 @@ Public Classes
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
-<td><a href="../../Contents/3/491.html">Connection</a></td>
+<td><a href="../../Contents/3/481.html">Connection</a></td>
 <td>Encapsulates a connection, providing read/write locking for synchronisation.
             Additionally, this should provide a useful position for adding reconnection abilities.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
-<td><a href="../../Contents/3/492.html">ConnectionRole</a></td>
-<td>Defines connection roles. A connection may act as Server or as Client.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
-<td><a href="../../Contents/3/493.html">Message</a></td>
+<td><a href="../../Contents/3/482.html">Message</a></td>
 <td>A message which can be sent or received over a Duplex Channel instance.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
-<td><a href="../../Contents/3/494.html">MessageException</a></td>
+<td><a href="../../Contents/3/483.html">MessageException</a></td>
 <td>Should be thrown when problems with sending or receiving a message occur.</td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
-<td><a href="../../Contents/3/495.html">TcpExChannel</a></td>
+<td><a href="../../Contents/3/484.html">TcpExChannel</a></td>
 <td>A replacement for the standard Tcp remoting channel that allows communication in both directions over a single tcp connection.
             <remarks>TcpExChannel only supports IPv4.</remarks><b>Remoting Configuration Parameters</b><ul><li><strong>port</strong>The tcp port the channel should listen on.  If this is specified, the channel will automatically start listening on that port.</li><li><strong>listen</strong>Indicates the channel should start listening.  This is not required if the port parameter is specified.  If no port is specified the channel will choose a random unused port.</li><li><strong>bufferSize</strong>The size of the buffer to use when sending data over a connection.</li><li><strong>priority</strong>The priority of the channel.</li></ul></td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
-<td><a href="../../Contents/3/496.html">TcpExChannelData</a></td>
+<td><a href="../../Contents/3/485.html">TcpExChannelData</a></td>
 <td>Describes configuration data of a TcpEx channel.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader20" class="SectionHeader">
+<img id="SectionExpanderImg20" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(20);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(20);">
+Public Enumerations
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv20" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEnumeration.gif" alt="Public Enumeration" /></td>
+<td><a href="../../Contents/3/486.html">ConnectionRole</a></td>
+<td>Defines connection roles. A connection may act as Server or as Client.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

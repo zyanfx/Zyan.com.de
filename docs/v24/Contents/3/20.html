@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionVisitor.VisitUnaryExpression Method (UnaryExpression)</title>
+<title>ExpressionConverter.VisitElementInit Method (ElementInit)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionVisitor.VisitUnaryExpression Method (UnaryExpression)</div>
+<div id="PageTitle">ExpressionConverter.VisitElementInit Method (ElementInit)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Visit a <span class="PseudoLink">System.Linq.Expressions.UnaryExpression</span>.
+Converts a <span class="PseudoLink">System.Linq.Expressions.ElementInit</span> to a
+            <a href="../../Contents/3/21.html">SerializableElementInit</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/485.html">ExpressionVisitor</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/373.html">ExpressionConverter</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/25.html">Zyan.InterLinq.Expressions.Helpers</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,17 +41,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected abstract object VisitUnaryExpression (
-        UnaryExpression <i>expression</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected override object VisitElementInit (
+        ElementInit <i>elementInit</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">expression</div>
+<div class="CommentParameterName">elementInit</div>
 <div class="ParameterCommentContainer">
-<span class="PseudoLink">System.Linq.Expressions.UnaryExpression</span> to visit.
+<span class="PseudoLink">System.Linq.Expressions.ElementInit</span> to convert.
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns the result of the visit.
+Returns the converted <a href="../../Contents/3/21.html">SerializableElementInit</a>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanExtensions.RegisterQueryableComponent&lt;T&gt; Method (ZyanComponentHost, T)</title>
+<title>ZyanExtensions.RegisterQueryableComponent Method (ZyanComponentHost, string, Func&lt;Type, IQueryable&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanExtensions.RegisterQueryableComponent&lt;T&gt; Method (ZyanComponentHost, T)</div>
+<div id="PageTitle">ZyanExtensions.RegisterQueryableComponent Method (ZyanComponentHost, string, Func&lt;Type, IQueryable&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Registers IQueryable component
+Registers IQueryable component factory
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/139.html">ZyanExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/131.html">ZyanExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,35 +40,23 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterQueryableComponent&lt;T&gt; (
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterQueryableComponent (
         ZyanComponentHost <i>host</i>,
-        T <i>instance</i>
-) </pre>
-<div style="padding-left: 30px; margin-top: 0px;">
-<table class="InsideCodeBlock">
-<col />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">where T</td>
-<td>&nbsp;: IBaseSource</td>
-</td>
-</tr>
-</table>
-</div>
-</td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-Component type
-</div>
+        string <i>uniqueName</i>,
+        Func&lt;Type, IQueryable&gt; <i>getMethod</i>
+) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">host</div>
 <div class="ParameterCommentContainer">
 Component host
 </div>
-<div class="CommentParameterName">instance</div>
+<div class="CommentParameterName">uniqueName</div>
 <div class="ParameterCommentContainer">
-Component instance
+Unique component name
+</div>
+<div class="CommentParameterName">getMethod</div>
+<div class="ParameterCommentContainer">
+Method returning IQueryable instances of the given type
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

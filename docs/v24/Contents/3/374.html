@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ClientProtocolSetupExtensions.AddChannelSetting Method (IClientProtocolSetup, string, object)</title>
+<title>ClientProtocolSetupExtensions.GetServerFormatter Method (IClientProtocolSetup)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ClientProtocolSetupExtensions.AddChannelSetting Method (IClientProtocolSetup, string, object)</div>
+<div id="PageTitle">ClientProtocolSetupExtensions.GetServerFormatter Method (IClientProtocolSetup)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Adds a single channel setting.
+Returns the configured formatter from the server sink chain of a specified client protocol setup.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/312.html">ClientProtocolSetupExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/304.html">ClientProtocolSetupExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/9.html">Zyan.Communication.Protocols</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,27 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IClientProtocolSetup AddChannelSetting (
-        IClientProtocolSetup <i>protocolSetup</i>,
-        string <i>name</i>,
-        object <i>value</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IServerFormatterSinkProvider GetServerFormatter (
+        IClientProtocolSetup <i>protocolSetup</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">protocolSetup</div>
 <div class="ParameterCommentContainer">
 Protocol setup
 </div>
-<div class="CommentParameterName">name</div>
-<div class="ParameterCommentContainer">
-Name of channel setting (example: "port")
-</div>
-<div class="CommentParameterName">value</div>
-<div class="ParameterCommentContainer">
-Value of channel setting (example: 8080)
-</div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+server formatter sink
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

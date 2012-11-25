@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>InvokeCanceledEventArgs.TrackingID Property </title>
+<title>InvokeCanceledException.GetObjectData Method (SerializationInfo, StreamingContext)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">InvokeCanceledEventArgs.TrackingID Property </div>
+<div id="PageTitle">InvokeCanceledException.GetObjectData Method (SerializationInfo, StreamingContext)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets or sets a unique ID for call tracking.
+Returns object data for serialization.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/45.html">InvokeCanceledEventArgs</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/45.html">InvokeCanceledException</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,10 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public Guid TrackingID { get; set; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override void GetObjectData (
+        SerializationInfo <i>info</i>,
+        StreamingContext <i>context</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">info</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+Serialization info
+</div>
+<div class="CommentParameterName">context</div>
+<div class="ParameterCommentContainer">
+Streaming context for serialization
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

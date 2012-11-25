@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionVisitor.VisitObject&lt;T&gt; Method (object)</title>
+<title>ExpressionVisitor.VisitUnknownExpression Method (Expression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionVisitor.VisitObject&lt;T&gt; Method (object)</div>
+<div id="PageTitle">ExpressionVisitor.VisitUnknownExpression Method (Expression)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Visits an <see langword="object" /> and returns a result of the type <span class="Code">T</span>.
+Handles the case, when the type of the <a href="../../Contents/2/478.html">Expression</a> is unkonwn.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/485.html">ExpressionVisitor</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/477.html">ExpressionVisitor</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/25.html">Zyan.InterLinq.Expressions.Helpers</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,22 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected T VisitObject&lt;T&gt; (
-        object <i>objectToVisit</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected virtual object VisitUnknownExpression (
+        Expression <i>expression</i>
 ) </pre></td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-<span class="PseudoLink">System.Type</span> of the returned value.
-</div>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">objectToVisit</div>
+<div class="CommentParameterName">expression</div>
 <div class="ParameterCommentContainer">
-<see langword="object" /> to visit.
+The unknown <a href="../../Contents/2/478.html">Expression</a>.
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns a result of the type <span class="Code">T</span>.
+Returns the result of a unknown <a href="../../Contents/2/478.html">Expression</a>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>NullAuthenticationProvider.Authenticate Method (AuthRequestMessage)</title>
+<title>AccountLockedException.GetObjectData Method (SerializationInfo, StreamingContext)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">NullAuthenticationProvider.Authenticate Method (AuthRequestMessage)</div>
+<div id="PageTitle">AccountLockedException.GetObjectData Method (SerializationInfo, StreamingContext)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Authentifiziert einen bestimmten Benutzer anhand seiner Anmeldeinformationen.
+Sets the <span class="PseudoLink">System.Runtime.Serialization.SerializationInfo</span> with information about the <a href="../../Contents/4/249.html">AccountLockedException</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/235.html">NullAuthenticationProvider</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/15.html">Zyan.Communication.Security</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/249.html">AccountLockedException</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/16.html">Zyan.Communication.Security.Exceptions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
 <div id="SectionHeader0" class="SectionHeader">
@@ -40,17 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public AuthResponseMessage Authenticate (
-        AuthRequestMessage <i>authRequest</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override void GetObjectData (
+        SerializationInfo <i>info</i>,
+        StreamingContext <i>context</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">authRequest</div>
+<div class="CommentParameterName">info</div>
 <div class="ParameterCommentContainer">
-Authentifizierungs-Anfragenachricht mit Anmeldeinformationen
+The <span class="PseudoLink">System.Runtime.Serialization.SerializationInfo</span> that holds the serialized object data about the exception being thrown.
 </div>
-<div class="CommentHeader">Return Value</div>
+<div class="CommentParameterName">context</div>
 <div class="ParameterCommentContainer">
-Antwortnachricht des Authentifizierungssystems
+The <span class="PseudoLink">System.Runtime.Serialization.StreamingContext</span> that contains contextual information about the source or destination.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

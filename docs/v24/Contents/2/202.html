@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanExtensions.RegisterQueryableComponent Method (ZyanComponentHost, string, Func&lt;IEntitySource&gt;)</title>
+<title>ZyanObjectQueryHandler.Get Method (Type)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanExtensions.RegisterQueryableComponent Method (ZyanComponentHost, string, Func&lt;IEntitySource&gt;)</div>
+<div id="PageTitle">ZyanObjectQueryHandler.Get Method (Type)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Registers IQueryable component factory
+Returns an <span class="PseudoLink">System.Linq.IQueryable</span>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/139.html">ZyanExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/132.html">ZyanObjectQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,23 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterQueryableComponent (
-        ZyanComponentHost <i>host</i>,
-        string <i>uniqueName</i>,
-        Func&lt;IEntitySource&gt; <i>factoryMethod</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public IQueryable Get (
+        Type <i>type</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">host</div>
+<div class="CommentParameterName">type</div>
 <div class="ParameterCommentContainer">
-Component host
+Type of the returned <span class="PseudoLink">System.Linq.IQueryable</span>.
 </div>
-<div class="CommentParameterName">uniqueName</div>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Unique component name
-</div>
-<div class="CommentParameterName">factoryMethod</div>
-<div class="ParameterCommentContainer">
-Factory method to create component instance
+Returns an <span class="PseudoLink">System.Linq.IQueryable</span>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

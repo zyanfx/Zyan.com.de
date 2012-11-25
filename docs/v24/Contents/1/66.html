@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ActivationType.Singleton Field</title>
+<title>CallInterceptorBuilder&lt;T&gt;.Action Method (Expression&lt;Action&lt;T&gt;&gt;, CallInterceptionDelegate)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ActivationType.Singleton Field</div>
+<div id="PageTitle">CallInterceptorBuilder&lt;T&gt;.Action Method (Expression&lt;Action&lt;T&gt;&gt;, CallInterceptionDelegate)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Component instance is created on first call and reused for all subsequent calls.
-            <remarks>Singleton activated components must be thread-safe</remarks>
+Creates new CallInterceptor for the given method.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/29.html">ActivationType</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/33.html">CallInterceptorBuilder&lt;T&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,7 +40,23 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable">public const ActivationType Singleton = 2</td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public CallInterceptor Action (
+        Expression&lt;Action&lt;T&gt;&gt; <i>expression</i>,
+        CallInterceptionDelegate <i>handler</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">expression</div>
+<div class="ParameterCommentContainer">
+LINQ expression of the method to intercept.
+</div>
+<div class="CommentParameterName">handler</div>
+<div class="ParameterCommentContainer">
+Interception handler.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>FilteredEventHandler Class Members</title>
+<title>FilteredEventHandler.AddFilter&lt;TEventArgs&gt; Method (EventHandler&lt;TEventArgs&gt;, IEventFilter, bool)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">FilteredEventHandler Class Members</div>
+<div id="PageTitle">FilteredEventHandler.AddFilter&lt;TEventArgs&gt; Method (EventHandler&lt;TEventArgs&gt;, IEventFilter, bool)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,56 +24,61 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Helper class for filtered event handlers.
+Creates filtered event handler of type EventHandler{TEventArgs}.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/57.html">FilteredEventHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/49.html">FilteredEventHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/7.html">Zyan.Communication.Delegates</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Syntax
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static EventHandler&lt;TEventArgs&gt; AddFilter&lt;TEventArgs&gt; (
+        EventHandler&lt;TEventArgs&gt; <i>eventHandler</i>,
+        IEventFilter <i>eventFilter</i>,
+        bool <i>filterLocally</i>
+) </pre>
+<div style="padding-left: 30px; margin-top: 0px;">
+<table class="InsideCodeBlock">
+<col />
+<col width="100%" />
 <tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/103.html">AddFilter</a></td>
-<td>Creates filtered event handler of type EventHandler.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/104.html">AddFilter&lt;TEventArgs&gt;</a></td>
-<td>Overloaded. Creates filtered event handler of type EventHandler{TEventArgs}.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/105.html">Create</a></td>
-<td>Creates filtered event handler of type EventHandler.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/106.html">Create&lt;TEventArgs&gt;</a></td>
-<td>Overloaded. Creates filtered event handler of type EventHandler{TEventArgs}.</td>
+<td class="NoWrapTop">where TEventArgs</td>
+<td>&nbsp;: EventArgs</td>
+</td>
 </tr>
 </table>
+</div>
+</td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">TEventArgs</div>
+<div class="ParameterCommentContainer">
+The type of the event arguments.
+</div>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">eventHandler</div>
+<div class="ParameterCommentContainer">
+The event handler.
+</div>
+<div class="CommentParameterName">eventFilter</div>
+<div class="ParameterCommentContainer">
+The event filter.
+</div>
+<div class="CommentParameterName">filterLocally</div>
+<div class="ParameterCommentContainer">
+Whether the filter should also work when used locally.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<p>There is no description.</p>
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

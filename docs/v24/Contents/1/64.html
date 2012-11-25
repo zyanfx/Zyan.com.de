@@ -6,14 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ActivationType Class Members</title>
+<title>CallInterceptorBuilder&lt;T&gt; Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ActivationType Class Members</div>
+<div id="PageTitle">CallInterceptorBuilder&lt;T&gt; Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader25" onclick="javascript: SetSectionVisibility(25, true); SetExpandCollapseAllToCollapseAll();">Fields</a>&nbsp;
+<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,22 +26,22 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Enumeration of supported activation types.
+Strong-typed builder for individual call interceptors.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/29.html">ActivationType</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/33.html">CallInterceptorBuilder&lt;T&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader25" class="SectionHeader">
-<img id="SectionExpanderImg25" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(25);" />
+<div id="SectionHeader30" class="SectionHeader">
+<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(25);">
-Public Fields
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
+Public Constructors
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv25" class="SectionContainer">
+<div id="SectionContainerDiv30" class="SectionContainer">
 <table class="MembersTable">
 <col width="7%" />
 <col width="38%" />
@@ -51,23 +53,123 @@ Public Fields
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicField.gif" alt="Public Field" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/1/65.html">SingleCall</a></td>
-<td>Component instance lives only for a single call.
-            <remarks>Single call activated components need not be thread-safe</remarks></td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/65.html">CallInterceptorBuilder</a></td>
+<td>Overloaded. Initializes a new instance of the <a href="../../Contents/1/33.html">CallInterceptorBuilder&lt;T&gt;</a> class.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicField.gif" alt="Public Field" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/1/66.html">Singleton</a></td>
-<td>Component instance is created on first call and reused for all subsequent calls.
-            <remarks>Singleton activated components must be thread-safe</remarks></td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/66.html">Action</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicField.gif" alt="Public Field" /></td>
-<td><a href="../../Contents/1/67.html">value__</a></td>
-<td><p>There is no summary.</p></td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/67.html">Action&lt;T1&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/68.html">Action&lt;T1, T2&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/69.html">Action&lt;T1, T2, T3&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/70.html">Action&lt;T1, T2, T3, T4&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/71.html">Action&lt;T1, T2, T3, T4, T5&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/72.html">Func&lt;T1&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/73.html">Func&lt;T1, T2&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/74.html">Func&lt;T1, T2, T3&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/75.html">Func&lt;T1, T2, T3, T4&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/1/76.html">Func&lt;T1, T2, T3, T4, T5&gt;</a></td>
+<td>Creates new CallInterceptor for the given method.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader40" class="SectionHeader">
+<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
+Public Properties
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv40" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/1/77.html">UniqueName</a></td>
+<td>Gets the unique name of the intercepted component.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

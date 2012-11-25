@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanProxy Constructor (string, Type, ZyanConnection, bool, Guid, string, bool, ActivationType)</title>
+<title>IComponentCatalog.GetRegistration Method (string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanProxy Constructor (string, Type, ZyanConnection, bool, Guid, string, bool, ActivationType)</div>
+<div id="PageTitle">IComponentCatalog.GetRegistration Method (string)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a new instance of the <a href="../../Contents/1/59.html">ZyanProxy</a> class.
+Gets registration data for a specified component by its interface name.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/59.html">ZyanProxy</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/57.html">IComponentCatalog</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,48 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public ZyanProxy (
-        string <i>uniqueName</i>,
-        Type <i>type</i>,
-        ZyanConnection <i>connection</i>,
-        bool <i>implicitTransactionTransfer</i>,
-        Guid <i>sessionID</i>,
-        string <i>componentHostName</i>,
-        bool <i>autoLoginOnExpiredSession</i>,
-        ActivationType <i>activationType</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract ComponentRegistration GetRegistration (
+        string <i>interfaceName</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">uniqueName</div>
+<div class="CommentParameterName">interfaceName</div>
 <div class="ParameterCommentContainer">
-Unique component name.
+Name of the component´s interface
 </div>
-<div class="CommentParameterName">type</div>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Component interface type.
-</div>
-<div class="CommentParameterName">connection</div>
-<div class="ParameterCommentContainer">
-<a href="../../Contents/1/54.html">ZyanConnection</a> instance.
-</div>
-<div class="CommentParameterName">implicitTransactionTransfer</div>
-<div class="ParameterCommentContainer">
-Specifies whether transactions should be passed implicitly.
-</div>
-<div class="CommentParameterName">sessionID</div>
-<div class="ParameterCommentContainer">
-Session ID.
-</div>
-<div class="CommentParameterName">componentHostName</div>
-<div class="ParameterCommentContainer">
-Name of the remote component host.
-</div>
-<div class="CommentParameterName">autoLoginOnExpiredSession</div>
-<div class="ParameterCommentContainer">
-Specifies whether Zyan should login automatically with cached credentials after the session is expired.
-</div>
-<div class="CommentParameterName">activationType</div>
-<div class="ParameterCommentContainer">
-Component activation type
+Component registration
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

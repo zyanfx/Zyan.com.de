@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanExtensions.RegisterQueryableComponent Method (ZyanComponentHost, Func&lt;IObjectSource&gt;, ActivationType)</title>
+<title>ZyanObjectQueryHandler.Get&lt;T&gt; Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanExtensions.RegisterQueryableComponent Method (ZyanComponentHost, Func&lt;IObjectSource&gt;, ActivationType)</div>
+<div id="PageTitle">ZyanObjectQueryHandler.Get&lt;T&gt; Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Registers IQueryable component factory
+Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/139.html">ZyanExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/132.html">ZyanObjectQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,23 +40,27 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterQueryableComponent (
-        ZyanComponentHost <i>host</i>,
-        Func&lt;IObjectSource&gt; <i>factoryMethod</i>,
-        ActivationType <i>activationType</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">host</div>
-<div class="ParameterCommentContainer">
-Component host
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public IQueryable&lt;T&gt; Get&lt;T&gt; ()</pre>
+<div style="padding-left: 30px; margin-top: 0px;">
+<table class="InsideCodeBlock">
+<col />
+<col width="100%" />
+<tr>
+<td class="NoWrapTop">where T</td>
+<td>&nbsp;: class</td>
+</td>
+</tr>
+</table>
 </div>
-<div class="CommentParameterName">factoryMethod</div>
+</td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">T</div>
 <div class="ParameterCommentContainer">
-Factory method to create component instance
+Generic Argument of the returned <span class="PseudoLink">System.Linq.IQueryable`1</span>.
 </div>
-<div class="CommentParameterName">activationType</div>
+<div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Activation type
+Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

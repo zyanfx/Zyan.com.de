@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ClientProtocolSetup._channelFactory Field</title>
+<title>ClientProtocolSetup.GetClientProtocol Method (string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ClientProtocolSetup._channelFactory Field</div>
+<div id="PageTitle">ClientProtocolSetup.GetClientProtocol Method (string)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Delegate to factory method, which creates the .NET Remoting channel instance.
+Gets the default client protocol setup for the given URL.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/311.html">ClientProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/303.html">ClientProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/9.html">Zyan.Communication.Protocols</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,7 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable">protected Func&lt;IDictionary, IClientChannelSinkProvider, IServerChannelSinkProvider, IChannel&gt; _channelFactory</td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IClientProtocolSetup GetClientProtocol (
+        string <i>url</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">url</div>
+<div class="ParameterCommentContainer">
+The URL to connect to.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+<a href="../../Contents/2/288.html">IClientProtocolSetup</a> implementation, or null, if the default protocol is not found.
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

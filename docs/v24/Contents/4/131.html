@@ -6,14 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpBinaryServerProtocolSetup Constructor</title>
+<title>TcpDuplexClientProtocolSetup Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpBinaryServerProtocolSetup Constructor</div>
+<div id="PageTitle">TcpDuplexClientProtocolSetup Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
+<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,22 +26,22 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Creates a new instance of the TcpBinaryServerProtocolSetup class.
+Client protocol setup for bi-directional TCP communication with support for user defined authentication and security.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/84.html">TcpBinaryServerProtocolSetup</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/75.html">TcpDuplexClientProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader0" class="SectionHeader">
-<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
+<div id="SectionHeader30" class="SectionHeader">
+<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Overload List
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
+Public Constructors
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv0" class="SectionContainer">
+<div id="SectionContainerDiv30" class="SectionContainer">
 <table class="MembersTable">
 <col width="7%" />
 <col width="38%" />
@@ -52,26 +54,74 @@ Overload List
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/139.html">TcpBinaryServerProtocolSetup ()</a></td>
-<td>Creates a new instance of the TcpBinaryServerProtocolSetup class.</td>
+<td><a href="../../Contents/4/132.html">TcpDuplexClientProtocolSetup</a></td>
+<td>Overloaded. Creates a new instance of the TcpDuplexClientProtocolSetup class.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/140.html">TcpBinaryServerProtocolSetup (Versioning)</a></td>
-<td>Creates a new instance of the TcpBinaryServerProtocolSetup class.</td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/133.html">CreateChannel</a></td>
+<td>Creates and configures a Remoting channel.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader40" class="SectionHeader">
+<img id="SectionExpanderImg40" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(40);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(40);">
+Public Properties
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv40" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/141.html">TcpBinaryServerProtocolSetup (int)</a></td>
-<td>Creates a new instance of the TcpBinaryServerProtocolSetup class.</td>
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/134.html">TcpKeepAliveEnabled</a></td>
+<td>Enables or disables TCP KeepAlive.</td>
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/142.html">TcpBinaryServerProtocolSetup (Versioning, int)</a></td>
-<td>Creates a new instance of the TcpBinaryServerProtocolSetup class.</td>
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/135.html">TcpKeepAliveInterval</a></td>
+<td>Gets or sets the TCP KeepAlive interval in milliseconds</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/4/136.html">TcpKeepAliveTime</a></td>
+<td>Gets or sets the TCP KeepAlive time in milliseconds.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

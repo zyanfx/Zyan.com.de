@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanExtensions.RegisterQueryHandler Method</title>
+<title>ZyanExtensions.RegisterQueryableComponent&lt;T&gt; Method (ZyanComponentHost, T)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanExtensions.RegisterQueryHandler Method</div>
+<div id="PageTitle">ZyanExtensions.RegisterQueryableComponent&lt;T&gt; Method (ZyanComponentHost, T)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Registers IQueryHandler as IQueryable component
+Registers IQueryable component
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/139.html">ZyanExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/131.html">ZyanExtensions</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -34,34 +34,42 @@ Registers IQueryHandler as IQueryable component
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Overload List
+Syntax
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static void RegisterQueryableComponent&lt;T&gt; (
+        ZyanComponentHost <i>host</i>,
+        T <i>instance</i>
+) </pre>
+<div style="padding-left: 30px; margin-top: 0px;">
+<table class="InsideCodeBlock">
+<col />
+<col width="100%" />
 <tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/191.html">ZyanExtensions.RegisterQueryHandler (ZyanComponentHost, IQueryHandler)</a></td>
-<td>Registers IQueryHandler as IQueryable component</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
-<td><a href="../../Contents/2/192.html">ZyanExtensions.RegisterQueryHandler (ZyanComponentHost, string, IQueryHandler)</a></td>
-<td>Registers IQueryHandler as IQueryable component</td>
+<td class="NoWrapTop">where T</td>
+<td>&nbsp;: IBaseSource</td>
+</td>
 </tr>
 </table>
+</div>
+</td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">T</div>
+<div class="ParameterCommentContainer">
+Component type
+</div>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">host</div>
+<div class="ParameterCommentContainer">
+Component host
+</div>
+<div class="CommentParameterName">instance</div>
+<div class="ParameterCommentContainer">
+Component instance
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

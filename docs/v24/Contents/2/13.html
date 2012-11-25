@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>CounterRemotingException Constructor (string)</title>
+<title>CounterServerChannelSinkProvider Constructor (IDictionary, ICollection)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">CounterRemotingException Constructor (string)</div>
+<div id="PageTitle">CounterServerChannelSinkProvider Constructor (IDictionary, ICollection)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Erstellt eine neue Instanz von CounterRemotingException.
+Erzeugt eine neue Instanz von CounterServerChannelSinkProvider.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/499.html">CounterRemotingException</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/492.html">CounterServerChannelSinkProvider</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/4.html">Zyan.Communication.ChannelSinks.Counter</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,13 +40,18 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public CounterRemotingException (
-        string <i>message</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public CounterServerChannelSinkProvider (
+        IDictionary <i>properties</i>,
+        ICollection <i>providerData</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">message</div>
+<div class="CommentParameterName">properties</div>
 <div class="ParameterCommentContainer">
-Fehlermeldung
+Konfigurationseinstellungen (z.B. aus der App.config)
+</div>
+<div class="CommentParameterName">providerData</div>
+<div class="ParameterCommentContainer">
+Optionale Anbieterdaten
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

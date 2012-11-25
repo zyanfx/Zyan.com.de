@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>InterLinqQueryProvider.Execute&lt;TResult&gt; Method (Expression)</title>
+<title>ZyanClientQueryHandler Constructor (string)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">InterLinqQueryProvider.Execute&lt;TResult&gt; Method (Expression)</div>
+<div id="PageTitle">ZyanClientQueryHandler Constructor (string)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Executes the strongly-typed query represented by a specified <span class="PseudoLink">System.Linq.Expressions.Expression</span> tree.
+Creates ZyanClientQueryHandler instance.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/136.html">InterLinqQueryProvider</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/129.html">ZyanClientQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,22 +40,13 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public virtual TResult Execute&lt;TResult&gt; (
-        Expression <i>expression</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public ZyanClientQueryHandler (
+        string <i>serverUrl</i>
 ) </pre></td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">TResult</div>
-<div class="ParameterCommentContainer">
-The <span class="PseudoLink">System.Type</span> of the value that is returned by the query execution.
-</div>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">expression</div>
+<div class="CommentParameterName">serverUrl</div>
 <div class="ParameterCommentContainer">
-An <span class="PseudoLink">System.Linq.Expressions.Expression</span> that represents a LINQ query.
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-A value of type TResult that results from executing the specified query.
+URL where the Remote Objects will be published.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

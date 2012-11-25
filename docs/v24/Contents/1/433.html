@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanProxy.Invoke Method (IMessage)</title>
+<title>IComponentCatalog.RegisterComponent&lt;I&gt; Method (string, Func&lt;object&gt;, ActivationType, Action&lt;object&gt;)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanProxy.Invoke Method (IMessage)</div>
+<div id="PageTitle">IComponentCatalog.RegisterComponent&lt;I&gt; Method (string, Func&lt;object&gt;, ActivationType, Action&lt;object&gt;)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Invokes the method that is specified in the provided IMessage on the remote object that is represented by the current instance.
+Registers a component in the component catalog.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/1/59.html">ZyanProxy</a><br />
+<b>Declaring type:</b> <a href="../../Contents/1/57.html">IComponentCatalog</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/2.html">Zyan.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,17 +40,33 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override IMessage Invoke (
-        IMessage <i>message</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract void RegisterComponent&lt;I&gt; (
+        string <i>uniqueName</i>,
+        Func&lt;object&gt; <i>factoryMethod</i>,
+        ActivationType <i>activationType</i>,
+        Action&lt;object&gt; <i>cleanUpHandler</i>
 ) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">message</div>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">I</div>
 <div class="ParameterCommentContainer">
-Remoting <span class="PseudoLink">System.Runtime.Remoting.Messaging.IMessage</span> that contains information about the method call.
+Interface type of the component
 </div>
-<div class="CommentHeader">Return Value</div>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">uniqueName</div>
 <div class="ParameterCommentContainer">
-The message returned by the invoked method, containing the return value and any out or ref parameters.
+Unique component name
+</div>
+<div class="CommentParameterName">factoryMethod</div>
+<div class="ParameterCommentContainer">
+Delegate of factory method for external instance creation
+</div>
+<div class="CommentParameterName">activationType</div>
+<div class="ParameterCommentContainer">
+Activation type (SingleCall/Singleton)
+</div>
+<div class="CommentParameterName">cleanUpHandler</div>
+<div class="ParameterCommentContainer">
+Delegate for external clean up method
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerProtocolSetupExtensions.AddServerSink Method (IServerProtocolSetup, IServerChannelSinkProvider)</title>
+<title>IClientProtocolSetup.ClientSinkChain Property </title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerProtocolSetupExtensions.AddServerSink Method (IServerProtocolSetup, IServerChannelSinkProvider)</div>
+<div id="PageTitle">IClientProtocolSetup.ClientSinkChain Property </div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Adds a specified server sink provider into the server sink chain.
+Gets a list of all Remoting sinks from the client sink chain.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/316.html">ServerProtocolSetupExtensions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/288.html">IClientProtocolSetup</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/9.html">Zyan.Communication.Protocols</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,22 +40,10 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static IServerProtocolSetup AddServerSink (
-        IServerProtocolSetup <i>protocolSetup</i>,
-        IServerChannelSinkProvider <i>serverSinkProvider</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">protocolSetup</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract List&lt;IClientChannelSinkProvider&gt; ClientSinkChain { get; }</pre></td></tr></table>
+<div class="CommentHeader">Property Value</div>
 <div class="ParameterCommentContainer">
-Protocol setup
-</div>
-<div class="CommentParameterName">serverSinkProvider</div>
-<div class="ParameterCommentContainer">
-Server sink provider to be added
-</div>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Protocol setup
+<p>There is no description.</p>
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

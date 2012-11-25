@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>TcpExChannelData.ChannelUris Property </title>
+<title>TcpCustomClientProtocolSetup.SocketCachingEnabled Property </title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">TcpExChannelData.ChannelUris Property </div>
+<div id="PageTitle">TcpCustomClientProtocolSetup.SocketCachingEnabled Property </div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,13 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets an array of all registered channel URIs.
+Gets or sets, if sockets should be cached and reused.
+            <remarks>
+            Caching sockets may reduce ressource consumption but may cause trouble in Network Load Balancing clusters.
+            </remarks>
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/496.html">TcpExChannelData</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/73.html">TcpCustomClientProtocolSetup</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/13.html">Zyan.Communication.Protocols.Tcp</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
 <div id="SectionHeader0" class="SectionHeader">
@@ -40,7 +43,7 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public string[] ChannelUris { get; }</pre></td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public bool SocketCachingEnabled { get; set; }</pre></td></tr></table>
 <div class="CommentHeader">Property Value</div>
 <div class="ParameterCommentContainer">
 <p>There is no description.</p>

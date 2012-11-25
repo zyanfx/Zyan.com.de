@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SerializableExpression Class Members</title>
+<title>SerializableBinaryExpression Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SerializableExpression Class Members</div>
+<div id="PageTitle">SerializableBinaryExpression Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
 <a href="#SectionHeader40" onclick="javascript: SetSectionVisibility(40, true); SetExpandCollapseAllToCollapseAll();">Properties</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
@@ -25,22 +25,22 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-A serializable version of <span class="PseudoLink">System.Linq.Expressions.Expression</span>.
+A serializable version of <span class="PseudoLink">System.Linq.Expressions.BinaryExpression</span>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/224.html">SerializableExpression</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/350.html">SerializableBinaryExpression</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader32" class="SectionHeader">
-<img id="SectionExpanderImg32" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(32);" />
+<div id="SectionHeader30" class="SectionHeader">
+<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(32);">
-Protected Constructors
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
+Public Constructors
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv32" class="SectionContainer">
+<div id="SectionContainerDiv30" class="SectionContainer">
 <table class="MembersTable">
 <col width="7%" />
 <col width="38%" />
@@ -52,36 +52,9 @@ Protected Constructors
 </tr>
 <tr>
 <td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" /></td>
-<td><a href="../../Contents/2/387.html">SerializableExpression</a></td>
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/2/387.html">SerializableBinaryExpression</a></td>
 <td>Overloaded. Default constructor for serialization.</td>
-</tr>
-</table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/2/388.html">ToString</a></td>
-<td>Builds a <see langword="string" /> representing the <span class="PseudoLink">System.Linq.Expressions.Expression</span>.</td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
@@ -107,20 +80,32 @@ Public Properties
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/2/389.html">HashCode</a></td>
-<td>The hashcode of the original <span class="PseudoLink">System.Linq.Expressions.Expression</span>.</td>
+<td><a href="../../Contents/2/388.html">Conversion</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.BinaryExpression.Conversion</span></td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/2/390.html">NodeType</a></td>
-<td>See <span class="PseudoLink">System.Linq.Expressions.Expression.NodeType</span></td>
+<td><a href="../../Contents/2/389.html">IsLiftedToNull</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.BinaryExpression.IsLiftedToNull</span></td>
 </tr>
 <tr>
 <td class="IconColumn">
 <img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
-<td><a href="../../Contents/2/391.html">Type</a></td>
-<td>See <span class="PseudoLink">System.Linq.Expressions.Expression.Type</span></td>
+<td><a href="../../Contents/2/390.html">Left</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.BinaryExpression.Left</span></td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/2/391.html">Method</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.BinaryExpression.Method</span></td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicProperty.gif" alt="Public Property" /></td>
+<td><a href="../../Contents/2/392.html">Right</a></td>
+<td>See <span class="PseudoLink">System.Linq.Expressions.BinaryExpression.Right</span></td>
 </tr>
 </table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>

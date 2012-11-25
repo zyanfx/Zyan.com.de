@@ -6,16 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ICompressible Interface</title>
+<title>CompressionClientChannelSinkProvider Constructor (int, CompressionMethod)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ICompressible Interface</div>
+<div id="PageTitle">CompressionClientChannelSinkProvider Constructor (int, CompressionMethod)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
-<a href="#SectionHeader2" onclick="javascript: SetSectionVisibility(2, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -26,12 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-The ICompressible interface implements a property that returns a flag,
-            which determines if the request or response should be compressed.
-            This interface is used in conjuction with the compression sink implementation
-            and allows to determine dynamically if the request or response is
-            to be compressed.
+Initializes a new instance of the <a href="../../Contents/1/462.html">CompressionClientChannelSinkProvider</a> class.
 <div id="ItemLocation">
+<b>Declaring type:</b> <a href="../../Contents/1/462.html">CompressionClientChannelSinkProvider</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/3.html">Zyan.Communication.ChannelSinks.Compression</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -45,44 +40,19 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
-<col width="0%" />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">public interface ICompressible </td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</td></tr></table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader1" class="SectionHeader">
-<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Remarks
-</span>
-</span>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public CompressionClientChannelSinkProvider (
+        int <i>compressionThreshold</i>,
+        CompressionMethod <i>compressionMethod</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">compressionThreshold</div>
+<div class="ParameterCommentContainer">
+The compression threshold.
 </div>
-
-<div id="SectionContainerDiv1" class="SectionContainer">
-<div class="RemarksContainer">
-The following is the order, in which the criteria are evaluated to determine
-            if the request or response is to be compressed: Threshold should be greater than
-            zero. NonCompressible marks the object as an exempt. If object size is
-            greater than threshold and not marked as NonCompressible, the ICompressible is evaluated.
+<div class="CommentParameterName">compressionMethod</div>
+<div class="ParameterCommentContainer">
+The compression method.
 </div>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader2" class="SectionHeader">
-<img id="SectionExpanderImg2" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(2);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(2);">
-Members
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv2" class="SectionContainer">
-<p>Click <a href="../../Contents/1/496.html">here</a> to see the list of members.</p>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

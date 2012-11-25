@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>PasswordExpiredException Constructor</title>
+<title>SessionManagerBase.CreateServerSession Method (Guid, DateTime, IIdentity)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">PasswordExpiredException Constructor</div>
+<div id="PageTitle">SessionManagerBase.CreateServerSession Method (Guid, DateTime, IIdentity)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,62 +24,44 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.
+Creates a new <a href="../../Contents/1/50.html">ServerSession</a> with the given arguments.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/263.html">PasswordExpiredException</a><br />
-<b>Namespace:</b> <a href="../../Contents/1/16.html">Zyan.Communication.Security.Exceptions</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/283.html">SessionManagerBase</a><br />
+<b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
 <div id="SectionHeader0" class="SectionHeader">
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Overload List
+Syntax
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/289.html">PasswordExpiredException ()</a></td>
-<td>Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/290.html">PasswordExpiredException (string)</a></td>
-<td>Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/291.html">PasswordExpiredException (string, Exception)</a></td>
-<td>Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/292.html">PasswordExpiredException (string, string)</a></td>
-<td>Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/4/293.html">PasswordExpiredException (string, string, Exception)</a></td>
-<td>Initializes a new instance of the <a href="../../Contents/4/263.html">PasswordExpiredException</a> class.</td>
-</tr>
-</table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected virtual ServerSession CreateServerSession (
+        Guid <i>sessionID</i>,
+        DateTime <i>timeStamp</i>,
+        IIdentity <i>identity</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sessionID</div>
+<div class="ParameterCommentContainer">
+Session unique identifier.
+</div>
+<div class="CommentParameterName">timeStamp</div>
+<div class="ParameterCommentContainer">
+Session time stamp.
+</div>
+<div class="CommentParameterName">identity</div>
+<div class="ParameterCommentContainer">
+<span class="PseudoLink">System.Security.Principal.IIdentity</span> for the user to associate a new session with.
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+New <a href="../../Contents/1/50.html">ServerSession</a> instance associated with the current <a href="../../Contents/4/284.html">ISessionManager</a> component.
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

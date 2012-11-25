@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SessionManagerBase Constructor (int, int)</title>
+<title>SqlSessionManager Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SessionManagerBase Constructor (int, int)</div>
+<div id="PageTitle">SqlSessionManager Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader30" onclick="javascript: SetSectionVisibility(30, true); SetExpandCollapseAllToCollapseAll();">Constructors</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,35 +25,125 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes a <a href="../../Contents/4/295.html">SessionManagerBase</a> instance.
+Session manager backed with SQL Server Database storage.
+            <remarks>
+            Session table has the following structure:
+            <ul><li><strong>SessionID</strong>uniqueidentifier</li><li><strong>SessionTimestamp</strong>datetime</li><li><strong>IdentityName</strong>nvarchar(255)</li></ul></remarks>
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/4/295.html">SessionManagerBase</a><br />
+<b>Declaring type:</b> <a href="../../Contents/4/286.html">SqlSessionManager</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/17.html">Zyan.Communication.SessionMgmt</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader0" class="SectionHeader">
-<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
+<div id="SectionHeader30" class="SectionHeader">
+<img id="SectionExpanderImg30" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(30);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(30);">
+Public Constructors
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public SessionManagerBase (
-        int <i>sessionAgeLimit</i>,
-        int <i>sessionSweepInterval</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">sessionAgeLimit</div>
-<div class="ParameterCommentContainer">
-Session age limit (in minutes).
+<div id="SectionContainerDiv30" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
+<td><a href="../../Contents/4/322.html">SqlSessionManager</a></td>
+<td>Creates a new instance of <a href="../../Contents/4/286.html">SqlSessionManager</a></td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods</span>
+ <span class="SeeAlsoInSectionHeader">(see also: <a href="#SectionHeader37" onclick="javascript: SetSectionVisibility(37, true); SetExpandCollapseAllToCollapseAll();">Protected</a> Methods)</span>
+</span>
 </div>
-<div class="CommentParameterName">sessionSweepInterval</div>
-<div class="ParameterCommentContainer">
-Session sweep interval (in minutes).
+
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/323.html">ExistSession</a></td>
+<td>Checks whether the given session exists.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/324.html">GetSessionBySessionID</a></td>
+<td>Returns <a href="../../Contents/1/50.html">ServerSession</a> identified by sessionID.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/325.html">GetSessionVariable</a></td>
+<td>Returns the value of the session variable.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/326.html">RemoveSession</a></td>
+<td>Removes the given session from the session list.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/327.html">SetSessionVariable</a></td>
+<td>Sets the new value of the session variable.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/328.html">StoreSession</a></td>
+<td>Stores the given <a href="../../Contents/1/50.html">ServerSession</a> to the session list.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader37" class="SectionHeader">
+<img id="SectionExpanderImg37" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(37);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(37);">
+Protected Methods
+</span>
+</span>
 </div>
+
+<div id="SectionContainerDiv37" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
+<td><a href="../../Contents/4/329.html">SweepExpiredSessions</a></td>
+<td>Removes all sessions older than SessionAgeLimit.</td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

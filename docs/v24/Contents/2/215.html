@@ -6,14 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ZyanQueryHandler Class Members</title>
+<title>ZyanServerQueryHandler.Retrieve Method (SerializableExpression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ZyanQueryHandler Class Members</div>
+<div id="PageTitle">ZyanServerQueryHandler.Retrieve Method (SerializableExpression)</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -24,83 +25,53 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Abstract query handler implementation
+Retrieves data from the server by an <a href="../../Contents/2/216.html">Expression</a> tree.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/141.html">ZyanQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/134.html">ZyanServerQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader32" class="SectionHeader">
-<img id="SectionExpanderImg32" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(32);" />
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(32);">
-Protected Constructors
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Syntax
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv32" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/ProtectedMethod.gif" alt="Protected Method" /></td>
-<td><a href="../../Contents/2/216.html">ZyanQueryHandler</a></td>
-<td><p>There is no summary.</p></td>
-</tr>
-</table>
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public object Retrieve (
+        SerializableExpression <i>expression</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">expression</div>
+<div class="ParameterCommentContainer">
+<a href="../../Contents/2/216.html">Expression</a> tree 
+                containing selection and projection.
+            
+</div>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+Returns requested data.
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader35" class="SectionHeader">
-<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
+<div id="SectionHeader1" class="SectionHeader">
+<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
-Public Methods
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
+Remarks
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv35" class="SectionContainer">
-<table class="MembersTable">
-<col width="7%" />
-<col width="38%" />
-<col width="55%" />
-<tr>
-<th>&nbsp;</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/2/217.html">CloseSession</a></td>
-<td>Tells the <a href="../../Contents/2/132.html">IQueryHandler</a> to close the current session.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/2/218.html">Get</a></td>
-<td>Returns an <span class="PseudoLink">System.Linq.IQueryable</span>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" /></td>
-<td><a href="../../Contents/2/219.html">Get&lt;T&gt;</a></td>
-<td>Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.</td>
-</tr>
-<tr>
-<td class="IconColumn">
-<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Virtual.gif" alt="Virtual" /></td>
-<td><a href="../../Contents/2/220.html">StartSession</a></td>
-<td>Tells the <a href="../../Contents/2/132.html">IQueryHandler</a> to start a new the session.</td>
-</tr>
-</table>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<div class="RemarksContainer">
+This method's return type depends on the submitted 
+            <a href="../../Contents/2/216.html">Expression</a> tree.
+            Here some examples ('T' is the requested type):
+            <p>MethodReturn Type</p><ul><li><strong>Select(...)</strong>T[]</li><li><strong>First(...), Last(...)</strong>T</li><li><strong>Count(...)</strong><see langword="int" /></li><li><strong>Contains(...)</strong><see langword="bool" /></li></ul>
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">
