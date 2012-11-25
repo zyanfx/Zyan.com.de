@@ -187,18 +187,18 @@
 			<h2>Why is it better than WCF?</h2>
 
 			<ul>
+				<li>You can use overloaded methods, which isn't possible with WCF. Service contracts produce WSDL, which doesn't
+				support method overloading (all operations must be uniquely named).</li>
+
+				<li>You can call methods with generic parameters, which is also impossible with WCF. What's worse, these
+				constraints cannot be validated at compile-time, so malformed WCF contracts throw exceptions at runtime.</li>
+
 				<li>You don't have to decorate your interfaces with ServiceContract and OperationContract
-				attributes: an interface is a contract.</li>
+				attributes: every method is a part of the contract.</li>
 
 				<li>There is no need to create separate callback contract 
 				for the duplex communication&nbsp;&#151; just pass in a delegate as an argument to the remote method, or subscribe
 				to a remote event using familiar syntax.</li>
-
-				<li>You can use overloaded methods, which isn't possible with WCF. Service contracts produce WSDL, which doesn't
-				support method overloading (all operations must be uniquely named).</li>
-
-				<li>Zyan supports calling methods with generic parameters, which is also impossible with WCF (also, contracts are 
-				only validated at runtime).</li>
 
 				<li>You are not forced to specify component activation mode using attributes at compile time.
 				ZyanComponentHost can be configured activate any component in a single-call (default) or a singleton mode.</li>
@@ -211,7 +211,7 @@
 				<li>You don't have to derive your component from MarshalByRefObject. Any .NET class can be used 
 				as a hosted component.</li>
 
-				<li>With the duck typing feature, you can even bind a component to an interface it doesn't implement 
+				<li>With the duck typing feature, you can bind a component to an interface it doesn't implement
 				(provided that all interface methods are implemented). This way you can make any third-party class 
 				remotely callable.</li>
 
@@ -219,7 +219,8 @@
 				This way you can make any third-party class serializable.</li>
 
 				<li>You can query remote components using LINQ, even with projections to anonymous classes. LINQ expressions 
-				can be passed as method arguments and returned from remote methods.</li>
+				can be passed as method arguments and returned from remote methods. This feature relies on custom serialization
+				handlers mentioned above.</li>
 
 				<li>There is no need for special treatment to use events, everything works just out-of-the box. 
 				Subscription to the remote event looks exactly the same as local subscription.</li>
