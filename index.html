@@ -187,14 +187,14 @@
 			<h2>Why is it better than WCF?</h2>
 
 			<ul>
+				<li>You don't have to decorate your interfaces with ServiceContract and OperationContract
+				attributes: every method is a part of the contract.</li>
+
 				<li>You can use overloaded methods, which isn't possible with WCF. Service contracts produce WSDL, which doesn't
 				support method overloading (all operations must be uniquely named).</li>
 
 				<li>You can call methods with generic parameters, which is also impossible with WCF. What's worse, these
 				constraints cannot be validated at compile-time, so malformed WCF contracts throw exceptions at runtime.</li>
-
-				<li>You don't have to decorate your interfaces with ServiceContract and OperationContract
-				attributes: every method is a part of the contract.</li>
 
 				<li>There is no need to create separate callback contract 
 				for the duplex communication&nbsp;&#151; just pass in a delegate as an argument to the remote method, or subscribe
