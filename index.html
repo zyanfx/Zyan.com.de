@@ -186,37 +186,44 @@
 		<div class="sixcol">
 			<h2>Why is it better than WCF?</h2>
 
-			<p>You don't have to decorate your interfaces with ServiceContract and OperationContract
-			attributes: an interface is a contract.</p>
+			<ul>
+				<li>You don't have to decorate your interfaces with ServiceContract and OperationContract
+				attributes: an interface is a contract.</li>
 
-			<p>There is no need to create separate callback contract 
-			for the duplex communication&nbsp;&#151; just pass in a delegate as an argument to the remote method, or subscribe
-			to a remote event using familiar syntax.</p>
+				<li>There is no need to create separate callback contract 
+				for the duplex communication&nbsp;&#151; just pass in a delegate as an argument to the remote method, or subscribe
+				to a remote event using familiar syntax.</li>
 
-			<p>You can use overloaded methods, which isn't possible with WCF. Service contracts produce WSDL, which doesn't
-			support method overloading (all operations must be uniquely named).</p>
+				<li>You can use overloaded methods, which isn't possible with WCF. Service contracts produce WSDL, which doesn't
+				support method overloading (all operations must be uniquely named).</li>
 
-			<p>Zyan supports calling methods with generic parameters, which is also impossible with WCF (also, contracts are 
-			only validated at runtime).</p>
+				<li>Zyan supports calling methods with generic parameters, which is also impossible with WCF (also, contracts are 
+				only validated at runtime).</li>
 
-			<p>You are not forced to specify component activation mode using attributes at compile time.
-			ZyanComponentHost can be configured activate any component in a single-call (default) or a singleton mode.</p>
+				<li>You are not forced to specify component activation mode using attributes at compile time.
+				ZyanComponentHost can be configured activate any component in a single-call (default) or a singleton mode.</li>
+			</ul>
 		</div>
 		<div class="sixcol last">
 			<h2>Why is it better than .NET Remoting?</h2>
 
-			<p>You don't have to derive your component from MarshalByRefObject. Any .NET class can be used as a hosted
-			component. With the duck typing feature, you can even bind a component to an interface it doesn't implement 
-			(provided that all interface methods are implemented). This way you can make any third-party class remotely callable.</p>
+			<ul>
+				<li>You don't have to derive your component from MarshalByRefObject. Any .NET class can be used 
+				as a hosted component.</li>
 
-			<p>You can set up custom serialization handlers for data types that aren't serializable.
-			This way you can make any third-party class serializable.</p>
+				<li>With the duck typing feature, you can even bind a component to an interface it doesn't implement 
+				(provided that all interface methods are implemented). This way you can make any third-party class 
+				remotely callable.</li>
 
-			<p>You can query remote components using LINQ, even with projections to anonymous classes. LINQ expressions 
-			can be passed as method arguments and returned from remote methods.</p>
+				<li>You can set up custom serialization handlers for data types that aren't serializable.
+				This way you can make any third-party class serializable.</li>
 
-			<p>There is no need for special treatment to use events, everything works just out-of-the box. 
-			Subscription to the remote event looks exactly the same as local subscription.</p>
+				<li>You can query remote components using LINQ, even with projections to anonymous classes. LINQ expressions 
+				can be passed as method arguments and returned from remote methods.</li>
+
+				<li>There is no need for special treatment to use events, everything works just out-of-the box. 
+				Subscription to the remote event looks exactly the same as local subscription.</li>
+			</ul>
 		</div>
 	</div>
 
@@ -224,34 +231,41 @@
 		<div class="sixcol">
 			<h2>Why is it better than other RPC frameworks?</h2>
 
-			<p>Zyan is more than just an RPC framework. It is in fact a skeleton for a full-featured application server
-			with a built-in authentication, session management, policy injection features, etc.</p>
+			<ul>
+				<li>Zyan is more than just an RPC framework. It is in fact a skeleton for a full-featured application server
+				with a built-in authentication, session management, policy injection features, etc.</li>
 
-			<p>Authentication system is fully customizable. You can use integrated Windows authentication (single sign on) 
-			or plug in your own authentication provider.</p>
+				<li>Authentication system is fully customizable. You can use integrated Windows authentication (single sign on) 
+				or plug in your own authentication provider.</li>
 
-			<p>Session management is also customizable. Fast and slim in-process session manager can be used for
-			self-hosted single-process application servers. SqlServer-backed session manager is suitable for 
-			multi-process clusters. You can easily create your own session manager by inheriting from the base class
-			and overriding a few virtual methods.</p>
+				<li>Session management is also customizable. Fast and slim in-process session manager can be used for
+				self-hosted single-process application servers. SqlServer-backed session manager is suitable for 
+				multi-process clusters. You can easily create your own session manager by inheriting from the base class
+				and overriding a few virtual methods.</li>
 
-			<p>Zyan supports transparent traffic compression (using Deflate or LZF algorithm) and encryption out-of-the-box. 
-			Encryption feature doesn't require certificates and is not platform dependent.</p>
+				<li>Zyan supports transparent traffic compression (using Deflate or LZF algorithm) and encryption out-of-the-box. 
+				Encryption feature doesn't require certificates and is not platform dependent.</li>
+			</ul>
 		</div>
 		<div class="sixcol last">
-			<h2>What are the other benefits of Zyan?</h2>
+			<h2>What are other benefits of Zyan?</h2>
 
-			<p>Managed Extensibility Framework integration (only available for .NET 4.x and Mono 2.10) allows building
-			loosely coupled client-server applications. You can set up your application server declaratively using MEF
-			attributes and publish it with a Zyan host. Client application can use MEF container to access remote services.
-			Both client and server can be completely unaware of the communication layer being used.</p>
+			<ul>
+				<li>Managed Extensibility Framework integration (only available for .NET 4.x and Mono 2.10) allows building
+				loosely coupled client-server applications. You can set up your application server declaratively using MEF
+				attributes and publish it with a Zyan host.</li>
 
-			<p>Zyan supports wiring distributed Event-Based Components. EBC is an architectural model which reduces 
-			dependencies between components. Components in EBC application communicate with each other by means of messages 
-			instead of invoking methods.</p>
+				<li>Client application can use MEF container to access remote services.
+				Both client and server can be completely unaware of the communication layer being used.</li>
 
-			<p>Other notable features of Zyan include call interception, deterministic resource cleanup, duplex TCP communication,
-			server-side event filters, session-bound events, OneWay methods support, centralized exception handling, and many more.</p>
+				<li>Zyan supports wiring distributed Event-Based Components. EBC is an architectural model which reduces 
+				dependencies between components. Components in EBC application communicate with each other by means of messages 
+				instead of invoking methods.</li>
+
+				<li>Other notable features of Zyan include call interception, deterministic resource cleanup, 
+				duplex TCP communication, server-side event filters, session-bound events, OneWay methods support, 
+				centralized exception handling, and many more.</li>
+			</ul>
 		</div>
 	</div>
 

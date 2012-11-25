@@ -1,6 +1,9 @@
 /*--------------*/
-p {
+p, li {
 	padding-bottom: 10px;
+}
+ul {
+	padding-left: 40px;
 }
 body {
 	font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica;
