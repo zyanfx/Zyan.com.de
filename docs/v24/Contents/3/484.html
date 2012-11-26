@@ -14,7 +14,8 @@
 <div id="PageTitle">TcpExChannel Class</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
+<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
+<a href="#SectionHeader2" onclick="javascript: SetSectionVisibility(2, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -26,7 +27,6 @@
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
 A replacement for the standard Tcp remoting channel that allows communication in both directions over a single tcp connection.
-            <remarks>TcpExChannel only supports IPv4.</remarks><b>Remoting Configuration Parameters</b><ul><li><strong>port</strong><br />The tcp port the channel should listen on.  If this is specified, the channel will automatically start listening on that port.</li><li><strong>listen</strong><br />Indicates the channel should start listening.  This is not required if the port parameter is specified.  If no port is specified the channel will choose a random unused port.</li><li><strong>bufferSize</strong><br />The size of the buffer to use when sending data over a connection.</li><li><strong>priority</strong><br />The priority of the channel.</li></ul>
 <div id="ItemLocation">
 <b>Namespace:</b> <a href="../../Contents/1/14.html">Zyan.Communication.Protocols.Tcp.DuplexChannel</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
@@ -60,12 +60,27 @@ IDisposable
 <img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Members
+Remarks
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv1" class="SectionContainer">
+<div class="RemarksContainer">
+TcpExChannel only supports IPv4.
+            <b>Remoting Configuration Parameters:</b><ul><li><strong>port</strong><br />The tcp port the channel should listen on.  If this is specified, the channel will automatically start listening on that port.</li><li><strong>listen</strong><br />Indicates the channel should start listening.  This is not required if the port parameter is specified.  If no port is specified the channel will choose a random unused port.</li><li><strong>bufferSize</strong><br />The size of the buffer to use when sending data over a connection.</li><li><strong>priority</strong><br />The priority of the channel.</li></ul>
+</div>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader2" class="SectionHeader">
+<img id="SectionExpanderImg2" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(2);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(2);">
+Members
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv2" class="SectionContainer">
 <p>Click <a href="../../Contents/4/36.html">here</a> to see the list of members.</p>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
