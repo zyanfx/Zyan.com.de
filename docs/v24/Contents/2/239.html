@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>InterLinqQuery&lt;T&gt;.Provider Property </title>
+<title>InterLinqQuery&lt;T&gt; Constructor (IQueryProvider)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">InterLinqQuery&lt;T&gt;.Provider Property </div>
+<div id="PageTitle">InterLinqQuery&lt;T&gt; Constructor (IQueryProvider)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 <a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
@@ -25,7 +25,7 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Gets the <span class="PseudoLink">System.Linq.IQueryProvider</span> that is associated with this data source.
+Initializes this Query with the arguments.
 <div id="ItemLocation">
 <b>Declaring type:</b> <a href="../../Contents/2/125.html">InterLinqQuery&lt;T&gt;</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
@@ -41,10 +41,13 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public IQueryProvider Provider { get; }</pre></td></tr></table>
-<div class="CommentHeader">Property Value</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public InterLinqQuery (
+        IQueryProvider <i>provider</i>
+) </pre></td></tr></table>
+<div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">provider</div>
 <div class="ParameterCommentContainer">
-<p>There is no description.</p>
+<a href="http://msdn.microsoft.com/library/system.linq.iqueryprovider.aspx" target="_top">System.Linq.IQueryProvider</a> to set.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 <div id="SectionHeader1" class="SectionHeader">
@@ -58,7 +61,9 @@ Remarks
 
 <div id="SectionContainerDiv1" class="SectionContainer">
 <div class="RemarksContainer">
-The <span class="PseudoLink">System.Linq.IQueryProvider</span> that is associated with this data source.
+This constructor creates a <a href="http://msdn.microsoft.com/library/system.linq.expressions.constantexpression.aspx" target="_top">System.Linq.Expressions.ConstantExpression</a>.
+            The arguments will be checked. These exceptions will be thrown...
+                ... when "provider" is null:    <a href="http://msdn.microsoft.com/library/system.argumentnullexception.aspx" target="_top">System.ArgumentNullException</a>
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

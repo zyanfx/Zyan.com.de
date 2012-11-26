@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SerializableUnaryExpression Class</title>
+<title>ExpressionConversionHelper Class Members</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SerializableUnaryExpression Class</div>
+<div id="PageTitle">ExpressionConversionHelper Class Members</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Members</a>&nbsp;
+<a href="#SectionHeader35" onclick="javascript: SetSectionVisibility(35, true); SetExpandCollapseAllToCollapseAll();">Methods</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -25,44 +24,67 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-A serializable version of <span class="PseudoLink">System.Linq.Expressions.UnaryExpression</span>.
+Static helper class providing several C# 3.0 Extension Methods.
 <div id="ItemLocation">
+<b>Declaring type:</b> <a href="../../Contents/2/347.html">ExpressionConversionHelper</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
-<div id="SectionHeader0" class="SectionHeader">
-<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
+<div id="SectionHeader35" class="SectionHeader">
+<img id="SectionExpanderImg35" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(35);" />
 <span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(35);">
+Public Methods
 </span>
 </span>
 </div>
 
-<div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><table style="width: 100%;" class="InsideCodeBlock">
-<col width="0%" />
-<col width="100%" />
+<div id="SectionContainerDiv35" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
 <tr>
-<td class="NoWrapTop">public class SerializableUnaryExpression :&nbsp;</td>
-<td>
-SerializableExpression<br />
-</td>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/365.html">Convert</a></td>
+<td>Extension Method for <a href="http://msdn.microsoft.com/library/system.collections.ienumerable.aspx" target="_top">System.Collections.IEnumerable</a>.
+            Returns the result of the executed <a href="../../Contents/2/216.html">SerializableExpression</a>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/366.html">Deserialize</a></td>
+<td>Extension method for <a href="../../Contents/2/216.html">SerializableExpression</a>.
+            Returns <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/367.html">MakeSerializable</a></td>
+<td>Overloaded. Extension Method for <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.
+            Converts an <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a> to a <a href="../../Contents/2/216.html">SerializableExpression</a>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/368.html">MakeSerializable&lt;T&gt;</a></td>
+<td>Extension Method for <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.
+            Converts an <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a> to a <span class="Code">T</span>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/369.html">MakeSerializableCollection&lt;T&gt;</a></td>
+<td>Extension Method for <a href="http://msdn.microsoft.com/library/system.collections.ienumerable.aspx" target="_top">System.Collections.IEnumerable</a>.
+            Converts an <a href="http://msdn.microsoft.com/library/system.collections.ienumerable.aspx" target="_top">System.Collections.IEnumerable</a> to a <a href="http://msdn.microsoft.com/library/system.collections.objectmodel.readonlycollection`1.aspx" target="_top">System.Collections.ObjectModel.ReadOnlyCollection`1</a>.</td>
 </tr>
 </table>
-</td></tr></table>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader1" class="SectionHeader">
-<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Members
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv1" class="SectionContainer">
-<p>Click <a href="../../Contents/2/471.html">here</a> to see the list of members.</p>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

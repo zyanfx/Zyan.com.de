@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>AnonymousMetaProperty.Equals Method (object)</title>
+<title>AnonymousMetaProperty.GetHashCode Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">AnonymousMetaProperty.Equals Method (object)</div>
+<div id="PageTitle">AnonymousMetaProperty.GetHashCode Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Overrides the equality check.
+Serves as a hash function for a particular type.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/3/150.html">AnonymousMetaProperty</a><br />
+<b>Declaring type:</b> <a href="../../Contents/3/149.html">AnonymousMetaProperty</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/28.html">Zyan.InterLinq.Types.Anonymous</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,17 +40,10 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override bool Equals (
-        object <i>obj</i>
-) </pre></td></tr></table>
-<div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">obj</div>
-<div class="ParameterCommentContainer">
-Object to compare with.
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override int GetHashCode ()</pre></td></tr></table>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-True, if the other <see langword="object" /> is equal to this. False, if not.
+A hash code for the current <see langword="object" />.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

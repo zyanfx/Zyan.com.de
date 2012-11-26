@@ -66,7 +66,7 @@ Remarks
 <div id="SectionContainerDiv1" class="SectionContainer">
 <div class="RemarksContainer">
 Dynamic invokers uses runtime code generation instead of the late binding of the Delegate.DynamicInvoke.
-            It doesn't wrap the exception thrown by the delegate into <span class="PseudoLink">System.Reflection.TargetInvocationException</span>.
+            It doesn't wrap the exception thrown by the delegate into <a href="http://msdn.microsoft.com/library/system.reflection.targetinvocationexception.aspx" target="_top">System.Reflection.TargetInvocationException</a>.
             On .NET runtime (versions 3.5, 4.0 and 4.5), this invoker is 10-12 times faster than the original DynamicInvoke.
             On Mono runtime (version 2.10.5), it performs 1.5-2 times slower than the original DynamicInvoke.
 </div>

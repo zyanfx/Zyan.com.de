@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>IQueryHandler.Get&lt;T&gt; Method ()</title>
+<title>IQueryHandler.StartSession Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">IQueryHandler.Get&lt;T&gt; Method ()</div>
+<div id="PageTitle">IQueryHandler.StartSession Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,7 +24,7 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.
+Tells the <a href="../../Contents/2/124.html">IQueryHandler</a> to start a new the session.
 <div id="ItemLocation">
 <b>Declaring type:</b> <a href="../../Contents/2/124.html">IQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/20.html">Zyan.InterLinq</a><br />
@@ -40,27 +40,10 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract IQueryable&lt;T&gt; Get&lt;T&gt; ()</pre>
-<div style="padding-left: 30px; margin-top: 0px;">
-<table class="InsideCodeBlock">
-<col />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">where T</td>
-<td>&nbsp;: class</td>
-</td>
-</tr>
-</table>
-</div>
-</td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-Generic Argument of the returned <span class="PseudoLink">System.Linq.IQueryable`1</span>.
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public abstract bool StartSession ()</pre></td></tr></table>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns an <span class="PseudoLink">System.Linq.IQueryable`1</span>.
+True, if the session creation was successful. False, if not.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

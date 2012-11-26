@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerQueryRemotingHandler Constructor ()</title>
+<title>ServerQueryRemotingHandler.InitializeLifetimeService Method ()</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerQueryRemotingHandler Constructor ()</div>
+<div id="PageTitle">ServerQueryRemotingHandler.InitializeLifetimeService Method ()</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,9 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Initializes this class.
+This methods is overwritten because this class is made for a singleton service and should
+            live until the application terminates.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/291.html">ServerQueryRemotingHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/290.html">ServerQueryRemotingHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/22.html">Zyan.InterLinq.Communication.Remoting</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -40,7 +41,11 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected ServerQueryRemotingHandler ()</pre></td></tr></table>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public override object InitializeLifetimeService ()</pre></td></tr></table>
+<div class="CommentHeader">Return Value</div>
+<div class="ParameterCommentContainer">
+This method will always return <see langword="null" />
+</div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

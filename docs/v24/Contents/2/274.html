@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServerQueryHandler.Retrieve Method (SerializableExpression)</title>
+<title>ServerQueryHandler.RetrieveGeneric&lt;T&gt; Method (SerializableExpression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServerQueryHandler.Retrieve Method (SerializableExpression)</div>
+<div id="PageTitle">ServerQueryHandler.RetrieveGeneric&lt;T&gt; Method (SerializableExpression)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 <a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
@@ -27,7 +27,7 @@
 <a id="ContentsAnchor">&nbsp;</a>
 Retrieves data from the server by an <a href="../../Contents/2/216.html">Expression</a> tree.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/256.html">ServerQueryHandler</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/255.html">ServerQueryHandler</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/21.html">Zyan.InterLinq.Communication</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,11 +41,16 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public object Retrieve (
-        SerializableExpression <i>expression</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public object RetrieveGeneric&lt;T&gt; (
+        SerializableExpression <i>serializableExpression</i>
 ) </pre></td></tr></table>
+<div class="CommentHeader">Type Parameters</div>
+<div class="CommentParameterName">T</div>
+<div class="ParameterCommentContainer">
+Type of the <a href="http://msdn.microsoft.com/library/system.linq.iqueryable.aspx" target="_top">System.Linq.IQueryable</a>.
+</div>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">expression</div>
+<div class="CommentParameterName">serializableExpression</div>
 <div class="ParameterCommentContainer">
 <a href="../../Contents/2/216.html">Expression</a> tree 
                 containing selection and projection.

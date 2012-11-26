@@ -6,15 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ServiceHelper.GetDefaultBinding Method ()</title>
+<title>ServiceHelper.GetEndpoint Method</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ServiceHelper.GetDefaultBinding Method ()</div>
+<div id="PageTitle">ServiceHelper.GetEndpoint Method</div>
 <div id="HeaderShortcuts">
-<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
-<a href="#SectionHeader1" onclick="javascript: SetSectionVisibility(1, true); SetExpandCollapseAllToCollapseAll();">Remarks</a>&nbsp;
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Overload List</a>&nbsp;
 </div>
 <div class="DarkLine"></div>
 <div class="LightLine"></div>
@@ -25,9 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns a default <span class="PseudoLink">System.ServiceModel.NetTcpBinding</span>.
+Returns the default Service <a href="http://msdn.microsoft.com/library/system.servicemodel.endpointaddress.aspx" target="_top">System.ServiceModel.EndpointAddress</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/319.html">ServiceHelper</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/318.html">ServiceHelper</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/23.html">Zyan.InterLinq.Communication.Wcf</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -35,33 +34,34 @@ Returns a default <span class="PseudoLink">System.ServiceModel.NetTcpBinding</sp
 <img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
 <span class="SectionHeader">
 <span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
-Syntax
+Overload List
 </span>
 </span>
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static Binding GetDefaultBinding ()</pre></td></tr></table>
-<div class="CommentHeader">Return Value</div>
-<div class="ParameterCommentContainer">
-Returns a default <span class="PseudoLink">System.ServiceModel.NetTcpBinding</span>.
-</div>
-<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
-<div id="SectionHeader1" class="SectionHeader">
-<img id="SectionExpanderImg1" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(1);" />
-<span class="SectionHeader">
-<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(1);">
-Remarks
-</span>
-</span>
-</div>
-
-<div id="SectionContainerDiv1" class="SectionContainer">
-<div class="RemarksContainer">
-The <span class="PseudoLink">System.ServiceModel.NetTcpBinding</span> looks like this:
-            
-            <p>PropertyValue</p><ul><li><strong><span class="PseudoLink">Security.Mode</span></strong><br /><span class="PseudoLink">ReaderQuotas.MaxArrayLength</span></strong><br /><span class="PseudoLink">OpenTimeout</span></strong><br />new <span class="PseudoLink">CloseTimeout</span></strong><br />new <span class="PseudoLink">SendTimeout</span></strong><br />new <span class="PseudoLink">System.TimeSpan</span>(0, 10, 0) = 10 Minutes</li></ul>
-</div>
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/339.html">ServiceHelper.GetEndpoint ()</a></td>
+<td>Returns the default Service <a href="http://msdn.microsoft.com/library/system.servicemodel.endpointaddress.aspx" target="_top">System.ServiceModel.EndpointAddress</a>.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicMethod.gif" alt="Public Method" />&nbsp;<img src="../../GFX/Static.gif" alt="Static" /></td>
+<td><a href="../../Contents/2/340.html">ServiceHelper.GetEndpoint (string, string, string)</a></td>
+<td>Returns a Service <a href="http://msdn.microsoft.com/library/system.servicemodel.endpointaddress.aspx" target="_top">System.ServiceModel.EndpointAddress</a>.</td>
+</tr>
+</table>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
 <div id="Footer">

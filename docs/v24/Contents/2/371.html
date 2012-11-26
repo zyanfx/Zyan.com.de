@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionConversionHelper.MakeSerializable Method (Expression)</title>
+<title>ExpressionConversionHelper.MakeSerializable Method (Expression, ExpressionConverter)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionConversionHelper.MakeSerializable Method (Expression)</div>
+<div id="PageTitle">ExpressionConversionHelper.MakeSerializable Method (Expression, ExpressionConverter)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Extension Method for <span class="PseudoLink">System.Linq.Expressions.Expression</span>.
-            Converts an <span class="PseudoLink">System.Linq.Expressions.Expression</span> to a <a href="../../Contents/2/216.html">SerializableExpression</a>.
+Extension Method for <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.
+            Converts an <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a> to a <a href="../../Contents/2/216.html">SerializableExpression</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/348.html">ExpressionConversionHelper</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/347.html">ExpressionConversionHelper</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -42,12 +42,17 @@ Syntax
 
 <div id="SectionContainerDiv0" class="SectionContainer">
 <table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static SerializableExpression MakeSerializable (
-        Expression <i>exp</i>
+        Expression <i>exp</i>,
+        ExpressionConverter <i>expConverter</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">exp</div>
 <div class="ParameterCommentContainer">
 Extended class instance.
+</div>
+<div class="CommentParameterName">expConverter</div>
+<div class="ParameterCommentContainer">
+<a href="../../Contents/2/372.html">ExpressionConverter</a> instance.
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">

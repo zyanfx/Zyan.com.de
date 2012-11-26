@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>SerializableExpressionVisitor.VisitObjectCollection&lt;T&gt; Method (IEnumerable)</title>
+<title>SerializableExpressionVisitor.VisitSerializableBinaryExpression Method (SerializableBinaryExpression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">SerializableExpressionVisitor.VisitObjectCollection&lt;T&gt; Method (IEnumerable)</div>
+<div id="PageTitle">SerializableExpressionVisitor.VisitSerializableBinaryExpression Method (SerializableBinaryExpression)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,9 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Returns an <span class="PseudoLink">System.Collections.Generic.IEnumerable`1</span>. Each element in <span class="Code">enumerable</span>
-            will be visited by calling <a href="../../Contents/3/69.html">VisitObject&lt;T&gt;</a>.
+Visits a <a href="../../Contents/2/349.html">SerializableBinaryExpression</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/481.html">SerializableExpressionVisitor</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/480.html">SerializableExpressionVisitor</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/25.html">Zyan.InterLinq.Expressions.Helpers</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,34 +40,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected IEnumerable&lt;T&gt; VisitObjectCollection&lt;T&gt; (
-        IEnumerable <i>enumerable</i>
-) </pre>
-<div style="padding-left: 30px; margin-top: 0px;">
-<table class="InsideCodeBlock">
-<col />
-<col width="100%" />
-<tr>
-<td class="NoWrapTop">where T</td>
-<td>&nbsp;: class</td>
-</td>
-</tr>
-</table>
-</div>
-</td></tr></table>
-<div class="CommentHeader">Type Parameters</div>
-<div class="CommentParameterName">T</div>
-<div class="ParameterCommentContainer">
-Generic argument of the returned <span class="PseudoLink">System.Collections.IEnumerable</span>.
-</div>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">protected abstract Expression VisitSerializableBinaryExpression (
+        SerializableBinaryExpression <i>expression</i>
+) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
-<div class="CommentParameterName">enumerable</div>
+<div class="CommentParameterName">expression</div>
 <div class="ParameterCommentContainer">
-<span class="PseudoLink">System.Collections.Generic.IEnumerable`1</span> to visit.
+<a href="../../Contents/2/349.html">SerializableBinaryExpression</a> to visit.
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns an <span class="PseudoLink">System.Collections.Generic.IEnumerable`1</span>.
+Returns the converted <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>

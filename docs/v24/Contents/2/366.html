@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
 <link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
 <script type="text/javascript" src="../../JS/Common.js"></script>
-<title>ExpressionConversionHelper.Convert Method (SerializableExpression, IQueryHandler)</title>
+<title>ExpressionConversionHelper.Deserialize Method (SerializableExpression)</title>
 </head>
 <body>
 <div id="Header">
 <div id="ProjectTitle">Zyan Communication Framework version 2.4</div>
-<div id="PageTitle">ExpressionConversionHelper.Convert Method (SerializableExpression, IQueryHandler)</div>
+<div id="PageTitle">ExpressionConversionHelper.Deserialize Method (SerializableExpression)</div>
 <div id="HeaderShortcuts">
 <a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Syntax</a>&nbsp;
 </div>
@@ -24,10 +24,10 @@
 </div>
 <div id="Contents">
 <a id="ContentsAnchor">&nbsp;</a>
-Extension Method for <span class="PseudoLink">System.Collections.IEnumerable</span>.
-            Returns the result of the executed <a href="../../Contents/2/216.html">SerializableExpression</a>.
+Extension method for <a href="../../Contents/2/216.html">SerializableExpression</a>.
+            Returns <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.
 <div id="ItemLocation">
-<b>Declaring type:</b> <a href="../../Contents/2/348.html">ExpressionConversionHelper</a><br />
+<b>Declaring type:</b> <a href="../../Contents/2/347.html">ExpressionConversionHelper</a><br />
 <b>Namespace:</b> <a href="../../Contents/1/24.html">Zyan.InterLinq.Expressions</a><br />
 <b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
 </div>
@@ -41,22 +41,17 @@ Syntax
 </div>
 
 <div id="SectionContainerDiv0" class="SectionContainer">
-<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static object Convert (
-        SerializableExpression <i>exp</i>,
-        IQueryHandler <i>linqHandler</i>
+<table class="CodeTable"><col width="100%" /><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">public static Expression Deserialize (
+        SerializableExpression <i>exp</i>
 ) </pre></td></tr></table>
 <div class="CommentHeader">Parameters</div>
 <div class="CommentParameterName">exp</div>
 <div class="ParameterCommentContainer">
-Extended class instance.
-</div>
-<div class="CommentParameterName">linqHandler</div>
-<div class="ParameterCommentContainer">
-<a href="../../Contents/2/124.html">IQueryHandler</a>.
+Serializable expression to convert
 </div>
 <div class="CommentHeader">Return Value</div>
 <div class="ParameterCommentContainer">
-Returns the result of the executed <a href="../../Contents/2/216.html">SerializableExpression</a>.
+Returns <a href="http://msdn.microsoft.com/library/system.linq.expressions.expression.aspx" target="_top">System.Linq.Expressions.Expression</a>.
 </div>
 <div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
 </div>
