@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This comment will force IE7 to go into quirks mode. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" type="text/css" href="../../CSS/Contents.css"></link>
+<script type="text/javascript" src="../../JS/Common.js"></script>
+<title>Zyan.Communication.ChannelSinks.Compression Namespace</title>
+</head>
+<body>
+<div id="Header">
+<div id="ProjectTitle">Zyan Communication Framework version 2.5</div>
+<div id="PageTitle">Zyan.Communication.ChannelSinks.Compression Namespace</div>
+<div id="HeaderShortcuts">
+<a href="#SectionHeader0" onclick="javascript: SetSectionVisibility(0, true); SetExpandCollapseAllToCollapseAll();">Classes</a>&nbsp;
+<a href="#SectionHeader5" onclick="javascript: SetSectionVisibility(5, true); SetExpandCollapseAllToCollapseAll();">Interfaces</a>&nbsp;
+<a href="#SectionHeader20" onclick="javascript: SetSectionVisibility(20, true); SetExpandCollapseAllToCollapseAll();">Enumerations</a>&nbsp;
+</div>
+<div class="DarkLine"></div>
+<div class="LightLine"></div>
+<div id="HeaderToolbar">
+<img id="ExpandCollapseAllImg" src="../../GFX/SmallSquareExpanded.gif" alt="" style="vertical-align: top;" onclick="javascript: ToggleAllSectionsVisibility();" />
+<span id="ExpandCollapseAllSpan" onclick="javascript: ToggleAllSectionsVisibility();">Collapse All</span>
+</div>
+</div>
+<div id="Contents">
+<a id="ContentsAnchor">&nbsp;</a>
+
+                This namespace contains compression channel sinks. Compression sinks enable transparent compression for the network traffic.
+            
+<div id="ItemLocation">
+<b>Assembly:</b> <a href="../../Contents/1/1.html">Zyan.Communication</a>
+</div>
+<div id="SectionHeader0" class="SectionHeader">
+<img id="SectionExpanderImg0" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(0);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(0);">
+Public Classes
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv0" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
+<td><a href="../../Contents/1/470.html">CompressionClientChannelSinkProvider</a></td>
+<td>Client channel compression sink provider. Creates <span class="PseudoLink">Zyan.Communication.ChannelSinks.Compression.CompressionClientChannelSink</span> for the client sink chain.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
+<td><a href="../../Contents/1/471.html">CompressionServerChannelSinkProvider</a></td>
+<td>Server channel compression sink provider. Creates <span class="PseudoLink">Zyan.Communication.ChannelSinks.Compression.CompressionServerChannelSink</span> for the server sink chain.</td>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicClass.gif" alt="Public Class" /></td>
+<td><a href="../../Contents/1/472.html">NonCompressibleAttribute</a></td>
+<td>Marks the class as an exempt from compression.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader5" class="SectionHeader">
+<img id="SectionExpanderImg5" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(5);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(5);">
+Public Interfaces
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv5" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicInterface.gif" alt="Public Interface" /></td>
+<td><a href="../../Contents/1/473.html">ICompressible</a></td>
+<td>The ICompressible interface implements a property that returns a flag,
+            which determines if the request or response should be compressed.
+            This interface is used in conjuction with the compression sink implementation
+            and allows to determine dynamically if the request or response is
+            to be compressed.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+<div id="SectionHeader20" class="SectionHeader">
+<img id="SectionExpanderImg20" src="../../GFX/BigSquareExpanded.gif" alt="Collapse/Expand" onclick="javascript: ToggleSectionVisibility(20);" />
+<span class="SectionHeader">
+<span class="ArrowCursor" onclick="javascript: ToggleSectionVisibility(20);">
+Public Enumerations
+</span>
+</span>
+</div>
+
+<div id="SectionContainerDiv20" class="SectionContainer">
+<table class="MembersTable">
+<col width="7%" />
+<col width="38%" />
+<col width="55%" />
+<tr>
+<th>&nbsp;</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="IconColumn">
+<img src="../../GFX/PublicEnumeration.gif" alt="Public Enumeration" /></td>
+<td><a href="../../Contents/1/474.html">CompressionMethod</a></td>
+<td>Compression levels.</td>
+</tr>
+</table>
+<div class="TopLink"><a href="#ContentsAnchor">Top</a></div></div>
+</div>
+<div id="Footer">
+<span class="Footer">Generated by <a href="http://immdocnet.codeplex.com/" target="_blank">ImmDoc .NET</a></span>.
+</div>
+
+</body>
+
+</html>
