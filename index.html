@@ -53,7 +53,7 @@
 		<div class="threecol">
 		</div>
 		<div class="ninecol last">
-			<p>Easy to use distributed application framework for .NET and Mono.</p>
+			<p>Easy to use distributed application framework for .NET, Mono and Xamarin.Android.</p>
 		</div>
 	</div>
 
@@ -320,22 +320,108 @@
 	</div>
 
 	<div class="row" style="padding-top: 1em">
-		<div class="fourcol">
-			<p><center><img src="img/ultima-logo-masked.png" style="margin-bottom:20px; margin-top:30px;"/></center></p>
-			<p>ULTIMA Businessware is an independent software developer based in Moscow, Russia.
-			We&nbsp;use Zyan&nbsp;Framework in our enterprise resource planning software.
-			</p>
+		<div class="sixcol">
+			<p>
+			<img src="img/IRPlogo1.png" style="float: left; margin-right: 2em; margin-bottom: 2em;"/>
+			<a href="http://www.risk-partnership.com/" target="_top">International Risk Partnership</a> 
+			is an independent consultancy. We're using the Zyan Framework 
+			to connect several parts of our suite of Risk Management products together, to give our users maximum 
+			flexibility in deployment. We've deployed elements locally, across a LAN and even on Amazon AWS (for 
+			instance, connecting from UK to Australia) without issue using TCP duplex connections. </p>
+			<p>Of particular interest to us and to our clients is the ability to communicate encrypted 
+			data quickly &#150; vital for our line of business. </p>
+			<p>Typically we have one or more control applications using duplex TCP to a remote server 
+			running our Data Manager. This in turn connects to our Central Logic via IPC. The Central Logic 
+			implements a queue and multi-threaded engines thus releasing the Data Manager quickly to prepare 
+			the next call.</p>
+			<p>In summary we use:</p>
+			<ul>
+				<li>Duplex TCP channel for inter-network calls</li>
+				<li>A callback registry of clients so we can pass data back and forth 
+				between multiple connected clients (and to the correct client!)</li>
+				<li>Encryption for safe data transfer.</li>
+				<li>IPC binary channel for calls on the same machine, to keep our logical 
+				business processes separate and therefore maximise resources, and to get maximum connection speed.</li>
+			</ul>
+			<p>Trying to use TCP Remoting without the Zyan Framework would never have got off the ground &#150; 
+			just glad we came across it. Also, we have received excellent service and support with even 
+			the most inept questions &#150; thanks to you both for this!</p>
+			<p align="right">&ndash; Dave Grafton</p>
+			<br/>
 		</div>
-		<div class="fourcol">
-			<p><center><img src="img/Feuerwehr-logo-masked.png" style="margin-bottom:-10px; margin-top:0px;"/></center></p>
-			<p>Fire-fighting departments in Germany use Zyan-powered application to control the state
-			of the fire-fighting vehicles.</p>
+		<div class="sixcol last">
+			<p>
+			<img src="img/UltimaLogo.png" style="float: left; margin-right: 2em; margin-bottom: 2em;"/>
+			<a href="http://ultima.ru/" target="_top">ULTIMA Businessware</a> is a software development company based in 
+			Moscow, Russia. Our flagship product is a large-scale enterprise resource planning system, 
+			and the current development version runs on top of Zyan Framework.</p>
+			<p>We have also integrated duplex TCP channel, apart from Zyan Framework itself, 
+			into <a href="http://ultima.ru/ultima_erp/" target="_top">stable version of ULTIMA ERP</a> to enable reliable 
+			server callbacks for the clients working behind NAT and firewalls. This version is already 
+			delivered to our current clients, mostly large retail stores in several different regions of Russia. 
+			We use pretty much every feature Zyan Communication Framework has to offer, including</p>
+			<ul>
+				<li>Traffic compression and encryption</li>
+				<li>Duplex TCP connection</li>
+				<li>Custom authentication manager</li>
+				<li>Custom persistent session manager</li>
+				<li>Distributed LINQ queries</li>
+				<li>Call interception for result caching</li>
+				<li>MEF integration (both client-side and server-side)</li>
+				<li>Session-bound events</li>
+				<li>Event filters</li>
+				<li>Load context-independent assembly resolution</li>
+				<li>Android version of the library</li>
+			</ul>
+			<p align="right">&ndash; Alexey Yakovlev</p>
+			<br/>
 		</div>
-		<div class="fourcol last">
-			<p><center><img src="img/zyan-logo-masked.png" style="margin-bottom:-5px; margin-top:5px;"/></center></p>
-			<p>Have used Zyan in your projects? <a href="http://zyan.codeplex.com/discussions/337472" target="_top">Share the details</a> of your application, 
-			help other customers to make a decision!</p>
-			<p></p>
+	</div>
+
+	<div class="row" style="padding-top: 1em">
+		<div class="sixcol">
+			<p><img src="img/FeuerwehrLogo.png" style="float: left; margin-right: 2em; margin-bottom: 2em;"/>
+			Fire-fighting departments in Germany use Zyan-powered application to control the state
+			of the fire-fighting vehicles (sorry, no website yet).</p>
+			<p>The software has a client-server architecture. Each fire truck sends analog radio signals to headquaters. 
+			These signals are decoded using a third party hardware component at a centralized server. 
+			Server gets state through a decoder and sends to all clients. At any client site, the information worker 
+			can create a dashboard of all fire trucks he wants to monitor. The following Zyan features are used:</p>
+			<ul>
+				<li>Duplex TCP connection between server and clients</li>
+				<li>IPC connection between udpate service and server</li>
+				<li>Events (client sends delegates to server. Delegates are invoked by the server)</li>
+			</ul>
+			<p>Furthermore i want to thank Rainbird for his great support. Many thanks to you, Rainbird.</p>
+			<p align="right">&ndash; Caldicot</p>
+			<br/>
+		</div>
+		<div class="sixcol last">
+			<p><img src="img/ZyanDrenchLogo.png" style="float: left; margin-right: 2em; margin-bottom: 2em;"/>
+			<a href="https://play.google.com/store/apps/details?id=yallie.Zyan.Drench" target="_top">Zyan Drench</a> 
+			is a simple yet very entertaining game developed using Zyan Communication Framework.</p>
+			<p>Game board is a random picture of size 15x15. Start from the top-left corner of the board. 
+			Select a new color for the top-left pixel, and all adjacent pixels of the same color will be painted 
+			over with the new color. The goal is to drench the whole board with your own color.</p>
+			<p>Zyan Drench has several modes: play against Android phone (with adjustable skill level), 
+			play solo (classic single-player mode) and network game over Wifi. It is completely ad-free 
+			and open source, hosted at <a href="https://drench.codeplex.com" target="_top">https://drench.codeplex.com</a>
+			and <a href="https://github.com/yallie/drench" target="_top">https://github.com/yallie/drench</a>.</p>
+			<p>The game uses the following features of Zyan library:</p>
+			<ul>
+				<li>Duplex TCP channel</li>
+				<li>Events to synchronize devices</li>
+				<li>Android version of the library</li>
+			</ul>
+			<p align="right">&ndash; Kind regards, yallie</p>
+			<br/>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="twelwecol last">
+			<p><center>If you have used Zyan in your own projects, please <a href="http://zyan.codeplex.com/discussions/337472" target="_top">share 
+			the details</a> of your application, help other customers to make a decision!</center></p>
 		</div>
 	</div>
 
