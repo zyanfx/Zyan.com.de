@@ -15,21 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="css/zyan.css">
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/zyanie.css" type="text/css" media="screen" /><![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/gist.css">
-	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-	<script type="text/javascript">
-
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-38318452-1']);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-
+	<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-38318452-1', 'auto');
+	ga('send', 'pageview');
 	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
 <body>
 
@@ -39,7 +31,7 @@
 		<div class="twocol">
 		</div>
 
-		<a href="http://zyan.codeplex.com" target="_top" title="Zyan Communication Framework">
+		<a href="http://zyan.com.de" target="_top" title="Zyan Communication Framework">
 			<div class="eightcol">
 				<img src="img/zyan-logo20-hi.png" alt="Zyan Communication Framework" title="Zyan Communication Framework"/>
 			</div>
@@ -61,13 +53,13 @@
 		<div class="threecol">
 		</div>
 		<div class="twocol">
-			<a href="http://nuget.org/packages/Zyan" target="_top" class="button"><div class="download">NuGet</div></a>
+			<a href="https://nuget.org/packages/Zyan" target="_top" class="button"><div class="download">NuGet</div></a>
 		</div>
 		<div class="twocol">
-			<a href="http://zyan.codeplex.com/releases" target="_top" class="button"><div class="download">Binaries</div></a>
+			<a href="https://github.com/zyanfx/Zyan/releases" target="_top" class="button"><div class="download">Binaries</div></a>
 		</div>
 		<div class="twocol">
-			<a href="http://zyan.codeplex.com/SourceControl/BrowseLatest" target="_top" class="button"><div class="download">Sources</div></a>
+			<a href="https://github.com/zyanfx/Zyan" target="_top" class="button"><div class="download">Sources</div></a>
 		</div>
 		<div class="threecol last">
 		</div>
@@ -426,8 +418,7 @@
 			over with the new color. The goal is to drench the whole board with your own color.</p>
 			<p>Zyan Drench has several modes: play against Android phone (with adjustable skill level), 
 			play solo (classic single-player mode) and network game over Wifi. It is completely ad-free 
-			and open source, hosted at <a href="https://drench.codeplex.com" target="_top">https://drench.codeplex.com</a>
-			and <a href="https://github.com/yallie/drench" target="_top">https://github.com/yallie/drench</a>.</p>
+			and open source, hosted at <a href="https://github.com/yallie/drench" target="_top">https://github.com/yallie/drench</a>.</p>
 			<p>The game uses the following features of Zyan library:</p>
 			<ul>
 				<li>Duplex TCP channel</li>
@@ -444,45 +435,18 @@
 			to a Bing map client, where the real-time position of the drone is displayed. So far, it works very well.</p>
 			<p>I wrote my own UDP stuff, but your software made the TCP server to the WPF map clients very easy.</p>
 			<p>You can see more info here:<br/>
-			<a href="http://phantompilots.com/viewtopic.php?f=4&t=2700&p=18719">http://phantompilots.com/viewtopic.php?f=4&t=2700&p=18719</a></p>
+			<a href="https://phantompilots.com/viewtopic.php?f=4&t=2700&p=18719">https://phantompilots.com/viewtopic.php?f=4&t=2700&p=18719</a></p>
 			<p>A video of a flight synchronized with the DronePhone Map client:<br/>
-			<a href="http://www.youtube.com/watch?v=DS3cgnEKpKY">http://www.youtube.com/watch?v=DS3cgnEKpKY</a></p>
+			<a href="https://www.youtube.com/watch?v=DS3cgnEKpKY">https://www.youtube.com/watch?v=DS3cgnEKpKY</a></p>
 			<p>It is best watched at full screen, 1080p.</p>
 			<p>Enjoy, and thanks for the great software!</p>
 			<p align="right">&ndash; Swifter<br/>2013</p>
 		</div>
 	</div>
 
-	<!--div class="row" style="padding-top: 1em">
-		<div class="sixcol">
-			<p><img src="img/ZyanDrenchLogo.png" style="float: left; margin-right: 2em; margin-bottom: 2em;"/>
-			<a href="https://play.google.com/store/apps/details?id=yallie.Zyan.Drench" target="_top">Zyan Drench</a> 
-			is a simple yet very entertaining game developed using Zyan Communication Framework.</p>
-			<p>Game board is a random picture of size 15x15. Start from the top-left corner of the board. 
-			Select a new color for the top-left pixel, and all adjacent pixels of the same color will be painted 
-			over with the new color. The goal is to drench the whole board with your own color.
-			As of February 2014, Zyan Drench is installed on more than 15,000 devices.</p>
-			<br/>
-		</div>
-		<div class="sixcol last">
-			<p>Zyan Drench has several modes: play against Android phone (with adjustable skill level), 
-			play solo (classic single-player mode) and network game over Wifi. It is completely ad-free 
-			and open source, hosted at <a href="https://drench.codeplex.com" target="_top">https://drench.codeplex.com</a>
-			and <a href="https://github.com/yallie/drench" target="_top">https://github.com/yallie/drench</a>.</p>
-			<p>The game uses the following features of Zyan library:</p>
-			<ul>
-				<li>Duplex TCP channel</li>
-				<li>Events to synchronize devices</li>
-				<li>Android version of the library</li>
-			</ul>
-			<p align="right">&ndash; Kind regards, yallie<br/>2014</p>
-			<br/>
-		</div>
-	</div-->
-
 	<div class="row">
 		<div class="twelwecol last">
-			<p><center>If you have used Zyan in your own projects, please <a href="http://zyan.codeplex.com/discussions/337472" target="_top">share 
+			<p><center>If you have used Zyan in your own projects, please <a href="https://github.com/zyanfx/Zyan/issues/new" target="_top">share 
 			the details</a> of your application, help other customers to make a decision!</center></p>
 		</div>
 	</div>
@@ -495,34 +459,34 @@
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">About</h3>
-			<p><a href="http://zyan.codeplex.com" target="_top">Overview</a></p>
-			<p><a href="http://zyan.codeplex.com/wikipage?title=What%C2%B4s%20new%20in%20Zyan%202.0%3f" target="_top">What's new</a></p>
+			<p><a href="http://zyan.com.de" target="_top">Overview</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan/wiki/What's-new-in-Zyan" target="_top">What's new</a></p>
 			<p>FAQ <span class="lighter">(TODO)</span></p>
 			<p><a href="https://www.ohloh.net/p/zyan" target="_top">Statistics</a></p>
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">Learn</h3>
-			<p><a href="http://zyan.codeplex.com/documentation" target="_top">User guide</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan/wiki" target="_top">User guide</a></p>
 			<p><a href="docs/v25" target="_top">API reference</a></p>
-			<p><a href="http://zyan.codeplex.com/discussions" target="_top">Support forum</a> <span class="lighter">[en]</span></p>
-			<p><a href="http://www.mycsharp.de/wbb2/thread.php?threadid=89085" target="_top">Support forum</a> <span class="lighter">[de]</span></p>
+			<p><a href="https://github.com/zyanfx/Zyan/discussions" target="_top">Support forum</a> <span class="lighter">[en]</span></p>
+			<p><a href="https://www.mycsharp.de/wbb2/thread.php?threadid=89085" target="_top">Support forum</a> <span class="lighter">[de]</span></p>
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">Download</h3>
-			<p><a href="http://nuget.org/packages/Zyan" target="_top">Nuget package</a></p>
-			<p><a href="http://zyan.codeplex.com/releases" target="_top">Binaries</a></p>
-			<p><a href="http://zyan.codeplex.com/SourceControl/BrowseLatest" target="_top">Source code</a></p>
+			<p><a href="https://nuget.org/packages/Zyan" target="_top">Nuget package</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan/releases" target="_top">Binaries</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan" target="_top">Source code</a></p>
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">Participate</h3>
-			<p><a href="http://zyan.codeplex.com/discussions" target="_top">Request features</a></p>
-			<p><a href="http://zyan.codeplex.com/workitem/list/basic" target="_top">Report bugs</a></p>
-			<p><a href="http://zyan.codeplex.com/SourceControl/list/patches" target="_top">Submit patches</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan/discussions" target="_top">Request features</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan/issues/new" target="_top">Report bugs</a></p>
+			<p><a href="https://github.com/zyanfx/Zyan/compare" target="_top">Submit patches</a></p>
 		</div>
 		<div class="twocol">
 			<h3 class="footer-title">Contact</h3>
 			<p><a href="http://yellow-rainbird.de" target="_top">Rainbird</a></p>
-			<p><a href="http://www.sharp-shooter.ru" target="_top">yallie</a></p>
+			<p>yallie</p>
 			<p><img src="img/stamp2012.png" style="position: relative; left: -4px;" 
 				alt="website designed by yallie" title="website designed by yallie"/></p>
 		</div>
